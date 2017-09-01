@@ -1,0 +1,20 @@
+# Made by RandomHashTags
+main: me.randomHashTags.RandomPackage.RandomPackage
+version: 13
+website: https://www.spigotmc.org/resources/randompackage.38501/
+name: RandomPackage
+author: RandomHashTags
+softdepend: [Vault, Essentials, WorldEdit, WorldGuard, Factions, LegacyFactions, mcMMO]
+commands:
+  disabledenchants:
+    permission: "RandomPackage.commands.disabledenchants"
+    aliases: [de]
+  givedp:
+    permission: "RandomPackage.commands.givedp"
+  gkit:
+    permission: "RandomPackage.commands.gkit"
+  randompackage:
+    permission: "RandomPackage.commands.randompackage"
+    aliases: [rp]
+  vkit:
+    permission: "RandomPackage.commands.vkit"

@@ -1,0 +1,57 @@
+# Made by RandomHashTags
+commands:
+  alchemist: true
+  bless: true
+  disabledenchants: true
+  enchanter: true
+  givedp: true
+  gkit: true
+  randompackage: true
+  shop: true
+  showcase: true
+  splitsouls: true
+  tinkerer: true
+  withdraw: true
+  xpbottle: true
+  vkit: true
+#
+features:
+  #
+  bosses:
+    brood-mother: false
+    king-slime: false
+    plague-bloater: false
+    undead-assassin: false
+    yijki: false
+  #
+  tnt:
+    gigantic: false
+    hex: false
+    lucky: false
+    mimic: false
+    tactical: false
+  # Givedp items
+  armor-enchantment-orb: true
+  banknote: true
+  black-scroll: true
+  christmas-candy: true
+  christmas-eggnog: true
+  experience-bottle: true
+  explosive-cake: true
+  faction-crystal: true
+  faction-mcmmo-booster: true
+  faction-xp-booster: true
+  halloween-candy: true
+  item-name-tag: true
+  mcmmo-credit-voucher: true
+  mcmmo-level-voucher: true
+  mcmmo-xp-voucher: true
+  mystery-dust: true
+  mystery-mob-spawner: true
+  soul-gem: true
+  space-drink: true
+  space-firework: true
+  transmog-scroll: true
+  weapon-enchantment-orb: true
+  white-scroll: true
+#

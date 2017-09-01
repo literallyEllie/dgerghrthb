@@ -1,0 +1,1302 @@
+# Made by RandomHashTags
+options:
+  hide-potion-effects: true
+#
+lores:
+  view-category: "&7Click to view this category."
+  # {BUY_PRICE} = The price the item is worth. Displayed as 2 decimal places.
+  purchase:
+  - " "
+  - "&aBuy Price"
+  - "&a${BUY_PRICE}/ea"
+  - " "
+  # {SELL_PRICE} = The price the item is worth to sell. Displayed as 2 decimal places.
+  sell:
+  - "&cSell Price"
+  - "&c${SELL_PRICE}/ea"
+  - " "
+  # {LEFT_CLICK} = The amount purchased via left click. "click-options.left".
+  # {SHIFT_LEFT_CLICK} = The amount purchased via shift-left click. "click-options.shift-left".
+  left-clicks:
+  - "&7&l&m--------------------"
+  - "&eLeft-Click &7to buy &e{LEFT_CLICK}x"
+  - "&eShift Left-Click &7to buy &e{SHIFT_LEFT_CLICK}x"
+  # {RIGHT_CLICK} = The amount sold via right click. "click-options.right".
+  # {SHIFT_RIGHT_CLICK} = The amount sold via shift-right click. "click-options.shift-right".
+  right-clicks:
+  - " "
+  - "&eRight-Click &7to sell &e{RIGHT_CLICK}x"
+  - "&eShift Right-Click &7to sell &e{SHIFT_RIGHT_CLICK}x"
+  # {BUY_PRICE} = The "purchase" string list.
+  # {SELL_PRICE} = The "sell" string list.
+  # {CLICK_OPTIONS} = The "left-clicks" and the "right-clicks" string lists.
+  item-lore:
+  - "{BUY_PRICE}"
+  - "{SELL_PRICE}"
+  - "{CLICK_OPTIONS}"
+#
+click-options:
+  # Purchase
+  left: 1
+  shift-left: 64
+  # Sell
+  right: 1
+  shift-right: 64
+#
+items:
+  back-to-categories:
+    item: "arrow:0"
+    name: "&a&lBack"
+    lore:
+    - "&7Click to return to categories."
+#
+shop:
+  title: "Shop Categories"
+  size: 18
+  '0':
+    item: "potion:0"
+    name: "&e&lPotion Shop"
+  '1':
+    item: "redstone:0"
+    name: '&e&lRaid Shop'
+  '2':
+    item: "mob_spawner:0"
+    name: "&e&lSpawners"
+  '3':
+    item: "smooth_brick:0"
+    name: "&e&lBuilding Blocks"
+  '4':
+    item: "emerald:0"
+    name: "&e&lOres and Gems"
+  '5':
+    item: "cooked_beef:0"
+    name: "&e&lFood and Farming"
+  '6':
+    item: "blaze_rod:0"
+    name: "&e&lMob Drops"
+  '7':
+    item: "eye_of_ender:0"
+    name: "&e&lSpecialty"
+  '8':
+    item: "brewing_stand_item:0"
+    name: "&e&lBrewing"
+  '11':
+    item: "wool:0"
+    name: "&e&lWool"
+  '12':
+    item: "stained_glass:13"
+    name: "&e&lGlass"
+  '14':
+    item: "stained_clay:0"
+    name: "&e&lClay"
+  '15':
+    item: "red_rose:0"
+    name: "&e&lFlowers"
+#
+# If you want to purchase spawners, the item string (item: "<right here>") needs to be one of these
+# igspawner
+# blazespawner
+# creeperspawner
+# endermanspawner
+# zombiepigmanspawner
+# slimespawner
+# cavespiderspawner
+# spiderspawner
+# skeletonspawner
+# zombiespawner
+# cowspawner
+# sheepspawner
+# chickenspawner
+# pigspawner
+# wolfspawner
+#
+# Available potions:
+# regeneration1 | regeneration2 | splashregeneration1 | splashregeneration2 |
+'0':
+  title: "Shop Items (Potion Shop)"
+  size: 18
+  '0':
+    item: "potion:regeneration2"
+    name: "&e&lRegeneration Potion II (0:22)"
+    buy-price: 120.00
+  '1':
+    item: "potion:splashregeneration2"
+    name: "&e&lRegeneration Splash II (0:16)"
+    buy-price: 145.00
+  '2':
+    item: "potion:swiftness2"
+    name: "&e&lSwiftness Potion II (1:30)"
+    buy-price: 30.00
+  '3':
+    item: "potion:splashswiftness2"
+    name: "&e&lSwiftness Splash II (1:07)"
+    buy-price: 55.00
+  '4':
+    item: "potion:waterbreathingextended"
+    name: "&e&lWater Breathing Potion (8:00)"
+    buy-price: 225.00
+  '5':
+    item: "potion:splashstrength2"
+    name: "&e&lStrength Splash II (1:07)"
+    buy-price: 110.00
+  '6':
+    item: "potion:strength2"
+    name: "&e&lStrength Potion II (1:30)"
+    buy-price: 85.00
+  '7':
+    item: "potion:instanthealth2"
+    name: "&e&lInstant Health II"
+    buy-price: 75.00
+  '8':
+    item: "potion:fireresistanceextended"
+    name: "&e&lFire Resistance Potion (8:00)"
+    buy-price: 1000.00
+  '17':
+    item: "back"
+#
+'1':
+  title: "Shop Items (Raid Shop)"
+  size: 27
+  '0':
+    item: "redstone:0"
+    name: "&e&lRedstone"
+    buy-price: 16.25
+    sell-price: 0.23
+  '1':
+    item: "piston_sticky_base:0"
+    name: "&e&lSticky Piston"
+    buy-price: 325.00
+  '2':
+    item: "piston_base:0"
+    name: "&e&lPiston"
+    buy-price: 195.00
+  '3':
+    item: "stone:0"
+    name: "&e&lStone"
+    buy-price: 5.47
+    sell-price: 1.48
+  '4':
+    item: "glowstone:0"
+    name: "&e&lGlowstone"
+    buy-price: 7.03
+    sell-price: 2.50
+  '5':
+    item: "sand:0"
+    name: "&e&lSand"
+    buy-price: 3.05
+  '6':
+    item: "sand:1"
+    name: "&e&lRed Sand"
+    buy-price: 4.06
+  '7':
+    item: "ice:0"
+    name: "&e&lIce"
+    buy-price: 50.00
+  '8':
+    item: "web:0"
+    name: "&e&lWeb"
+    buy-price: 40.00
+  '9':
+    item: "sponge:0"
+    name: "&e&lSponge"
+    buy-price: 2000.00
+  '10':
+    item: "quartz:0"
+    name: "&e&lQuartz"
+    buy-price: 3.05
+  '11':
+    item: "tnt:0"
+    name: "&e&lTNT"
+    buy-price: 81.25
+    sell-price: 8.12
+  '12':
+    item: "glass:0"
+    name: "&e&lGlass"
+    buy-price: 4.06
+  '13':
+    item: "water_bucket:0"
+    name: "&e&lWater Bucket"
+    buy-price: 500.00
+  '14':
+    item: "lava_bucket:0"
+    name: "&e&lLava Bucket"
+    buy-price: 500.00
+  '15':
+    item: "step:0"
+    name: "&e&lStone Slab"
+    buy-price: 80.86
+  '16':
+    item: "redstone_torch_on:0"
+    name: "&e&lRedstone Torch"
+    buy-price: 25.00
+  '17':
+    item: "redstone_comparator:0"
+    name: "&e&lRedstone Comparator"
+    buy-price: 100.00
+  '18':
+    item: "diode:0"
+    name: "&e&lRedstone Repeater"
+    buy-price: 85.00
+  '19':
+    item: "dispenser:0"
+    name: "&e&lDispenser"
+    buy-price: 819.00
+  '20':
+    item: "dropper:0"
+    name: "&e&lDropper"
+    buy-price: 100.00
+  '21':
+    item: "ladder:0"
+    name: "&e&lLadder"
+    buy-price: 10.00
+  '22':
+    item: "monster_egg:50"
+    name: "&e&lSpawn Creeper"
+    buy-price: 250000.00
+  '23':
+    item: "stone_button:0"
+    name: "&e&lButton"
+    buy-price: 5.50
+  '24':
+    item: "lever:0"
+    name: "&e&lLever"
+    buy-price: 20.00
+  '26':
+    item: "back"
+#
+'2':
+  title: "Shop Items (Spawners)"
+  size: 18
+  '0':
+    item: "igspawner"
+    name: "&e&lIron Golem Spawner"
+    buy-price: 2000000.00
+  '1':
+    item: "blazespawner"
+    name: "&e&lBlaze Spawner"
+    buy-price: 390000.00
+  '2':
+    item: "creeperspawner"
+    name: "&e&lCreeper Spawner"
+    buy-price: 390000.00
+  '3':
+    item: "endermanspawner"
+    name: "&e&lEnderman Spawner"
+    buy-price: 390000.00
+  '4':
+    item: "zombiepigmanspawner"
+    name: "&e&lZombie Pigman Spawner"
+    buy-price: 390000.00
+  '5':
+    item: "slimespawner"
+    name: "&e&lSlime Spawner"
+    buy-price: 1300000.00
+  '6':
+    item: "cavespiderspawner"
+    name: "&e&lCave Spider Spawner"
+    buy-price: 90000.00
+  '7':
+    item: "spiderspawner"
+    name: "&e&lSpider Spawner"
+    buy-price: 95000.00
+  '8':
+    item: "skeletonspawner"
+    name: "&e&lSkeleton Spawner"
+    buy-price: 115000.00
+  '9':
+    item: "zombiespawner"
+    name: "&e&lZombie Spawner"
+    buy-price: 115000.00
+  '10':
+    item: "cowspawner"
+    name: "&e&lCow Spawner"
+    buy-price: 162500.00
+  '11':
+    item: "sheepspawner"
+    name: "&e&lSheep Spawner"
+    buy-price: 95000.00
+  '12':
+    item: "chickenspawner"
+    name: "&e&lChicken Spawner"
+    buy-price: 390000.00
+  '13':
+    item: "pigspawner"
+    name: "&e&lPig Spawner"
+    buy-price: 65000.00
+  '14':
+    item: "wolfspawner"
+    name: "&e&lWolf Spawner"
+    buy-price: 97500.00
+  '15':
+    item: "mysterymobspawner"
+    name: "&6&lMystery Mob Spawner"
+    buy-price: 3000000.00
+  '17':
+    item: "back"
+#
+'3':
+  title: "Shop Items (Building Blocks)"
+  size: 36
+  '0':
+    item: "grass:0"
+    name: "&e&lGrass Block"
+    buy-price: 3.00
+    sell-price: 0.69
+  '1':
+    item: "log:0"
+    name: "&e&lOak Wood"
+    buy-price: 8.12
+    sell-price: 2.03
+  '2':
+    item: "log:1"
+    name: "&e&lSpruce Wood"
+    buy-price: 8.12
+    sell-price: 2.03
+  '3':
+    item: "log:2"
+    name: "&e&lBirch Wood"
+    buy-price: 8.12
+    sell-price: 2.03
+  '4':
+    item: "log:3"
+    name: "&e&lJungle Wood"
+    buy-price: 8.12
+    sell-price: 2.03
+  '5':
+    item: "log_2:0"
+    name: "&e&lAcacia Wood"
+    buy-price: 8.12
+    sell-price: 2.03
+  '6':
+    item: "log_2:1"
+    name: "&e&lDark Oak Wood"
+    buy-price: 8.12
+    sell-price: 2.03
+  '7':
+    item: "dirt:0"
+    name: "&e&lDirt"
+    buy-price: 3.00
+    sell-price: 0.69
+  '8':
+    item: "dirt:2"
+    name: "&e&lPodzol"
+    buy-price: 10.94
+    sell-price: 3.75
+  '9':
+    item: "mycel:2"
+    name: "&e&lMycelium"
+    buy-price: 10.16
+    sell-price: 3.75
+  '10':
+    item: "stone:0"
+    name: "&e&lStone"
+    buy-price: 5.47
+    sell-price: 1.48
+  '11':
+    item: "cobblestone:0"
+    name: "&e&lCobblestone"
+    buy-price: 4.06
+    sell-price: 1.02
+  '12':
+    item: "smooth_brick:0"
+    name: "&e&lStone Bricks"
+    buy-price: 6.56
+  '13':
+    item: "smooth_brick:1"
+    name: "&e&lMossy Stone Bricks"
+    buy-price: 6.56
+  '14':
+    item: "smooth_brick:2"
+    name: "&e&lCracked Stone Bricks"
+    buy-price: 6.56
+  '15':
+    item: "smooth_brick:3"
+    name: "&e&lChiseled Stone Bricks"
+    buy-price: 6.56
+  '16':
+    item: "sandstone:0"
+    name: "&e&lSandstone"
+    buy-price: 12.19
+  '17':
+    item: "sandstone:1"
+    name: "&e&lChiseled Sandstone"
+    buy-price: 12.19
+  '18':
+    item: "sandstone:2"
+    name: "&e&lSmooth Sandstone"
+    buy-price: 48.75
+  '19':
+    item: "quartz_block:0"
+    name: "&e&lQuartz Block"
+    buy-price: 12.19
+  '20':
+    item: "quartz_block:1"
+    name: "&e&lChiseled Quartz Block"
+    buy-price: 48.75
+  '21':
+    item: "quartz_block:2"
+    name: "&e&lPillar Quartz Block"
+    buy-price: 12.19
+  '22':
+    item: "netherrack:0"
+    name: "&e&lNetherrack"
+    buy-price: 2.34
+    sell-price: 0.94
+  '23':
+    item: "nether_brick:0"
+    name: "&e&lNether Brick"
+    buy-price: 5.47
+  '24':
+    item: "glowstone:0"
+    name: "&e&lGlowstone"
+    buy-price: 7.03
+    sell-price: 2.50
+  '25':
+    item: "soul_sand:0"
+    name: "&e&lSoul Sand"
+    buy-price: 7.06
+  '26':
+    item: "ender_stone:0"
+    name: "&e&lEnd Stone"
+    buy-price: 7.03
+  '27':
+    item: "sand:0"
+    name: "&e&lSand"
+    buy-price: 4.06
+  '28':
+    item: "sand:1"
+    name: "&e&lRed Sand"
+    buy-price: 3.05
+  '29':
+    item: "gravel:0"
+    name: "&e&lGravel"
+    buy-price: 3.52
+  '30':
+    item: "obsidian:0"
+    name: "&e&lObsidian"
+    buy-price: 14.84
+    sell-price: 5.47
+  '31':
+    item: "ice:0"
+    name: "&e&lIce"
+    buy-price: 50.00
+  '32':
+    item: "packed_ice:0"
+    name: "&e&lPacked Ice"
+    buy-price: 75.00
+  '33':
+    item: "snow_block:0"
+    name: "&e&lSnow Block"
+    buy-price: 250.00
+  '35':
+    item: "back"
+#
+'4':
+  title: Shop Items (Ores and Gems)
+  size: 18
+  '0':
+    item: iron_block:0
+    name: '&e&lIron Block'
+    buy-price: 1170.00
+    sell-price: 350.00
+  '1':
+    item: iron_ingot:0
+    name: '&e&lIron Ingot'
+    buy-price: 130.00
+    sell-price: 40.00
+  '2':
+    item: gold_ingot:0
+    name: '&e&lGold Ingot'
+    buy-price: 100.00
+    sell-price: 50.00
+  '3':
+    item: coal:0
+    name: '&e&lCoal'
+    buy-price: 9.06
+    sell-price: 0.94
+  '4':
+    item: coal_block:0
+    name: '&e&lBlock of Coal'
+    buy-price: 80.00
+    sell-price: 8.00
+  '5':
+    item: gold_block:0
+    name: '&e&lGold Block'
+    buy-price: 1850.00
+    sell-price: 450.00
+  '6':
+    item: ink_sack:4
+    name: '&e&lLapis Lazuli'
+    buy-price: 18.12
+    sell-price: 1.25
+  '7':
+    item: lapis_block:0
+    name: '&e&lLapis Lazuli Block'
+    buy-price: 160.00
+    sell-price: 9.00
+  '8':
+    item: redstone:0
+    name: '&e&lRedstone'
+    buy-price: 16.25
+    sell-price: 0.94
+  '9':
+    item: redstone_block:0
+    name: '&e&lRedstone Block'
+    buy-price: 195.00
+    sell-price: 10.00
+  '10':
+    item: diamond:0
+    name: '&e&lDiamond'
+    buy-price: 390.00
+    sell-price: 100.00
+  '11':
+    item: diamond_block:0
+    name: '&e&lDiamond Block'
+    buy-price: 3500.00
+    sell-price: 800.00
+  '12':
+    item: emerald:0
+    name: '&e&lEmerald'
+    buy-price: 1150.00
+    sell-price: 200.00
+  '13':
+    item: emerald_block:0
+    name: '&e&lEmerald Block'
+    buy-price: 8775.00
+    sell-price: 1250.00
+  '17':
+    item: back
+#
+'5':
+  title: Shop Items (Food and Farming)
+  size: 27
+  '0':
+    item: melon_seeds:0
+    name: '&e&lMelon Seeds'
+    buy-price: 3.44
+  '1':
+    item: pumpkin_seeds:0
+    name: '&e&lPumpkin Seeds'
+    buy-price: 3.44
+  '2':
+    item: seeds:0
+    name: '&e&lSeeds'
+    buy-price: 2.19
+  '3':
+    item: cactus:0
+    name: '&e&lCactus'
+    buy-price: 18.75
+    sell-price: 3.75
+  '4':
+    item: sugar_cane:0
+    name: '&e&lSugar Cane'
+    buy-price: 16.25
+    sell-price: 3.12
+  '5':
+    item: carrot_item:0
+    name: '&e&lCarrots'
+    buy-price: 25.00
+    sell-price: 1.56
+  '6':
+    item: melon:0
+    name: '&e&lMelon'
+    buy-price: 20.31
+    sell-price: 6.25
+  '7':
+    item: pumpkin:0
+    name: '&e&lPumpkin'
+    buy-price: 325.00
+    sell-price: 5.31
+  '8':
+    item: wheat:0
+    name: '&e&lWheat'
+    buy-price: 11.88
+    sell-price: 6.25
+  '9':
+    item: apple:0
+    name: '&e&lApple'
+    buy-price: 25.00
+    sell-price: 10.00
+  '10':
+    item: golden_apple:0
+    name: '&e&lGold Apple'
+    buy-price: 1500.00
+  '11':
+    item: cake:0
+    name: '&e&lCake'
+    buy-price: 50.00
+  '12':
+    item: bread:0
+    name: '&e&lBread'
+    buy-price: 31.25
+  '13':
+    item: cookie:0
+    name: '&e&lCookie'
+    buy-price: 5.94
+  '14':
+    item: raw_beef:0
+    name: '&e&lRaw Beef'
+    buy-price: 9.38
+    sell-price: 2.19
+  '15':
+    item: cooked_beef:0
+    name: '&e&lSteak'
+    buy-price: 11.88
+    sell-price: 2.81
+  '16':
+    item: pork:0
+    name: '&e&lRaw Porkchop'
+    buy-price: 10.00
+    sell-price: 1.25
+  '17':
+    item: grilled_pork:0
+    name: '&e&lCooked Porkshop'
+    buy-price: 11.88
+    sell-price: 1.88
+  '26':
+    item: back
+#
+'6':
+  title: Shop Items (Mob Drops)
+  size: 18
+  '0':
+    item: sulphur:0
+    name: '&e&lGunpowder'
+    buy-price: 25.00
+    sell-price: 4.38
+  '1':
+    item: bow:0
+    name: '&e&lBow'
+    buy-price: 40.00
+    sell-price: 20.00
+  '2':
+    item: arrow:0
+    name: '&e&lArrow'
+    buy-price: 6.25
+    sell-price: 2.19
+  '3':
+    item: feather:0
+    name: '&e&lFeather'
+    buy-price: 8.12
+    sell-price: 1.09
+  '4':
+    item: blaze_rod:0
+    name: '&e&lBlaze Rod'
+    buy-price: 62.50
+    sell-price: 28.75
+  '5':
+    item: water_lily:0
+    name: '&e&lLily Pad'
+    buy-price: 20.00
+  '6':
+    item: rotten_flesh:0
+    name: '&e&lRotten Flesh'
+    buy-price: 2.50
+    sell-price: 1.09
+  '7':
+    item: string:0
+    name: '&e&lString'
+    buy-price: 8.12
+    sell-price: 1.88
+  '8':
+    item: leather:0
+    name: '&e&lLeather'
+    buy-price: 16.25
+    sell-price: 5.62
+  '9':
+    item: ender_pearl:0
+    name: '&e&lEnder Pearl'
+    buy-price: 50.00
+    sell-price: 25.00
+  '10':
+    item: bone:0
+    name: '&e&lBone'
+    buy-price: 6.25
+    sell-price: 0.50
+  '11':
+    item: iron_ingot:0
+    name: '&e&lIron Ingot'
+    buy-price: 130.00
+    sell-price: 40.00
+  '12':
+    item: emerald:0
+    name: '&e&lEmerald'
+    buy-price: 1150.00
+    sell-price: 200.00
+  '13':
+    item: diamond:0
+    name: '&e&lDiamond'
+    buy-price: 390.00
+    sell-price: 100.00
+  '14':
+    item: gold_ingot:0
+    name: '&e&lGold Ingot'
+    buy-price: 100.00
+    sell-price: 50.00
+  '17':
+    item: back
+#
+'7':
+  title: Shop Items (Specialty)
+  size: 27
+  '0':
+    item: chest:0
+    name: '&e&lChest'
+    buy-price: 15.00
+  '1':
+    item: trapped_chest:0
+    name: '&e&lTrapped Chest'
+    buy-price: 150.00
+  '2':
+    item: enchantment_table:0
+    name: '&e&lEnchantment Table'
+    buy-price: 793.00
+  '3':
+    item: anvil:0
+    name: '&e&lAnvil'
+    buy-price: 3543.00
+  '4':
+    item: ender_chest:0
+    name: '&e&lEnder Chest'
+    buy-price: 6430.00
+  '5':
+    item: beacon:0
+    name: '&e&lBeacon Block'
+    buy-price: 250000.00
+  '6':
+    item: flint_and_steel:0
+    name: '&e&lFlint and Steel'
+    buy-price: 145.00
+  '7':
+    item: daylight_detector:0
+    name: '&e&lDaylight Sensor'
+    buy-price: 640.00
+  '8':
+    item: tripwire_hook:0
+    name: '&e&lTripwire Hook'
+    buy-price: 100.00
+  '9':
+    item: hopper:0
+    name: '&e&lHopper'
+    buy-price: 22750.00
+  '10':
+    item: piston_sticky_base:0
+    name: '&e&lSticky Piston'
+    buy-price: 325.00
+  '11':
+    item: piston_base:0
+    name: '&e&lPiston'
+    buy-price: 195.00
+  '12':
+    item: redstone_lamp_off:0
+    name: '&e&lRedstone Lamp (Inactive)'
+    buy-price: 730.00
+  '13':
+    item: web:0
+    name: '&e&lWeb'
+    buy-price: 40.00
+  '14':
+    item: dispenser:0
+    name: '&e&lDispenser'
+    buy-price: 819.00
+  '15':
+    item: ice:0
+    name: '&e&lIce'
+    buy-price: 50.00
+  '16':
+    item: packed_ice:0
+    name: '&e&lPacked Ice'
+    buy-price: 75.00
+  '17':
+    item: snow_block:0
+    name: '&e&lSnow Block'
+    buy-price: 250.00
+  '18':
+    item: sponge:0
+    name: '&e&lSponge'
+    buy-price: 2000.00
+  '19':
+    item: nether_fence:0
+    name: '&e&lNether Brick Fence'
+    buy-price: 4.06
+    sell-price: 1.41
+  '26':
+    item: back
+#
+'8':
+  title: "Shop Items (Brewing)"
+  size: 18
+  '0':
+    item: "spider_eye:0"
+    name: "&e&lSpider Eye"
+    buy-price: 130.00
+    sell-price: 7.50
+  '1':
+    item: "ghast_tear:0"
+    name: "&e&lGhast Tear"
+    buy-price: 97.50
+    sell-price: 40.00
+  '2':
+    item: "brewing_stand_item:0"
+    name: "&e&lBrewing Stand"
+    buy-price: 315.00
+  '3':
+    item: "potion:0"
+    name: "&e&lWater Bottle"
+    buy-price: 10.44
+  '4':
+    item: "golden_carrot:0"
+    name: "&e&lGolden Carrot"
+    buy-price: 73.12
+  '5':
+    item: "glowstone_dust:0"
+    name: "&e&lGlowstone Dust"
+    buy-price: 5.00
+  '6':
+    item: "sugar:0"
+    name: "&e&lSugar"
+    buy-price: 5.00
+  '7':
+    item: "slime_ball:0"
+    name: "&e&lSlime Ball"
+    buy-price: 200.00
+  '8':
+    item: "nether_stalk:0"
+    name: "&e&lNether Wart"
+    buy-price: 16.25
+    sell-price: 4.06
+  '9':
+    item: "speckled_melon:0"
+    name: "&e&lGlistering Melon"
+    buy-price: 38.75
+  '17':
+    item: "back"
+#
+'11':
+  title: "Shop Items (Wool)"
+  size: 36
+  '0':
+    item: "wool:0"
+    name: "&e&lWool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '1':
+    item: "wool:1"
+    name: "&e&lOrange Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '2':
+    item: "wool:2"
+    name: "&e&lMagenta Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '3':
+    item: "wool:3"
+    name: "&e&lLight Blue Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '4':
+    item: "wool:4"
+    name: "&e&lYellow Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '5':
+    item: "wool:5"
+    name: "&e&lLime Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '6':
+    item: "wool:6"
+    name: "&e&lPink Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '7':
+    item: "wool:7"
+    name: "&e&lGray Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '8':
+    item: "wool:8"
+    name: "&e&lSilver Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '9':
+    item: "wool:9"
+    name: "&e&lCyan Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '10':
+    item: "wool:10"
+    name: "&e&lPurple Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '11':
+    item: "wool:11"
+    name: "&e&lBlue Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '12':
+    item: "wool:12"
+    name: "&e&lBrown Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '13':
+    item: "wool:13"
+    name: "&e&lGreen Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '14':
+    item: "wool:14"
+    name: "&e&lRed Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '15':
+    item: "wool:15"
+    name: "&e&lBlack Wool"
+    buy-price: 2.34
+    sell-price: 1.25
+  '16':
+    item: "carpet:0"
+    name: "&e&lCarpet"
+    buy-price: 1.56
+  '17':
+    item: "carpet:1"
+    name: "&e&lOrange Carpet"
+    buy-price: 1.56
+  '18':
+    item: "carpet:2"
+    name: "&e&lMagenta Carpet"
+    buy-price: 1.56
+  '19':
+    item: "carpet:3"
+    name: "&e&lLight Blue Carpet"
+    buy-price: 1.56
+  '20':
+    item: "carpet:4"
+    name: "&e&lYellow Carpet"
+    buy-price: 1.56
+  '21':
+    item: "carpet:5"
+    name: "&e&lLime Carpet"
+    buy-price: 1.56
+  '22':
+    item: "carpet:6"
+    name: "&e&lPink Carpet"
+    buy-price: 1.56
+  '23':
+    item: "carpet:7"
+    name: "&e&lGray Carpet"
+    buy-price: 1.56
+  '24':
+    item: "carpet:8"
+    name: "&e&lSilver Carpet"
+    buy-price: 1.56
+  '25':
+    item: "carpet:9"
+    name: "&e&lCyan Carpet"
+    buy-price: 1.56
+  '26':
+    item: "carpet:10"
+    name: "&e&lPurple Carpet"
+    buy-price: 1.56
+  '27':
+    item: "carpet:11"
+    name: "&e&lBlue Carpet"
+    buy-price: 1.56
+  '28':
+    item: "carpet:12"
+    name: "&e&lBrown Carpet"
+    buy-price: 1.56
+  '29':
+    item: "carpet:13"
+    name: "&e&lGreen Carpet"
+    buy-price: 1.56
+  '30':
+    item: "carpet:14"
+    name: "&e&lRed Carpet"
+    buy-price: 1.56
+  '31':
+    item: "carpet:15"
+    name: "&e&lBlack Carpet"
+    buy-price: 1.56
+  '35':
+    item: "back"
+#
+'12':
+  title: "Shop Items (Glass)"
+  size: 36
+  '0':
+    item: "glass:0"
+    name: "&e&lGlass"
+    buy-price: 4.06
+  '1':
+    item: "stained_glass:0"
+    name: "&e&lWhite Stained Glass"
+    buy-price: 6.25
+  '2':
+    item: "stained_glass:1"
+    name: "&e&lOrange Stained Glass"
+    buy-price: 6.25
+  '3':
+    item: "stained_glass:2"
+    name: "&e&lMagenta Stained Glass"
+    buy-price: 6.25
+  '4':
+    item: "stained_glass:3"
+    name: "&e&lLight Blue Stained Glass"
+    buy-price: 6.25
+  '5':
+    item: "stained_glass:4"
+    name: "&e&lYellow Stained Glass"
+    buy-price: 6.25
+  '6':
+    item: "stained_glass:5"
+    name: "&e&lLime Stained Glass"
+    buy-price: 6.25
+  '7':
+    item: "stained_glass:6"
+    name: "&e&lPink Stained Glass"
+    buy-price: 6.25
+  '8':
+    item: "stained_glass:7"
+    name: "&e&lGray Stained Glass"
+    buy-price: 6.25
+  '9':
+    item: "stained_glass:8"
+    name: "&e&lSilver Stained Glass"
+    buy-price: 6.25
+  '10':
+    item: "stained_glass:9"
+    name: "&e&lCyan Stained Glass"
+    buy-price: 6.25
+  '11':
+    item: "stained_glass:10"
+    name: "&e&lPurple Stained Glass"
+    buy-price: 6.25
+  '12':
+    item: "stained_glass:11"
+    name: "&e&lBlue Stained Glass"
+    buy-price: 6.25
+  '13':
+    item: "stained_glass:12"
+    name: "&e&lBrown Stained Glass"
+    buy-price: 6.25
+  '14':
+    item: "stained_glass:13"
+    name: "&e&lGreen Stained Glass"
+    buy-price: 6.25
+  '15':
+    item: "stained_glass:14"
+    name: "&e&lRed Stained Glass"
+    buy-price: 6.25
+  '16':
+    item: "stained_glass:15"
+    name: "&e&lBlack Stained Glass"
+    buy-price: 6.25
+  '17':
+    item: "thin_glass:0"
+    name: "&e&lGlass Pane"
+    buy-price: 2.34
+  '18':
+    item: "stained_glass_pane:0"
+    name: "&e&lWhite Stained Glass Pane"
+    buy-price: 2.34
+  '19':
+    item: "stained_glass_pane:1"
+    name: "&e&lOrange Stained Glass Pane"
+    buy-price: 2.34
+  '20':
+    item: "stained_glass_pane:2"
+    name: "&e&lMagenta Stained Glass Pane"
+    buy-price: 2.34
+  '21':
+    item: "stained_glass_pane:3"
+    name: "&e&lLight Blue Stained Glass"
+    buy-price: 2.34
+  '22':
+    item: "stained_glass_pane:4"
+    name: "&e&lYellow Stained Glass Pane"
+    buy-price: 2.34
+  '23':
+    item: "stained_glass_pane:5"
+    name: "&e&lLime Stained Glass Pane"
+    buy-price: 2.34
+  '24':
+    item: "stained_glass_pane:6"
+    name: "&e&lPink Stained Glass Pane"
+    buy-price: 2.34
+  '25':
+    item: "stained_glass_pane:7"
+    name: "&e&lGray Stained Glass Pane"
+    buy-price: 2.34
+  '26':
+    item: "stained_glass_pane:8"
+    name: "&e&lSilver Stained Glass Pane"
+    buy-price: 2.34
+  '27':
+    item: "stained_glass_pane:9"
+    name: "&e&lCyan Stained Glass Pane"
+    buy-price: 2.34
+  '28':
+    item: "stained_glass_pane:10"
+    name: "&e&lPurple Stained Glass Pane"
+    buy-price: 2.34
+  '29':
+    item: "stained_glass_pane:11"
+    name: "&e&lBlue Stained Glass Pane"
+    buy-price: 2.34
+  '30':
+    item: "stained_glass_pane:12"
+    name: "&e&lBrown Stained Glass Pane"
+    buy-price: 2.34
+  '31':
+    item: "stained_glass_pane:13"
+    name: "&e&lGreen Stained Glass Pane"
+    buy-price: 2.34
+  '32':
+    item: "stained_glass_pane:14"
+    name: "&e&lRed Stained Glass Pane"
+    buy-price: 2.34
+  '33':
+    item: "stained_glass_pane:15"
+    name: "&e&lBlack Stained Glass Pane"
+    buy-price: 2.34
+  '35':
+    item: "back"
+#
+'14':
+  title: "Shop Items (Clay)"
+  size: 18
+  '0':
+    item: "hard_clay:0"
+    name: "&e&lHardened Clay"
+    buy-price: 6.25
+  '1':
+    item: "stained_clay:0"
+    name: "&e&lWhite Stained Clay"
+    buy-price: 6.25
+  '2':
+    item: "stained_clay:1"
+    name: "&e&lOrange Stained Clay"
+    buy-price: 6.25
+  '3':
+    item: "stained_clay:2"
+    name: "&e&lMagenta Stained Clay"
+    buy-price: 6.25
+  '4':
+    item: "stained_clay:3"
+    name: "&e&lLight Blue Stained Clay"
+    buy-price: 6.25
+  '5':
+    item: "stained_clay:4"
+    name: "&e&lYellow Stained Clay"
+    buy-price: 6.25
+  '6':
+    item: "stained_clay:5"
+    name: "&e&lLime Stained Clay"
+    buy-price: 6.25
+  '7':
+    item: "stained_clay:6"
+    name: "&e&lPink Stained Clay"
+    buy-price: 6.25
+  '8':
+    item: "stained_clay:7"
+    name: "&e&lGray Stained Clay"
+    buy-price: 6.25
+  '9':
+    item: "stained_clay:8"
+    name: "&e&lSilver Stained Clay"
+    buy-price: 6.25
+  '10':
+    item: "stained_clay:9"
+    name: "&e&lCyan Stained Clay"
+    buy-price: 6.25
+  '11':
+    item: "stained_clay:10"
+    name: "&e&lPurple Stained Clay"
+    buy-price: 6.25
+  '12':
+    item: "stained_clay:11"
+    name: "&e&lBlue Stained Clay"
+    buy-price: 6.25
+  '13':
+    item: "stained_clay:12"
+    name: "&e&lBrown Stained Clay"
+    buy-price: 6.25
+  '14':
+    item: "stained_clay:13"
+    name: "&e&lGreen Stained Clay"
+    buy-price: 6.25
+  '15':
+    item: "stained_clay:14"
+    name: "&e&lRed Stained Clay"
+    buy-price: 6.25
+  '16':
+    item: "stained_clay:15"
+    name: "&e&lBlack Stained Clay"
+    buy-price: 6.25
+  '17':
+    item: "back"
+#
+'15':
+  title: "Shop Items (Flowers)"
+  size: 18
+  '0':
+    item: "red_rose:0"
+    name: "&e&lRose"
+    buy-price: 18.75
+  '1':
+    item: "red_rose:1"
+    name: "&e&lBlue Orchid"
+    buy-price: 18.75
+  '2':
+    item: "red_rose:2"
+    name: "&e&lAllium"
+    buy-price: 18.75
+  '3':
+    item: "red_rose:3"
+    name: "&e&lAzure Bluet"
+    buy-price: 18.75
+  '4':
+    item: "red_rose:4"
+    name: "&e&lRed Tulip"
+    buy-price: 18.75
+  '5':
+    item: "red_rose:5"
+    name: "&e&lOrange Tulip"
+    buy-price: 18.75
+  '6':
+    item: "red_rose:6"
+    name: "&e&lWhite Tulip"
+    buy-price: 18.75
+  '7':
+    item: "red_rose:7"
+    name: "&e&lPink Tulip"
+    buy-price: 18.75
+  '8':
+    item: "double_plant:0"
+    name: "&e&lSunflower"
+    buy-price: 18.75
+  '9':
+    item: "double_plant:1"
+    name: "&e&lLilac"
+    buy-price: 18.75
+  '10':
+    item: "double_plant:4"
+    name: "&e&lRose Bush"
+    buy-price: 18.75
+  '11':
+    item: "vine:0"
+    name: "&e&lVines"
+    buy-price: 75.00
+  '12':
+    item: "red_mushroom:0"
+    name: "&e&lRed Mushroom"
+    buy-price: 10.00
+  '13':
+    item: "flower_pot_item:0"
+    name: "&e&lFlower Pot"
+    buy-price: 300.00
+  '17':
+    item: "back"
+#

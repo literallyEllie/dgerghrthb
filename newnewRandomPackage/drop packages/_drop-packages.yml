@@ -1,0 +1,355 @@
+# Made by RandomHashTags #
+##############################################
+# These correspond with the loot file names! #
+##################################################################################
+# {DP_TYPE} = The dp-type                                                        #
+# {REDEEMABLE_ITEMS} = The amount of items the player can select to reveal loot. #
+##################################################################################
+##
+drop-package:
+  selected: # When you select a "open-gui" item, and want to redeem that slot for a random item
+    item: "thin_glass:0"
+    name: "&f&l???"
+    lore:
+    - "&7You have selected this mystery chest"
+#
+god:
+  settings:
+    use-old-version: false
+    title: "Godly Space Chest"
+    size: 45
+    redeemable-items: 5
+  # - = background-item
+  # + = open-gui
+  open-gui-format:
+  - "---------"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "---------"
+  background-item:
+    item: "stained_glass_pane:15"
+    name: " "
+  display-item:
+    dp-type: "&cGodly"
+    item: "stained_glass_pane:14"
+    name: "&c&l???"
+    lore:
+    - "&7This slot contains a(n)"
+    - "&cgodly &7piece of {DP_TYPE}"
+  open-gui:
+    item: "trapped_chest:0"
+    name: "&c&l???&r &7#{SLOT}"
+    lore:
+    - "&7Choose &c&n{REDEEMABLE_ITEMS} mystery items&r&7 and,"
+    - "&7your &c&lGoldy&r&7 loot will be revealed."
+  interactable-item:
+    item: "trapped_chest:0"
+    name: "&c&lGodly Drop Package &7(Right Click)"
+    lore:
+    - "&7A cache of equipment packed by"
+    - "&7the Intergalactic Server Station."
+    - " "
+    - "&7Contains &c&n5 Godly rarity&r &7items..."
+    - "&c&l*&r &7Godly Equipment"
+    - "&c&l*&r &7Godly /gkit Items"
+    - "&c&l*&r &7Yijki / Plague Bloater Boss Eggs"
+    - "&c&l*&r &7200 Level mcMMO Voucher"
+    - "&c&l*&r &7$4,000,000 Money Notes"
+    - "&c&l*&r &7100,000-200,000XP Bottles"
+    - "&c&l*&r &7Legendary Enchantment Books"
+    - "&c&l*&r &7Cosmic Envoy Summon"
+    - "&c&l*&r &7Nether Mob Spawners"
+    - "&c&l*&r &7Lucky Creepers/TNT"
+    - "&c&l*&r &7Mystery Mob Spawners"
+    - "&c&l*&r &7Godly Randomization Scrolls"
+    - "&c&l*&r &711 Slot Enchantment Orbs"
+    - "&c&l*&r &7/gkit + /vkit Fallen Heroes"
+    - "&c&l*&r &7Soul Enchantment Books"
+    - "&c&l*&r &7Faction Crystals"
+    - "&c&l*&r &7Depth Strider Books"
+    - "&c&l*&r &7Mystery Cosmic Crate"
+    - "&c&l*&r &7Tier #5 Rank Quest"
+    - "&c&l*&r &7Heroic Rank Crystal"
+    - "&c... and much more!"
+#
+legendary:
+  settings:
+    use-old-version: false
+    title: "Legendary Space Chest"
+    size: 45
+    redeemable-items: 5
+  # - = background-item
+  # + = open-gui
+  open-gui-format:
+  - "---------"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "---------"
+  background-item:
+    item: "stained_glass_pane:15"
+    name: " "
+  display-item:
+    dp-type: "&6Legendary"
+    item: "stained_glass_pane:1"
+    name: "&6&l???"
+    lore:
+    - "&7This slot contains a(n)"
+    - "&6legendary &7piece of {DP_TYPE}"
+  open-gui:
+    item: "trapped_chest:0"
+    name: "&6&l???"
+    lore:
+    - "&7Choose {REDEEMABLE_ITEMS} mystery panels, and"
+    - "&7your loot will be revealed!"
+  interactable-item:
+    item: "trapped_chest:0"
+    name: "&6&lLegendary Server Chest &7(Right Click)"
+    lore:
+    - "&7A cache of equipment packed by"
+    - "&7the Intergalactic Server Station."
+    - " "
+    - "&7Contains &6&n5 Legendary rarity&r &7items..."
+    - "&6&l* &r&7Legendary Equipment"
+    - "&6&l* &r&7Legendary /gkit Items"
+    - "&6&l* &r&7Legendary Boss Eggs"
+    - "&6&l* &r&775 Level (Primary) Skill Vouchers"
+    - "&6&l* &r&750 Level mcMMO Voucher"
+    - "&6&l* &r&7$1,000,000 Money Notes"
+    - "&6&l* &r&750,000-100,000XP Bottles"
+    - "&6&l* &r&7White & 75% Black Scrolls"
+    - "&6&l* &r&7Cosmic Envoy Summon"
+    - "&6&l* &r&7Nether Mob Spawners"
+    - "&6&l* &r&7Lucky Creepers/TNT"
+    - "&6&l* &r&7Legendary Player Titles"
+    - "&6&l* &r&7Mystery Mob Spawners"
+    - "&6&l* &r&7XP Boosters"
+    - "&6&l* &r&710 Slot Enchantment Orbs"
+    - "&6&l* &r&7/gkit + /vkit Fallen Heroes"
+    - "&6&l* &r&7Godly Space Flare"
+    - "&6&l* &r&7Showcase Expander"
+    - "&6&l* &r&7Home Increaser"
+    - "&6&l* &r&7Tier #5 Rank Quest"
+    - "&6... and more!"
+#
+ultimate:
+  settings:
+    use-old-version: false
+    title: "Ultimate Space Chest"
+    size: 45
+    redeemable-items: 5
+  # - = background-item
+  # + = open-gui
+  open-gui-format:
+  - "---------"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "---------"
+  background-item:
+    item: "stained_glass_pane:15"
+    name: " "
+  display-item:
+    dp-type: "&eUltimate"
+    item: "stained_glass_pane:4"
+    name: "&e&l???"
+    lore:
+    - "&7This slot contains a(n)"
+    - "&eultimate &7piece of {DP_TYPE}"
+  open-gui:
+    item: "trapped_chest:0"
+    name: "&e&l???"
+    lore:
+    - "&7Choose {REDEEMABLE_ITEMS} mystery panels, and"
+    - "&7your loot will be revealed!"
+  interactable-item:
+    item: "trapped_chest:0"
+    name: "&e&lUltimate Drop Package &7(Right Click)"
+    lore:
+    - "&7A cache of equipment packed by"
+    - "&7the Intergalactic Server Station."
+    - " "
+    - "&7Contains &e&n5 Ultimate rarity&r &7items..."
+    - "&e&l* &r&7Ultimate Equipment"
+    - "&e&l* &r&7Ultimate /gkit Items"
+    - "&e&l* &r&7Ultimate Boss Eggs"
+    - "&e&l* &r&730 Level (Primary) Skill Vouchers"
+    - "&e&l* &r&725 Level mcMMO Voucher"
+    - "&e&l* &r&7$250,000 Money Notes"
+    - "&e&l* &r&725,000-75,000XP Bottles"
+    - "&e&l* &r&7Item Nametags"
+    - "&e&l* &r&7Transmog Scrolls"
+    - "&e&l* &r&7White & 50% Black Scrolls"
+    - "&e&l* &r&7Blaze/IG Spawners"
+    - "&e&l* &r&7Mystery Soul Book"
+    - "&e&l* &r&7Mystery Mob Spawners"
+    - "&e&l* &r&7XP Boosters"
+    - "&e&l* &r&7Ultimate /gkit Fallen Heroes"
+    - "&e&l* &r&7Custom Creeper Eggs"
+    - "&e&l* &r&7Tier #4 Rank Quest"
+    - "&e... and more!"
+#
+elite:
+  settings:
+    use-old-version: false
+    title: "Elite Space Chest"
+    size: 45
+    redeemable-items: 5
+  # - = background-item
+  # + = open-gui
+  open-gui-format:
+  - "---------"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "---------"
+  background-item:
+    item: "stained_glass_pane:15"
+    name: " "
+  display-item:
+    dp-type: "&bElite"
+    item: "stained_glass_pane:3"
+    name: "&b&l???"
+    lore:
+    - "&7This slot contains a(n)"
+    - "&belite &7piece of {DP_TYPE}"
+  open-gui:
+    item: "trapped_chest:0"
+    name: "&b&l???"
+    lore:
+    - "&7Choose {REDEEMABLE_ITEMS} mystery panels, and"
+    - "&7your loot will be revealed!"
+  interactable-item:
+    item: "trapped_chest:0"
+    name: "&b&lElite Drop Package &7(Right Click)"
+    lore:
+    - "&7A cache of equipment packed by"
+    - "&7the Intergalactic Server Station."
+    - " "
+    - "&7Contains &b&n5 Elite rarity&r &7items..."
+    - "&b&l* &r&7Elite Equipment"
+    - "&b&l* &r&7Elite Custom TNT"
+    - "&b&l* &r&7Creeper Eggs"
+    - "&b&l* &r&7Hoppers"
+    - "&b&l* &r&7Zombie, Skeleton Spawners"
+    - "&b&l* &r&7Spider, Wolf Spawners"
+    - "&b&l* &r&730 Level (Secondary) Skill Vouchers"
+    - "&b&l* &r&715 Level mcMMO Voucher"
+    - "&b&l* &r&7$100,000 Money Notes"
+    - "&b&l* &r&75,000-20,000XP Bottles"
+    - "&b&l* &r&7Elite Player Titles"
+    - "&b&l* &r&7Elite Secret Dust"
+    - "&b&l* &r&7Elite Enchantment Book"
+    - "&b&l* &r&7Elite Randomization Scroll"
+    - "&b&l* &r&7Elite /gkit Fallen Heroes"
+    - "&b&l* &r&7Tier #3 Rank Quest"
+    - "&b... and more!"
+#
+unique:
+  settings:
+    use-old-version: false
+    title: "Unique Space Chest"
+    size: 45
+    redeemable-items: 5
+  # - = background-item
+  # + = open-gui
+  open-gui-format:
+  - "---------"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "---------"
+  background-item:
+    item: "stained_glass_pane:15"
+    name: " "
+  display-item:
+    dp-type: "&aUnique"
+    item: "stained_glass_pane:5"
+    name: "&a&l???"
+    lore:
+    - "&7This slot contains a(n)"
+    - "&aunique &7piece of {DP_TYPE}"
+  open-gui:
+    item: "trapped_chest:0"
+    name: "&a&l???"
+    lore:
+    - "&7Choose {REDEEMABLE_ITEMS} mystery panels, and"
+    - "&7your loot will be revealed!"
+  interactable-item:
+    item: "trapped_chest:0"
+    name: "&a&lUnique Drop Package &7(Right Click)"
+    lore:
+    - "&7A cache of equipment packed by"
+    - "&7the Intergalactic Server Station."
+    - " "
+    - "&7Contains &a&n5 Unique rarity&r &7items..."
+    - "&a&l* &r&7Unique Equipment"
+    - "&a&l* &r&7Unique Custom TNT"
+    - "&a&l* &r&7Pig/Chicken Spawners"
+    - "&a&l* &r&7Hopper"
+    - "&a&l* &r&7Cosmic Crackers"
+    - "&a&l* &r&710 Level Skill Vouchers"
+    - "&a&l* &r&75 Level mcMMO Voucher"
+    - "&a&l* &r&7$50,000 Money Notes"
+    - "&a&l* &r&72,000-5,000XP Bottles"
+    - "&a&l* &r&7Unique Player Titles"
+    - "&a&l* &r&7Unique Secret Dust"
+    - "&a&l* &r&7Unique Enchantment Book"
+    - "&a&l* &r&7Simple/Unique Kill Tracker"
+    - "&a&l* &r&7Unique Randomization Scroll"
+    - "&a&l* &r&7Tier #2 Rank Quest"
+    - "&a... and more!"
+#
+simple:
+  settings:
+    use-old-version: false
+    title: "Simple Space Chest"
+    size: 45
+    redeemable-items: 5
+  # - = background-item
+  # + = open-gui
+  open-gui-format:
+  - "---------"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "-+++++++-"
+  - "---------"
+  background-item:
+    item: "stained_glass_pane:15"
+    name: " "
+  display-item:
+    dp-type: "&fSimple"
+    item: "stained_glass_pane:0"
+    name: "&f&l???"
+    lore:
+    - "&7This slot contains a(n)"
+    - "&fsimple &7piece of {DP_TYPE}"
+  open-gui:
+    item: "trapped_chest:0"
+    name: "&f&l???"
+    lore:
+    - "&7Choose {REDEEMABLE_ITEMS} mystery panels, and"
+    - "&7your loot will be revealed!"
+  interactable-item:
+    item: "trapped_chest:0"
+    name: "&f&lSimple Drop Package &7(Right Click)"
+    lore:
+    - "&7A cache of equipment packed by"
+    - "&7the Intergalactic Server Station."
+    - " "
+    - "&7Contains &f&n5 Simple rarity&r &7items..."
+    - "&f&l* &r&7Vanilla Equipment"
+    - "&f&l* &r&7Vanilla Potions"
+    - "&f&l* &r&7Sheep Spawners"
+    - "&f&l* &r&7Food"
+    - "&f&l* &r&7Buckets"
+    - "&f&l* &r&7Exploding Cake"
+    - "&f&l* &r&7$10,000 Money Notes"
+    - "&f&l* &r&71,00XP Bottles"
+    - "&f&l* &r&7Simple Player Titles"
+    - "&f&l* &r&7Simple Secret Dust"
+    - "&f&l* &r&7Simple Enchantment Book"
+    - "&f&l* &r&7Simple Randomization Scroll"
+    - "&f&l* &r&7Tier #1 Rank Quest"
+#

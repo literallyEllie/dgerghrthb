@@ -1,0 +1,324 @@
+# Made by RandomHashTags #
+##########################
+# Correct "area" format  #
+# area: "<x>:<y>:<z>"    #
+##################################################################################################
+# Format for enchantments that have a 'potion-effects' option                                    #
+# Format = "<potion effect name>:<potion effect level>:<duration in TICKS>"                      #
+# Supports 10 potion effects                                                                     #
+# 20 ticks = 1 second                                                                            #
+# 99999 = Forever (Until the player takes off the item containing the enchant or the item breaks)#
+# level = The level of the enchant, as a number                                                  #
+###################################################################################################################
+# If you're multiplying the level by a number, and then adding/subtracting, put the multiplication in paretheses! #
+###################################################################################################################
+Angelic:
+  potion-effects:
+    '1': "regeneration:level - 1:(20 * level) + 20"
+AntiGravity:
+  potion-effects:
+    '1': "jump_boost:level + 2:99999"
+Aquatic:
+  potion-effects:
+    '1': "water_breathing:level - 1:99999"
+Berserk:
+  potion-effects:
+    '1': "strength:level - 1:(20 * level) + 40"
+    '2': "mining_fatigue:level - 1:(20 * level) + 40"
+Cleave:
+  area: "3 + level:3 + level:3 + level"
+  # The damager has the fire aspect vanilla enchantment, and Cleave enchantment.
+  # This is the chance of the other damaged player(s) catching fire. (out of 100). 0 = 1% |
+  fire-aspect: 24
+Commander:
+  area: "3 + level:3 + level:3 + level"
+  potion-effect:
+    '1': "haste:level - 1:(20 * level) + 20"
+Confusion:
+  potion-effects:
+    '1': "confusion:level + 2:(20 * level) + 120"
+Curse:
+  potion-effects:
+    '1': "slowness:level - 1:80 + (level * 20)"
+Deathbringer:
+  potion-effects:
+    '1': "strength:level - 1:(20 * level) + 40"
+DeepWounds:
+  potion-effects:
+    '1': "wither:level - 1:140"
+Detonate:
+  blacklisted-blocks:
+  - "bedrock"
+  - "chest"
+  - "ender_chest"
+  - "obsidian"
+  - "trapped_chest"
+Drunk:
+  potion-effects:
+    '1': "strength:level - 1:99999"
+    '2': "slowness:level - 1:99999"
+    '3': "mining_fatigue:level - 1:99999"
+EnderShift:
+  potion-effects:
+    '1': "speed:level - 1:(20 * level) + 80"
+    '2': "health_boost:level - 1:(20 * level) + 80"
+Execute:
+  potion-effects:
+    '1': "strength:level - 1:20 * level"
+Featherweight:
+  potion-effects:
+    '1': "haste:level - 1:(20 * level) + 40"
+Frozen:
+  potion-effects:
+    '1': "slowness:level - 1:(40 * level) + 40"
+Gears:
+  potion-effects:
+    '1': "speed:level - 1:99999"
+Glowing:
+  potion-effects:
+    '1': "night_vision:level - 1:99999"
+Guardians:
+  # {PLAYER} = The player's name that has summoned the Guardian
+  name: "&e{PLAYER}'s &9Guardian"
+Haste:
+  potion-effects:
+    '1': "haste:level - 1:20 * level"
+IceAspect:
+  potion-effects:
+    '1': "slowness:level + 1:(40 * level) + 40"
+Inquisitive:
+  # xp = The amount of xp the mob dropped
+  # level = The level of Inquisitive, as a number
+  # Total XP gained for using Inquisitive 1
+  level-one: "xp + 3"
+  # Total XP gained for every level other than level 1
+  levels: "xp * level"
+Insanity:
+  # damage = The damage that has already been done
+  # level = The level of Insanity, as a number
+  damage: "damage + (level * 0.5)"
+Insomnia:
+  potion-effects:
+    '1': "slowness:level - 1:40 * level"
+    '2': "mining_fatigue:level - 1:40 * level"
+    '3': "confusion:level - 1:(40 * level) + 20"
+Lifebloom:
+  area: "3 + level"
+Obsidianshield:
+  potion-effects:
+    '1': "fire_resistance:level - 1:99999"
+Overload:
+  potion-effects:
+    '1': "health_boost:level - 1:99999"
+Paralyze:
+  potion-effects:
+    '1': "slowness:level - 1:(20 * level) + 40"
+    '2': "mining_fatigue:level - 1:(20 * level) + 40"
+Protection:
+  area: "3 + level:3 + level:3 + level"
+Pummel:
+  area: "7 + level:2:7 + level"
+  potion-effects:
+    '1': "slowness:level:20 * (3 * level)"
+Rage:
+  mob-particles: true
+  player-particles: true
+Ravenous:
+  potion-effects:
+    '1': "saturation:4:1"
+RocketEscape:
+  potion-effects:
+    '1': "jump_boost:level + 6:(20 * level) + 20"
+    '2': "regeneration:level:(20 * level) + 40"
+SpiritLink:
+  area: "3 + level:3 + level:3 + level"
+Spirits:
+  name: "&e{PLAYER}'s &9Spirit"
+  potion-effects:
+    '1': "regeneration:1:20 * level"
+Springs:
+  potion-effects:
+    '1': "jump_boost:level - 1:99999"
+Snare:
+  potion-effects:
+    '1': "slowness:level - 1:(20 * level) + 20"
+    '2': "mining_fatigue:level - 1:(20 * level) + 20"
+Trap:
+  potion-effects:
+    '1': "slowness:level:(40 * level) + 20"
+UndeadRuse:
+  name: "&e{PLAYER}'s &bUndead Ruse"
+Valor:
+  potion-effects:
+    '1': "damage_resistance:level - 1:(40 * level) + 80"
+#
+## Chances of enchantments procking.
+#############################################################################
+# If the chance equals zero (0), then it has a 1% chance of procking.
+# If the chance equals ninety nine (99), then it has a 100% of procking.
+#############################################################################
+# lucky = The level of the Lucky enchantment, as a number
+# level = The level of enchant, as a number
+# * = Multiply
+# + = Add
+# - = Subtract
+##################################################
+#
+# Restrictions on editing the values.
+#
+## ONLY SUPPORTS 1 PAIR OF PARENTHESES!
+## ONLY SUPPORTS 2 VARIABLES IN THE PARENTHESES!
+#
+## YOU CAN ONLY MULTIPLY 2 VARIABLES TOGETHER!
+## IF YOU USE ADDITION, YOU CANNOT USE SUBTRACTION!
+## IF YOU USE SUBTRACTION, YOU CANNOT USE ADDITION!
+chances:
+  Angelic: "lucky + 6 + (2 * level)"
+  Armored: "lucky + (6 * level)"
+  ArrowBreak: "19 + (6 * level)"
+  ArrowDeflect: "99"
+  ArrowLifesteal: "20 + (8 * level)"
+  AutoSmelt: "20 + (20 * level)"
+  Barbarian: "6 * level"
+  Berserk: "4 * level"
+  Blacksmith: "level"
+  Bleed: "5 + (5 * level)"
+  Blessed: "2 * level"
+  Blind: "5 * level"
+  Block: "level * 5"
+  BloodLink: "6 + (2 * level)"
+  BloodLust: "10 + (5 * level)"
+  Cactus: "25 + (25 * level)"
+  Cleave: "4 + (3 * level)"
+  Commander: "99"
+  Confusion: "6 + (2 * level)"
+  Cowification: "99"
+  CreeperArmor: "99"
+  Curse: "lucky + 8 + (2 * level)"
+  Deathbringer: "lucky + 4 + (2 * level)"
+  Decapitation: "20 * level"
+  DeepWounds: "7 + level"
+  Demonforged: "9 + level"
+  Destruction: "99"
+  Detonate: "35 + (5 * level)"
+  Devour: "99"
+  DimensionRift: "level * 4"
+  Disarmor: "level - 1"
+  Disintegrate: "level * 4"
+  Dodge:
+    if-sneaking: "lucky + (4 * level)"
+    not-sneaking: "lucky + (2 * level)"
+  DoubleStrike: "10 + (2 * level)"
+  EagleEye: "level * 5"
+  Epicness: "20 * level"
+  EnderShift: "lucky + 15 + level"
+  # With the Ender Walker enchant equipped, this is the chance of healing the player at low health
+  EnderWalker: "8 * level"
+  Enlighted: "lucky + 7 + (8 * level)"
+  Enrage: "10 + (2 * level)"
+  Execute: "7 + level"
+  Experience: "15 * level"
+  Explosive: "20 + (10 * level)"
+  Farcast: "15 * level"
+  Featherweight: "10 + (5 * level)"
+  Frozen: "3 * level"
+  Greatsword: "12 + level"
+  Guardians: "2 + level"
+  Hardened: "16 + (8 * level)"
+  Haste: "99"
+  Headless: "20 * level"
+  Healing: "99"
+  Heavy: "99"
+  Hellfire: "10 + (10 * level)"
+  Hijack: "20 + (10 * level)"
+  IceAspect: "3 * level"
+  IceFreeze: "level * 4"
+  Implants: "10 + (2 * level)"
+  Infernal: "99"
+  Inquisitive: "99"
+  Insanity: "4 + (2 * level)"
+  Insomnia: "4 + (2 * level)"
+  Inversion: "lucky + 6 + (2 * level)"
+  KillAura: "level * 4"
+  Leadership: "99"
+  Lifebloom: "30 + (10 * level)"
+  Lifesteal: "4 * level"
+  Lightning: "12 + (2 * level)"
+  Longbow: "45 + (5 * level)"
+  # Using the Lucky enchantment will add this number to the chance of other equipped enchants chance of procking.
+  Lucky: "level"
+  Marksman: "50 + (5 * level)"
+  # Metaphysical - Chance of removing the Slowness effect
+  Metaphysical: "level * 22"
+  Molten: "99"
+  NaturesWrath: "level"
+  Nimble: "99"
+  Nutrition: "99"
+  Obliterate: "50 + (5 * level)"
+  ObsidianDestroyer: "5 * level"
+  Oxygenate: "70 + (5 * level)"
+  Pacify: "level * 4"
+  Paralyze: "2 + (2 * level)"
+  Piercing: "30 + (6 * level)"
+  PlagueCarrier: "99"
+  Poison: "7 + level"
+  Poisoned: "lucky + 4 + (2 * level)"
+  Protection: "99"
+  Pummel: "14 + (3 * level)"
+  Ragdoll: "lucky + 25 + (25 * level)"
+  Rage: "99"
+  Ravenous: "12 + (2 * level)"
+  Reforged: "30 + (6 * level)"
+  # Chance of negating 50% damage from an attack that would normally kill you
+  Resilience: "level * 6"
+  RocketEscape: "lucky + 7 + level"
+  SelfDestruct: "99"
+  Shackle: "99"
+  Shockwave: "lucky + 7 + (3 * level)"
+  Silence: "1 + level"
+  Skilling: "99"
+  SkillSwipe: "14 + level"
+  SmokeBomb: "lucky + 8 + level"
+  Snare: "30 + (5 * level)"
+  Sniper: "40 + (8 * level)"
+  # Using the Solutide enchantment will increase the Silence prock rate by this much.
+  Solitude: "level"
+  SpiritLink: "90"
+  Spirits: "3 + level"
+  # Using the Sticky enchantment will decrease the Disarmor prock rate by this much.
+  Sticky: "level"
+  Stormcaller: "lucky + 13 + (2 * level)"
+  Tank: "lucky + (6 * level)"
+  TargetTracking: "99"
+  Telepathy: "99"
+  Teleportation: "99"
+  ThunderingBlow: "5 + level"
+  Training: "99"
+  Trap: "6 + (2 * level)"
+  Trickster: "4 * level"
+  Unfocus: "10 + (2 * level)"
+  Valor: "lucky + 10 + (2 * level)"
+  Vampire: "14 + (2 * level)"
+  Venom: "level * 4"
+  Virus: "level * 5"
+  Voodoo: "lucky + 6 + (2 * level)"
+  Wither: "lucky + 4 + (2 * level)"
+  UndeadRuse: "2 + level"
+  # Editing these will not change anything. LEAVE THEM ALONEEEE!!!!
+  AntiGravity: 1
+  Aquatic: 1
+  Clarity: 1
+  DivineImmolation: 1
+  Drunk: 1
+  Gears: 1
+  Ghost: 1
+  Glowing: 1
+  Immortal: 1
+  Obsidianshield: 1
+  Overload: 1
+  Paradox: 1
+  Phoenix: 1
+  SoulTrap: 1
+  Springs: 1
+  Teleblock: 1
+#

@@ -1,0 +1,589 @@
+# Made by RandomHashTags
+"1.8.8":
+  armor-switch:
+    helmet:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+    chestplate:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+    leggings:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+    boots:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+#
+  alchemist:
+    need-more-cash:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    need-more-xp:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    upgrade-creative:
+      sound: "PORTAL_TRAVEL"
+      volume: 1
+      pitch: 1
+    upgrade-via-cash:
+      sound: "PORTAL_TRAVEL"
+      volume: 1
+      pitch: 1
+    upgrade-via-xp:
+      sound: "PORTAL_TRAVEL"
+      volume: 1
+      pitch: 1
+#
+  drop-packages:
+    randomize-loot:
+      sound: "STEP_LADDER"
+      volume: 1
+      pitch: 1
+#
+  dust:
+    reveal-mystery-dust:
+      sound: "LAVA_POP"
+      volume: 1
+      pitch: 1
+    reveal-dust:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+#
+  enchanter:
+    cash-purchase-success:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+    xp-purchase-success:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+    need-more-cash:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 2
+    need-more-xp:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 2
+#
+  givedp-items:
+    explosive-cake:
+      sound: "EXPLODE"
+      volume: 1
+      pitch: 1
+#
+  gkit:
+    need-to-wait-for-cooldown:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    need-permission:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 1
+#
+  kitop:
+    obtain:
+      sound: "BAT_TAKEOFF"
+      volume: 1
+      pitch: 1
+#
+  redeem:
+    banknote:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+    gkit-gem:
+      success:
+        sound: "CLICK"
+        volume: 1
+        pitch: 1
+      already-have:
+        sound: "VILLAGER_NO"
+        volume: 1
+        pitch: 1
+    mcmmo-xp-voucher:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 1
+#
+    tinkerer:
+      trade-cancelled:
+        sound: "VILLAGER_NO"
+        volume: 1
+        pitch: 1
+#
+    title:
+      success:
+        sound: "VILLAGER_YES"
+        volume: 1
+        pitch: 1
+      already-have:
+        sound: "VILLAGER_NO"
+        volume: 1
+        pitch: 2
+    xpbottle:
+      sound: "SPLASH"
+      volume: 1
+      pitch: 1
+#
+  shop:
+    buy:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+    not-enough-balance:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    sell:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 1
+    not-have-any-to-sell:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    not-sellable:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 1
+#
+  soul-mode:
+    enter:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+#
+  splitsouls:
+    need-to-collect-souls:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 2
+#
+  success-and-destroy:
+    success:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+    destroy:
+      sound: "LAVA_POP"
+      volume: 1
+      pitch: 1
+#
+  tinkerer:
+    accepted:
+      sound: "VILLAGER_YES"
+      volume: 1
+      pitch: 1
+    cancelled:
+      sound: "VILLAGER_NO"
+      volume: 1
+      pitch: 1
+#
+  withdraw:
+    deposit:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 2
+    withdraw:
+      sound: "BAT_TAKEOFF"
+      volume: 1
+      pitch: 0
+#
+  xpbottle:
+    sound: "LEVEL_UP"
+    volume: 1
+    pitch: 1
+#
+  enchants:
+    ArrowBreak:
+      sound: "SHOOT_ARROW"
+      volume: 1
+      pitch: 2
+    ArrowLifesteal:
+      sound: "ENDERMEN_TELEPORT"
+      volume: 1
+      pitch: 2
+    AutoSmelt:
+      sound: "FIRE_IGNITE"
+      volume: 1
+      pitch: 1
+    Barbarian:
+      sound: "ITEM_BREAK"
+      volume: 1
+      pitch: 2
+    Blacksmith:
+      sound: "HORSE_ARMOR"
+      volume: 1
+      pitch: 2
+    Cleave:
+      sound: "DIG_GRASS"
+      volume: 1
+      pitch: 1
+    Demonforged:
+      sound: "ANVIL_LAND"
+      volume: 1
+      pitch: 2
+    Detonate:
+      sound: "EXPLODE"
+      volume: 1
+      pitch: 1
+    Disarmor:
+      sound: "NOTE_PLING"
+      volume: 1
+      pitch: 2
+    Dodge:
+      sound: "BAT_TAKEOFF"
+      volume: 1
+      pitch: 2
+    DoubleStrike:
+      sound: "SLIME_ATTACK"
+      volume: 1
+      pitch: 2
+    Enderwalker: # This sound is when you equip boots with the enchant on them
+      sound: "WITHER_SPAWN"
+      volume: 1
+      pitch: 1
+    Heavy:
+      sound: "HORSE_ARMOR"
+      volume: 1
+      pitch: 0
+    Insanity:
+      sound: "NOTE_PLING"
+      volume: 1
+      pitch: 2
+    Lifebloom:
+      sound: "CREEPER_HISS"
+      volume: 1
+      pitch: 1
+    Lifesteal:
+      sound: "LEVEL_UP"
+      volume: 1
+      pitch: 5
+    Phoenix:
+      sound: "GHAST_SCREAM"
+      volume: 1
+      pitch: 1
+    Sniper:
+      sound: "DIG_GRASS"
+      volume: 1
+      pitch: 1
+    Spirits:
+      sound: "PIG_WALK"
+      volume: 1
+      pitch: 2
+    Unfocus:
+      sound: "GHAST_MOAN"
+      volume: 1
+      pitch: 1
+#
+"1.9+":
+  armor-switch:
+    helmet:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+    chestplate:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+    leggings:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+    boots:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+#
+  alchemist:
+    need-more-cash:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    need-more-xp:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    upgrade-creative:
+      sound: "BLOCK_PORTAL_TRAVEL"
+      volume: 1
+      pitch: 1
+    upgrade-via-cash:
+      sound: "BLOCK_PORTAL_TRAVEL"
+      volume: 1
+      pitch: 1
+    upgrade-via-xp:
+      sound: "BLOCK_PORTAL_TRAVEL"
+      volume: 1
+      pitch: 1
+#
+  drop-packages:
+    randomize-loot:
+      sound: "BLOCK_CLOTH_PLACE"
+      volume: 1
+      pitch: 1
+#
+  dust:
+    reveal-mystery-dust:
+      sound: "BLOCK_LAVA_POP"
+      volume: 1
+      pitch: 1
+    reveal-dust:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+#
+  enchanter:
+    cash-purchase-success:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+    xp-purchase-success:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+    need-more-cash:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 2
+    need-more-xp:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 2
+#
+  givedp-items:
+    explosive-cake:
+      sound: "ENTITY_GENERIC_EXPLODE"
+      volume: 1
+      pitch: 1
+#
+  gkit:
+    need-to-wait-for-cooldown:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    need-permission:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+#
+  itemnametag:
+    cannot-rename-item:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    cannot-rename-name:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    rename-item:
+      sound: "ENTITY_VILLAGER_YES"
+      volume: 1
+      pitch: 1
+#
+  kitop:
+    obtain:
+      sound: "ENTITY_BAT_TAKEOFF"
+      volume: 1
+      pitch: 1
+#
+  redeem:
+    banknote:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+    gkit-gem:
+      success:
+        sound: "BLOCK_LEVER_CLICK"
+        volume: 1
+        pitch: 1
+      already-have:
+        sound: "ENTITY_VILLAGER_NO"
+        volume: 1
+        pitch: 1
+    mcmmo-xp-voucher:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 1
+#
+    tinkerer:
+      trade-cancelled:
+        sound: "ENTITY_VILLAGER_NO"
+        volume: 1
+        pitch: 1
+#
+    title:
+      success:
+        sound: "ENTITY_VILLAGER_YES"
+        volume: 1
+        pitch: 1
+      already-have:
+        sound: "ENTITY_VILLAGER_NO"
+        volume: 1
+        pitch: 2
+    xpbottle:
+      sound: "ENTITY_SPLASH_POTION_BREAK"
+      volume: 1
+      pitch: 1
+#
+  shop:
+    buy:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+    not-enough-balance:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    sell:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 1
+    not-have-any-to-sell:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+    not-sellable:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+#
+  soul-mode:
+    enter:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+#
+  splitsouls:
+    need-to-collect-souls:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 2
+#
+  success-and-destroy:
+    success:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+    destroy:
+      sound: "BLOCK_LAVA_POP"
+      volume: 1
+      pitch: 1
+#
+  tinkerer:
+    accepted:
+      sound: "ENTITY_VILLAGER_YES"
+      volume: 1
+      pitch: 1
+    cancelled:
+      sound: "ENTITY_VILLAGER_NO"
+      volume: 1
+      pitch: 1
+#
+  withdraw:
+    deposit:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 2
+    withdraw:
+      sound: "ENTITY_BAT_TAKEOFF"
+      volume: 1
+      pitch: 0
+#
+  xpbottle:
+    sound: "ENTITY_PLAYER_LEVELUP"
+    volume: 1
+    pitch: 1
+#
+  enchants:
+    ArrowBreak:
+      sound: "ENTITY_ARROW_SHOOT"
+      volume: 1
+      pitch: 2
+    ArrowLifesteal:
+      sound: "ENTITY_ENDERMEN_TELEPORT"
+      volume: 1
+      pitch: 2
+    AutoSmelt:
+      sound: "BLOCK_FIRE_EXTINGUISH"
+      volume: 1
+      pitch: 1
+    Barbarian:
+      sound: "ITEM_SHIELD_BLOCK"
+      volume: 1
+      pitch: 2
+    Blacksmith:
+      sound: "ITEM_ARMOR_EQUIP_DIAMOND"
+      volume: 1
+      pitch: 2
+    Cleave:
+      sound: "BLOCK_GRASS_BREAK"
+      volume: 1
+      pitch: 1
+    Demonforged:
+      sound: "BLOCK_ANVIL_FALL"
+      volume: 1
+      pitch: 2
+    Detonate:
+      sound: "ENTITY_GENERIC_EXPLODE"
+      volume: 1
+      pitch: 1
+    Disarmor:
+      sound: "BLOCK_NOTE_PLING"
+      volume: 1
+      pitch: 2
+    Dodge:
+      sound: "ENTITY_BAT_TAKEOFF"
+      volume: 1
+      pitch: 2
+    DoubleStrike:
+      sound: "ENTITY_PLAYER_ATTACK_CRIT"
+      volume: 1
+      pitch: 2
+    EnderWalker: # This sound is when you equip boots with the enchant on them
+      sound: "ENTITY_WITHER_SPAWN"
+      volume: 1
+      pitch: 1
+    Heavy:
+      sound: "ENTITY_ARMORSTAND_BREAK"
+      volume: 1
+      pitch: 0
+    Insanity:
+      sound: "BLOCK_NOTE_PLING"
+      volume: 1
+      pitch: 2
+    Lifebloom:
+      sound: "ENTITY_CREEPER_PRIMED"
+      volume: 1
+      pitch: 1
+    Lifesteal:
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1
+      pitch: 5
+    Phoenix:
+      sound: "ENTITY_GHAST_SCREAM"
+      volume: 1
+      pitch: 1
+    Sniper:
+      sound: "BLOCK_GRASS_BREAK"
+      volume: 1
+      pitch: 1
+    Spirits:
+      sound: "BLOCK_FURNACE_FIRE_CRACKLE"
+      volume: 1
+      pitch: 2
+    Unfocus:
+      sound: "ENTITY_ELDER_GUARDIAN_CURSE"
+      volume: 1
+      pitch: 1
+#

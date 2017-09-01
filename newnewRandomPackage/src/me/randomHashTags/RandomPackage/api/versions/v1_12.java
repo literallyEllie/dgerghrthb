@@ -1,0 +1,57 @@
+package me.randomHashTags.RandomPackage.api.versions;
+
+import org.bukkit.ChatColor;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
+import org.bukkit.entity.WitherSkeleton;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.ItemStack;
+
+import me.randomHashTags.RandomPackage.RandomPackage;
+import me.randomHashTags.RandomPackage.api.RandomPackageAPI;
+import me.randomHashTags.RandomPackage.api.enums.RPConfigs;
+import me.randomHashTags.RandomPackage.listeners.RPListeners;
+
+public class v1_12 {
+	
+	public static ItemStack getItemInHand(Player player) {
+		if(player.getInventory().getItemInMainHand() == null) {
+			return new ItemStack(Material.AIR);
+		} else {
+			return player.getInventory().getItemInMainHand();
+		}
+	}
+	public static void setItemInHand(Player player, ItemStack item) {
+		player.getInventory().setItemInMainHand(item);
+	}
+	//
+	public static void spawnFallenHero(PlayerInteractEvent event, int gkit) {
+		FileConfiguration config = RandomPackage.getConfig(RPConfigs.MASTER);
+		for(String string : config.getStringList("fallen-heros.summon")) {
+			if(string.contains("{FALLEN_HERO_NAME}")) { string = string.replace("{FALLEN_HERO_NAME}", ChatColor.translateAlternateColorCodes('&', config.getString("fallen-heros." + gkit + ".name"))); }
+			event.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', string));
+		}
+		WitherSkeleton skeleton = (WitherSkeleton) event.getClickedBlock().getWorld().spawn(new Location(event.getClickedBlock().getWorld(), event.getClickedBlock().getLocation().getX(), event.getClickedBlock().getLocation().getBlockY() + 1, event.getClickedBlock().getLocation().getZ()), WitherSkeleton.class);
+		skeleton.setCanPickupItems(false); skeleton.setCustomNameVisible(true);
+		skeleton.setCustomName(ChatColor.translateAlternateColorCodes('&', config.getString("fallen-heros.name").replace("{FALLEN_HERO_NAME}", config.getString("fallen-heros." + gkit + ".name"))));
+		for(ItemStack is : RPListeners.getInstance().getGkitItems(gkit)) {
+			if(!(is == null)) {
+				if(is.getType().name().endsWith("HELMET") || is.getType().name().endsWith("CHESTPLATE") || is.getType().name().endsWith("LEGGINGS") || is.getType().name().endsWith("BOOTS")
+						|| is.getType().name().endsWith("SWORD") || is.getType().name().endsWith("AXE") || is.getType().name().endsWith("SPADE") || is.getType().name().endsWith("BOW") || is.getType().name().endsWith("HOE")) {
+					RPListeners.getInstance().addVanillaAndRandomPackageEnchants(event.getPlayer(), is, false, -1);
+				}
+				if(is.getType().name().endsWith("HELMET")) { skeleton.getEquipment().setHelmet(is);
+				} else if(is.getType().name().endsWith("CHESTPLATE")) { skeleton.getEquipment().setChestplate(is);
+				} else if(is.getType().name().endsWith("LEGGINGS")) { skeleton.getEquipment().setLeggings(is);
+				} else if(is.getType().name().endsWith("BOOTS")) { skeleton.getEquipment().setBoots(is);
+				} else if(is.getType().name().endsWith("SWORD") && skeleton.getEquipment().getItemInHand().getType().equals(Material.AIR)
+						|| is.getType().name().endsWith("_AXE") && skeleton.getEquipment().getItemInHand().getType().equals(Material.AIR)
+						|| is.getType().name().endsWith("BOW") && skeleton.getEquipment().getItemInHand().getType().equals(Material.AIR)) {
+					skeleton.getEquipment().setItemInHand(is); }
+			}
+		}
+		skeleton.setTarget(event.getPlayer());
+	}
+}

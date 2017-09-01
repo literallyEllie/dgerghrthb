@@ -1,0 +1,1224 @@
+# Made by RandomHashTags
+#
+# GLOBAL SETTINGS
+global-settings:
+  # Currency for the Alchemist upgrade is "XP" or "CASH"                              
+  # Having it to "CASH" requires the Vault plugin to be installed and enabled properly
+  alchemist-currency: "XP"
+  soul-settings:
+    # Toggle whether the soul enchantments require souls to work or not. "true" or "false"
+    use-souls: true
+  soul-mode:
+    # This is known to use more CPU, potentially causing some TPS drops. Use at your own risk.
+    show-particles: true
+  books:
+    # This is known to crash some players when opening a lot in short duration. Use at your own risk.
+    shoot-fireworks: true
+#
+# PURCHASE SIGN SETTINGS
+signs:
+  armor-enchantment-orb: "&a&lArmorEnchOrb"
+  blackscroll: "&e&lBlack Scroll"
+  christmas-candy: "&e&lChristmasCandy"
+  christmas-eggnog: "&e&lChristmasEggnog"
+  experience-bottle: "&a&lEXP Bottle"
+  explosive-cake: "&f&lExplosiveCake"
+  faction-crystal: "&b&lFaction Crystal"
+  faction-mcmmo-booster: "&b&lFactionMcMMOBooster"
+  faction-xp-booster: "&b&lFactionXPBooster"
+  halloween-candy: "&e&lHalloween Candy"
+  itemnametag: "&6&lItem Nametag"
+  mcmmo-credit-voucher: "&6&lMCMMOCreditVoucher"
+  mcmmo-xp-voucher: "&6&lMCMMOXPVoucher"
+  mystery-dust: "&f&lMystery Dust"
+  mystery-mob-spawner: "&6&lMysteryMobSpawner"
+  sb: "{ENCHANT}"
+  soul-gem: "&c&lSoul Gem"
+  space-drink: "&bSpace Drink"
+  space-firework: "&e&lSpace Firework"
+  transmogscroll: "&e&lTransmog Scroll"
+  weapon-enchantment-orb: "&6&lWeaponEnchOrb"
+  whitescroll: "&e&lWhite Scroll"
+  banknote: "&b&lBanknote"
+#
+# PLAYER SETTINGS
+player:
+  # Remove the player's file if they are banned
+  ban-remove: false
+#
+# CHANCES FOR DUST & DROP PACKAGES
+chances:
+  drop-package:
+    god:
+      legendary: 5
+      ultimate: 10
+      elite: 15
+      unique: 20
+      simple: 25
+    legendary:
+      legendary: 5
+      ultimate: 10
+      elite: 15
+      unique: 20
+      simple: 25
+    ultimate:
+      legendary: 5
+      ultimate: 10
+      elite: 15
+      unique: 20
+      simple: 25
+    elite:
+      legendary: 5
+      ultimate: 10
+      elite: 15
+      unique: 20
+      simple: 25
+    unique:
+      legendary: 5
+      ultimate: 10
+      elite: 15
+      unique: 20
+      simple: 25
+    simple:
+      legendary: 5
+      ultimate: 10
+      elite: 15
+      unique: 20
+      simple: 25
+  #
+# Givedp Items
+#############################################################################################################
+# FULL LIST OF AVAILABLE GIVEDP ITEM NAMES
+# whitescroll
+# blackscroll
+# transmogscroll
+# halloweencandy
+# mysterymobspawner
+# itemnametag
+# christmascandy
+# christmaseggnog
+# soulgem
+# explosivecake
+# factioncrystal
+# factionmcmmoboost:<multiplier>:<duration>
+# factionxpbooster:<multiplier>:<duration>
+# mcmmocreditvoucher:<amount of credits>
+# mcmmoxpvoucher:<skill name>:<amount of xp>
+# spacedrink
+# spacefirework
+# gigantictnt
+# hextnt
+# luckytnt
+# mimictnt
+# tacticaltnt
+# randombook
+# soulbook
+# legendarybook
+# ultimatebook
+# elitebook
+# uniquebook
+# simplebook
+# goddp
+# legendarydp
+# ultimatedp
+# elitedp
+# uniquedp
+# simpledp
+# soulfireball
+# legendaryfireball
+# ultimatefireball
+# elitefireball
+# uniquefireball
+# simplefireball
+# godrandomizationscroll
+# legendaryrandomizationscroll
+# ultimaterandomizationscroll
+# eliterandomizationscroll
+# uniquerandomizationscroll
+# simplerandomizationscroll
+# legendarysoultracker
+# ultimatesoultracker
+# elitesoultracker
+# uniquesoultracker
+# simplesoultracker
+# soulprimaldust
+# legendaryprimaldust
+# ultimateprimaldust
+# eliteprimaldust
+# uniqueprimaldust
+# simpleprimaldust
+# souldust
+# legendarydust
+# ultimatedust
+# elitedust
+# uniquedust
+# simpledust
+# Book with a specific or random level, success, and destroy rate
+# sb:<enchant name>:<enchant level OR 'random'>:<success number OR 'random'>:<destroy number OR 'random'>
+# experiencebottle:<amount of xp>
+# experiencebottle:<min amount of xp the bottle can contain>:<max amount of xp the bottle can contain>
+#############################################################################################################
+# GIVEDP ITEMS & SETTINGS
+givedp-items:
+  lores:
+    # These are only applicable in the "revealed-item" lore!
+    # {SUCCESS} = Where the "success" string is located.
+    # {DESTROY} = Where the "destroy" string is located.
+    # {BOOK_LORE} = The book's description from the info.yml
+    # {ENCHANT_TYPE} = The type of item that the book can be applied to
+    # {APPLY} = Where the "apply" string is located
+    #########################################
+    # {PERCENT} = A random number out of 100
+    success: "&a{PERCENT}% Success Rate"
+    destroy: "&c{PERCENT}% Destroy Rate"
+    apply: "&7Drop onto item to enchant"
+  enchant-types:
+    armor: "&7Armor Enchant"
+    helmet: "&7Helmet Enchant"
+    chestplate: "&7Chestplate Enchant"
+    leggings: "&7Leggings Enchant"
+    boots: "&7Boots Enchant"
+    sword: "&7Sword Enchant"
+    axe: "&7Axe Enchant"
+    weapon: "&7Weapon Enchant"
+    bow: "&7Bow Enchant"
+    pickaxe: "&7Pickaxe Enchant"
+    tool: "&7Tool Enchant"
+  #
+  random:
+    reveal-item:
+      item: "book:0"
+      name: "&d&lRandom Enchantment Book &7(Right Click)"
+      lore:
+      - "&7Examine to receive a random"
+      - "&drandom &7enchantment book."
+    revealed-item:
+      item: "book:0"
+      # The firework shot into the air when revealing a custom enchant.
+      # Usage: "<firework type>:<explode color>:<fade color>:<power>"
+      firework: "ball:purple:fuchsia:3"
+      # This is applied to the item when you successfully apply the custom enchant
+  god:
+    randomization-scroll: # This randomization scroll applies to ALL enchantment books!
+      item: "paper:0"
+      name: "&c&lGodly Randomization Scroll"
+      lore:
+      - " "
+      - "&7Apply to &cANY &7enchantment book"
+      - "&7to reroll the success and destroy rates."
+      -  " "
+      - "&7Drag n' Drop onto &nenchantment book&r &7to apply."
+  soul:
+    reveal-item:
+      item: "book:0"
+      name: "&c&lSoul Enchantment Book &7(Right Click)"
+      lore:
+      - "&7Examine to receive a random"
+      - "&csoul &7enchantment book."
+    revealed-item:
+      item: "book:0"
+      name: "&c&l&n{ENCHANT}"
+      lore:
+      - "{SUCCESS}"
+      - "{DESTROY}"
+      - "{BOOK_LORE}"
+      - "{ENCHANT_TYPE}"
+      - "{APPLY}"
+      # The firework shot into the air when revealing a custom enchant.
+      # Usage: "<firework type>:<explode color>:<fade color>:<power>"
+      firework: "ball:red:fuchsia:3"
+      # This is applied to the item when you successfully apply the custom enchant
+      apply-format: "&c{ENCHANT}"
+    fireball:
+      item: "fireball:0"
+      name: "&c&lSoul Secret Dust"
+      lore:
+      - "&7Contains: &bMagic, &ePrimal, &7or &fMystery &7dust."
+      - "&7An unidentified satchel of dust."
+    randomization-scroll:
+      item: "paper:0"
+      name: "&c&lSoul Randomization Scroll"
+      lore:
+      - " "
+      - "&7Apply to a(n) &cSoul &7enchantment book"
+      - "&7to reroll the success and destroy rates."
+      - " "
+      - "&7Drag n' Drop onto &nenchantment book&r &7to apply."
+    # Dust
+    primal:
+      item: "glowstone_dust:0"
+      name: "&c&lSoul Primal Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 5
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 30
+      min-percent: 10
+      lore:
+      - "&a&l+{PERCENT}% SUCCESS"
+      - "&7Apply to a &c&lSoul &7Enchantment Book"
+      - "&7to increase its success by &c&l{PERCENT}%"
+      - " "
+      - "&7Place dust on enchantment book"
+    regular:
+      item: "sugar:0"
+      name: "&cSoul Magic Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 10
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 9
+      min-percent: 1
+      lore:
+      - "&a+{PERCENT}% SUCCESS"
+      - "&7Apply to a &cSoul &7Enchantment Book"
+      - "&7to increase its success by &c{PERCENT}%"
+      -  " "
+      - "&7Please dust on enchantment book"
+  legendary:
+    reveal-item:
+      item: "book:0"
+      name: "&6&lLegendary Enchantment Book &7(Right Click)"
+      lore:
+      - "&7Examine to receive a random"
+      - "&6legendary &7enchantment book."
+    revealed-item:
+      item: "book:0"
+      name: "&6&l&n{ENCHANT}"
+      lore:
+      - "{SUCCESS}"
+      - "{DESTROY}"
+      - "{BOOK_LORE}"
+      - "{ENCHANT_TYPE}"
+      - "{APPLY}"
+      # The firework shot into the air when revealing a custom enchant.
+      # Usage: "<firework type>:<explode color>:<fade color>:<power>"
+      firework: "ball:orange:fuchsia:2"
+      # This is applied to the item when you successfully apply the custom enchant
+      apply-format: "&6{ENCHANT}"
+    fireball:
+      item: "fireball:0"
+      name: "&6&lLegendary Secret Dust"
+      lore:
+      - "&7Contains: &bMagic, &ePrimal, &7or &fMystery &7dust."
+      - "&7An unidentified satchel of dust."
+    randomization-scroll:
+      item: "paper:0"
+      name: "&6&lLegendary Randomization Scroll"
+      lore:
+      - " "
+      - "&7Apply to a(n) &6Legendary &7enchantment book"
+      - "&7to reroll the success and destroy rates."
+      - " "
+      - "&7Drag n' Drop onto &nenchantment book&r &7to apply."
+    soul-tracker:
+      # When a player does the /splitsouls command on an item containing this soul tracker,
+      # the amount of souls is multiplied by this number to be put into the Soul Gem.
+      splitsouls-multiply: 5
+      item: "paper:0"
+      name: "&6&lLegendary Soul Tracker"
+      lore:
+      - "&7Apply to weapons to start tracking"
+      - "&6&lLegendary Souls &7collected from kills."
+      - " "
+      - "&c&lWARNING: &7Previously tracked souls"
+      - "&7will be released on apply."
+      # This is added to the item's lore when applying. This tracks how many kills the player has using this item
+      # {SOULS} = The amount of kills the player has killed with the soul tracker on the weapon
+      apply: "&6&lSOULS HARVESTED: {SOULS}"
+    # Dust
+    primal:
+      # Cost of upgrading other primal dust to this primal dust.
+      upgrade-cost: 20000
+      item: "glowstone_dust:0"
+      name: "&6&lLegendary Primal Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 5
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 30
+      min-percent: 10
+      lore:
+      - "&a&l+{PERCENT}% SUCCESS"
+      - "&7Apply to a &6&lLegendary &7Enchantment Book"
+      - "&7to increase its success by &6&l{PERCENT}%"
+      - " "
+      - "&7Place dust on enchantment book"
+    regular:
+      # Cost of upgrading other dust to this dust.
+      upgrade-cost: 10000
+      item: "sugar:0"
+      name: "&6Legendary Magic Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 10
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 9
+      min-percent: 1
+      lore:
+      - "&a+{PERCENT}% SUCCESS"
+      - "&7Apply to a &6Legendary &7Enchantment Book"
+      - "&7to increase its success by &6{PERCENT}%"
+      - " "
+      - "&7Please dust on enchantment book"
+  ultimate:
+    reveal-item:
+      item: "book:0"
+      name: "&e&lUltimate Enchantment Book &7(Right Click)"
+      lore:
+      - "&7Examine to receive a random"
+      - "&eultimate &7enchantment book."
+    revealed-item:
+      item: "book:0"
+      name: "&e&l&n{ENCHANT}"
+      lore:
+      - "{SUCCESS}"
+      -  "{DESTROY}"
+      - "{BOOK_LORE}"
+      - "{ENCHANT_TYPE}"
+      - "{APPLY}"
+      # The firework shot into the air when revealing a custom enchant.
+      # Usage: "<firework type>:<explode color>:<fade color>:<power>"
+      firework: "ball:yellow:fuchsia:1"
+      # This is applied to the item when you successfully apply the custom enchant
+      apply-format: "&e{ENCHANT}"
+    fireball:
+      item: "fireball:0"
+      name: "&e&lUltimate Secret Dust"
+      lore:
+      - "&7Contains: &bMagic, &ePrimal, &7or &fMystery &7dust."
+      - "&7An unidentified satchel of dust."
+    randomization-scroll:
+      item: "paper:0"
+      name: "&e&lUltimate Randomization Scroll"
+      lore:
+      - " "
+      - "&7Apply to a(n) &eUltimate &7enchantment book"
+      - "&7to reroll the success and destroy rates."
+      - " "
+      - "&7Drag n' Drop onto &nenchantment book&r &7to apply."
+    soul-tracker:
+      # When a player does the /splitsouls command on an item containing this soul tracker,
+      # the amount of souls is multiplied by this number to be put into the Soul Gem.
+      splitsouls-multiply: 4
+      item: "paper:0"
+      name: "&e&lUltimate Soul Tracker"
+      lore:
+      - "&7Apply to weapons to start tracking"
+      - "&e&lUltimate Souls &7collected from kills."
+      - " "
+      - "&c&lWARNING: &7Previously tracked souls"
+      - "&7will be released on apply."
+      # This is added to the item's lore when applying. This tracks how many kills the player has using this item
+      # {SOULS} = The amount of kills the player has killed with the soul tracker on the weapon
+      apply: "&e&lSOULS HARVESTED: {SOULS}"
+    # Dust
+    primal:
+      # Cost of upgrading other primal dust to this primal dust.
+      upgrade-cost: 15000
+      item: "glowstone_dust:0"
+      name: "&e&lUltimate Primal Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 5
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 30
+      min-percent: 10
+      lore:
+      - "&a&l+{PERCENT}% SUCCESS"
+      - "&7Apply to a &e&lUltimate &7Enchantment Book"
+      - "&7to increase its success by &e&l{PERCENT}%"
+      - " "
+      - "&7Place dust on enchantment book"
+    regular:
+      # Cost of upgrading other dust to this dust.
+      upgrade-cost: 7500
+      item: "sugar:0"
+      name: "&eUltimate Magic Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 10
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 9
+      min-percent: 1
+      lore:
+      - "&a+{PERCENT}% SUCCESS"
+      - "&7Apply to a &eUltimate &7Enchantment Book"
+      - "&7to increase its success by &e{PERCENT}%"
+      - " "
+      - "&7Please dust on enchantment book"
+  elite:
+    reveal-item:
+      item: "book:0"
+      name: "&b&lElite Enchantment Book &7(Right Click)"
+      lore:
+      - "&7Examine to receive a random"
+      - "&belite &7enchantment book."
+    revealed-item:
+      item: "book:0"
+      name: "&b&l&n{ENCHANT}"
+      lore:
+      - "{SUCCESS}"
+      - "{DESTROY}"
+      - "{BOOK_LORE}"
+      - "{ENCHANT_TYPE}"
+      - "{APPLY}"
+      # The firework shot into the air when revealing a custom enchant.
+      # Usage: "<firework type>:<explode color>:<fade color>:<power>"
+      firework: "ball:aqua:fuchsia:1"
+      # This is applied to the item when you successfully apply the custom enchant
+      apply-format: "&b{ENCHANT}"
+    fireball:
+      item: "fireball:0"
+      name: "&b&lElite Secret Dust"
+      lore:
+      - "&7Contains: &bMagic, &ePrimal, &7or &fMystery &7dust."
+      - "&7An unidentified satchel of dust."
+    randomization-scroll:
+      item: "paper:0"
+      name: "&b&lElite Randomization Scroll"
+      lore:
+      - " "
+      - "&7Apply to a(n) &bElite &7enchantment book"
+      - "&7to reroll the success and destroy rates."
+      - " "
+      - "&7Drag n' Drop onto &nenchantment book&r &7to apply."
+    soul-tracker:
+      # When a player does the /splitsouls command on an item containing this soul tracker,
+      # the amount of souls is multiplied by this number to be put into the Soul Gem.
+      splitsouls-multiply: 3
+      item: "paper:0"
+      name: "&b&lElite Soul Tracker"
+      lore:
+      - "&7Apply to weapons to start tracking"
+      - "&b&lElite Souls &7collected from kills."
+      - " "
+      - "&c&lWARNING: &7Previously tracked souls"
+      - "&7will be released on apply."
+      # This is added to the item's lore when applying. This tracks how many kills the player has using this item
+      # {SOULS} = The amount of kills the player has killed with the soul tracker on the weapon
+      apply: "&b&lSOULS HARVESTED: {SOULS}"
+    # Dust
+    primal:
+      # Cost of upgrading other primal dust to this primal dust.
+      upgrade-cost: 10000
+      item: "glowstone_dust:0"
+      name: "&b&lElite Primal Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 5
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 30
+      min-percent: 10
+      lore:
+      - "&a&l+{PERCENT}% SUCCESS"
+      - "&7Apply to a &b&lElite &7Enchantment Book"
+      - "&7to increase its success by &b&l{PERCENT}%"
+      - " "
+      - "&7Place dust on enchantment book"
+    regular:
+      # Cost of upgrading other dust to this dust.
+      upgrade-cost: 5000
+      item: "sugar:0"
+      name: "&bElite Magic Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 10
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 9
+      min-percent: 1
+      lore:
+      - "&a+{PERCENT}% SUCCESS"
+      - "&7Apply to a &bElite &7Enchantment Book"
+      - "&7to increase its success by &b{PERCENT}%"
+      - " "
+      - "&7Please dust on enchantment book"
+  unique:
+    reveal-item:
+      item: "book:0"
+      name: "&a&lUnique Enchantment Book &7(Right Click)"
+      lore:
+      - "&7Examine to receive a random"
+      - "&aunique &7enchantment book."
+    revealed-item:
+      item: "book:0"
+      name: "&a&l&n{ENCHANT}"
+      lore:
+      - "{SUCCESS}"
+      - "{DESTROY}"
+      - "{BOOK_LORE}"
+      - "{ENCHANT_TYPE}"
+      - "{APPLY}"
+      # The firework shot into the air when revealing a custom enchant.
+      # Usage: "<firework type>:<explode color>:<fade color>:<power>"
+      firework: "ball:lime:fuchsia:1"
+      # This is applied to the item when you successfully apply the custom enchant
+      apply-format: "&a{ENCHANT}"
+    fireball:
+      item: "fireball:0"
+      name: "&a&lUnique Secret Dust"
+      lore:
+      - "&7Contains: &bMagic, &ePrimal, &7or &fMystery &7dust."
+      - "&7An unidentified satchel of dust."
+    randomization-scroll:
+      item: "paper:0"
+      name: "&a&lUnique Randomization Scroll"
+      lore:
+      - " "
+      - "&7Apply to a(n) &aUnique &7enchantment book"
+      - "&7to reroll the success and destroy rates."
+      - " "
+      - "&7Drag n' Drop onto &nenchantment book&r &7to apply."
+    soul-tracker:
+      # When a player does the /splitsouls command on an item containing this soul tracker,
+      # the amount of souls is multiplied by this number to be put into the Soul Gem.
+      splitsouls-multiply: 2
+      item: "paper:0"
+      name: "&a&lUnique Soul Tracker"
+      lore:
+      - "&7Apply to weapons to start tracking"
+      - "&a&lUnique Souls &7collected from kills."
+      - " "
+      - "&c&lWARNING: &7Previously tracked souls"
+      - "&7will be released on apply."
+      # This is added to the item's lore when applying. This tracks how many kills the player has using this item
+      # {SOULS} = The amount of kills the player has killed with the soul tracker on the weapon
+      apply: "&a&lSOULS HARVESTED: {SOULS}"
+    # Dust
+    primal:
+      # Cost of upgrading other primal dust to this primal dust.
+      upgrade-cost: 5000
+      item: "glowstone_dust:0"
+      name: "&a&lUnique Primal Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 5
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 30
+      min-percent: 10
+      lore:
+      - "&a&l+{PERCENT}% SUCCESS"
+      - "&7Apply to a &a&lUnique &7Enchantment Book"
+      - "&7to increase its success by &a&l{PERCENT}%"
+      - " "
+      - "&7Place dust on enchantment book"
+    regular:
+      # Cost of upgrading other dust to this dust.
+      upgrade-cost: 2500
+      item: "sugar:0"
+      name: "&aUnique Magic Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 10
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 9
+      min-percent: 1
+      lore:
+      - "&a+{PERCENT}% SUCCESS"
+      - "&7Apply to a &aUnique &7Enchantment Book"
+      - "&7to increase its success by &a{PERCENT}%"
+      - " "
+      - "&7Please dust on enchantment book"
+  simple:
+    reveal-item:
+      item: "book:0"
+      name: "&f&lSimple Enchantment Book &7(Right Click)"
+      lore:
+      - "&7Examine to receive a random"
+      - "&fsimple &7enchantment book."
+    revealed-item:
+      item: "book:0"
+      name: "&7&l&n{ENCHANT}"
+      lore:
+      - "{SUCCESS}"
+      - "{DESTROY}"
+      - "{BOOK_LORE}"
+      - "{ENCHANT_TYPE}"
+      - "{APPLY}"
+      # The firework shot into the air when revealing a custom enchant.
+      # Usage: "<firework type>:<explode color>:<fade color>:<power>"
+      firework: "ball:silver:fuchsia:2"
+      # This is applied to the item when you successfully apply the custom enchant
+      apply-format: "&7{ENCHANT}"
+    fireball:
+      item: "fireball:0"
+      name: "&f&lSimple Secret Dust"
+      lore:
+      - "&7Contains: &bMagic, &ePrimal, &7or &fMystery &7dust."
+      - "&7An unidentified satchel of dust."
+    randomization-scroll:
+      item: "paper:0"
+      name: "&f&lSimple Randomization Scroll"
+      lore:
+      - " "
+      - "&7Apply to a(n) &fSimple &7enchantment book"
+      - "&7to reroll the success and destroy rates."
+      - " "
+      - "&7Drag n' Drop onto &nenchantment book&r &7to apply."
+    soul-tracker:
+      # When a player does the /splitsouls command on an item containing this soul tracker,
+      # the amount of souls is multiplied by this number to be put into the Soul Gem.
+      splitsouls-multiply: 1
+      item: "paper:0"
+      name: "&f&lSimple Soul Tracker"
+      lore:
+      - "&7Apply to weapons to start tracking"
+      - "&f&lSimple Souls &7collected from kills."
+      - " "
+      - "&c&lWARNING: &7Previously tracked souls"
+      - "&7will be released on apply."
+      # This is added to the item's lore when applying. This tracks how many kills the player has using this item
+      # {SOULS} = The amount of kills the player has killed with the soul tracker on the weapon
+      apply: "&f&lSOULS HARVESTED: {SOULS}"
+    # Dust
+    primal:
+      item: "glowstone_dust:0"
+      name: "&f&lSimple Primal Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 5
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 30
+      min-percent: 10
+      lore:
+      - "&a&l+{PERCENT}% SUCCESS"
+      - "&7Apply to a &f&lSimple &7Enchantment Book"
+      - "&7to increase its success by &f&l{PERCENT}%"
+      - " "
+      - "&7Place dust on enchantment book"
+    regular:
+      item: "sugar:0"
+      name: "&fSimple Magic Dust"
+      # Chance of obtaining this dust when revealing it's fireballs (out of 100)
+      chance: 10
+      # {PERCENT} = The number of success the rarity book's success rate is increased by.
+      # Applicable anywhere in the lore. Required to have at least 1 in lore.
+      max-percent: 9
+      min-percent: 1
+      lore:
+      - "&a+{PERCENT}% SUCCESS"
+      - "&7Apply to a &fSimple &7Enchantment Book"
+      - "&7to increase its success by &f{PERCENT}%"
+      - " "
+      - "&7Please dust on enchantment book"
+  #
+  #
+  armor-enchantment-orb:
+    item: "eye_of_ender:0"
+    # {MAX} = The player's level cap number, plus the "add-slots". Applicable in the name and lore.
+    name: "&6&lArmor Enchantment Orb [&a&n{MAX}&6&l]"
+    lore:
+    # {PERCENT} = Random number out of 100.
+    # {ADD_SLOTS} = The number located at "add-slots".
+    - "&a{PERCENT}% Success Rate"
+    - " "
+    - "&6+1 Enchantment Slots"
+    - "&6{MAX} Max Enchantment Slots"
+    - " "
+    - "&eIncreases the # of enchantment"
+    - "&eslots on a piece of armor by {ADD_SLOTS},"
+    - "&eup to a maximum of {MAX}."
+    - "&7Drag n' Drop onto armor to apply."
+    add-slots: 1
+    # The string applied to the item to show a armor enchantment orb was applied to it.
+    apply: "&a&l{MAX} Enchantment Slots &7(Orb [&a+{ADD_SLOTS}&7])"
+  #
+  black-scroll:
+    item: "ink_sack:0"
+    name: "&f&lBlack Scroll"
+    # Lore needs to have {PERCENT} to work!
+    # {PERCENT} = Black Scroll percent that corresponds with the settings below the lore.
+    lore:
+    - "&7Removes a random enchantment"
+    - "&7from an item and converts"
+    - "&7it into a &f{PERCENT}% success book."
+    - "&fPlace scroll on item to extract."
+    randomized-percent: true
+    max-percent: 100
+    min-percent: 30
+    # If randomized-percent is false, this will always be the percentage
+    default-percent: 75
+  #
+  christmas-candy:
+    item: "glowstone_dust:0"
+    name: "&eChristmas Candy &7(Right Click)"
+    lore:
+    - "&7A yummy piece of space candy, only"
+    - "&7obtainable during &nChristmas 2016"
+  #
+  christmas-eggnog:
+    item: "potion:0"
+    name: "&eChristmas Eggnog"
+    lore:
+    - '&7Also known as "egg milk punch",'
+    - '&7a chilled, sweetened, alcoholic'
+    - '&7beverage perfect for the holidays!'
+  #
+  bosses:
+    dangerous-lore:
+    - "&7This monster egg contains a"
+    - "&c&ndangerous&r &7warzone boss"
+    - " "
+    brood-mother:
+      item: "monster_egg:52"
+      name: "&5&lBrood Mother"
+      lore:
+      - "&5&lLORE"
+      - "&7&oThe mother of all spiders, with the"
+      - "&7&omost deadly venom in all the"
+      - "&7&oCosmoverse. No one has survived a"
+      - "&7&obite from the Brood Mother."
+      - " "
+      - "&5&lDIFFICULTY"
+      - "&5Ultimate"
+    king-slime:
+      item: "monster_egg:55"
+      name: "&e&lKing Slime"
+      lore:
+      - "&e&lLORE"
+      - "&7&oAn enormous slime, rumored to be"
+      - "&7&othe king of all slimes in the"
+      - "&7&oServoverse. Apparently he has anger"
+      - "&7&oissues."
+      - " "
+      - "&e&lDIFFICULTY"
+      - "&eUltimate+"
+    plague-bloater:
+      item: "monster_egg:54"
+      name: "&2&lPlague Bloater"
+      lore:
+      - "&2&lLORE"
+      - "&7&oThe host vessel of the most deadly"
+      - "&7&oplague virus strain ever"
+      - "&7&odiscovered. Wherever this"
+      - "&7&oabomination goes, death soon"
+      - "&7&ofollows."
+      - " "
+      - "&2&lDIFFICULTY"
+      - "&2Legendary+"
+    undead-assassin:
+      item: "monster_egg:51"
+      name: "&c&lUndead Assassin"
+      lore:
+      - "&c&lLORE"
+      - "&7&oA legendary assassin that rides a"
+      - "&7&oskeleton horse. Stories have told"
+      - "&7&othat the reason this assassin"
+      - "&7&ocannot be stopped is because he is"
+      - "&7&oalready dead."
+      - " "
+      - "&c&lDIFFICULTY"
+      - "&cLegendary"
+    yijki:
+      item: "monster_egg:60"
+      name: "&6&lYijki, World Destroyer"
+      lore:
+      - "&6&lLORE"
+      - "&7&oAn entity with powers on paar with"
+      - "&7&othe god of destruction itself. No"
+      - "&7&oheroes in recorded Server"
+      - "&7&ohistory have faced this absolute"
+      - "&7&oevil and lived to tell the tale."
+      - " "
+      - "&6&lDIFFICULTY"
+      - "&6Legendary++"
+  #
+  experience-bottle:
+    item: "exp_bottle:0"
+    name: "&a&lExperience Bottle &7(Throw)"
+    lore:
+    - "&dValue &f{AMOUNT} XP"
+    - "&dEnchanter &f{BOTTLER_NAME}"
+    # When someone tinker's armor. This replaces the {BOTTLER_NAME}
+    tinkered: "Tinkerer"
+    # When someone redeems a gkit containing an xpbottle. This replaces the {BOTTLER_NAME}
+    gkit: "Gkit"
+    # Cooldown till the player can do /xpbottle again. Format: <minutes>:<seconds>
+    cooldown: "17:00"
+  #
+  explosive-cake:
+    item: "cake:0"
+    name: "&f&lExplosive Cake &7(Right Click)"
+    lore:
+    - "&7What? have you not seen an"
+    - "&7&nEXPLODING&r &7cake before?!"
+  #
+  faction-crystal:
+    item: "quartz:0"
+    name: "&b&lFaction Crystal"
+    lore:
+    - "&7This crystal can be used to purchase"
+    - "&b/f upgrades &7for your Faction."
+  #
+  faction-mcmmo-booster:
+    item: "emerald:0"
+    name: "&b&lFaction &nmcMMO&r &b&lBooster"
+    lore:
+    - "&7Multiplies mcMMO XP gained by all"
+    - "&7faction members while active."
+    - " "
+    - "&7Right-Click to activate."
+    - " "
+    - "&d&lMULTIPLIER"
+    - "&7{MULTIPLIER}x"
+    - " "
+    - "&d&lDURATION"
+    - "&7{MINUTES}min"
+  #
+  faction-xp-booster:
+    item: "emerald:0"
+    name: "&b&lFaction &nXP&r &b&lBooster"
+    # {MULTIPLIER} = A double (1.00, 1.91, 0.59, 15.00); The number that is multiplied for the final xp amount.
+    # {HOURS} = The amount of time in hours of how long the xp boost lasts.
+    # {MINUTES} = The amount of time in minutes of how long the xp boost lasts.
+    # {SECONDS} = The amount of time in seconds of how long the xp boost lasts.
+    lore:
+    - "&7Multiplies XP gained by all faction"
+    - "&7members from killing mobs while active."
+    - " "
+    - "&7Right-Click to activate."
+    - " "
+    - "&d&lMULTIPLIER"
+    - "&7{MULTIPLIER}x"
+    - " "
+    - "&d&lDURATION"
+    - "&7{MINUTES}min"
+    #
+    durations:
+      # duration format: <hours>:<minutes>:<seconds> . Can have a max of 20 durations
+      # multiplier format: <multiplier>
+      '0':
+        duration: "00:01:00"
+        multiplier: 1.25
+      '1':
+        duration: "00:02:00"
+        multipler: 1.25
+    #
+    multipliers: # format: <multiplier>
+  #
+  halloween-candy:
+    item: "magma_cream:0"
+    name: "&eHalloween Candy &7(Right Click)"
+    lore:
+    - "&7A yummy piece of space candy, only"
+    - "&7obtainable during &nHalloween Events!"
+  #
+  item-name-tag:
+    item: "name_tag:0"
+    name: "&6&lItem Nametag &7(Right Click)"
+    lore:
+    - "&7Rename and customize your equipment."
+    # Adding an item to the blacklist will make that item unable to be renamed using the ItemNameTag
+    blacklisted-items:
+    - "name_tag"
+    - "paper"
+    - "fireball"
+    - "book"
+    - "trapped_chest"
+    blacklisted-names:
+    - "&6&lLegendary Drop Package &7(Right Click)"
+  #
+  mcmmo-vouchers:
+    credit:
+      item: "paper:0"
+      name: "&6&lMCMMO Voucher &7(Right Click)"
+      # {CREDITS} = The amount of credits the voucher will redeem. Needs to be in the 1st line.
+      lore:
+      - "&6{CREDITS} credit(s)"
+      - "&7Use /redeem after depositing voucher."
+    level:
+      item: "paper:0"
+      name: "&6&lSkill Voucher &7(Right Click)"
+      lore:
+      # {SKILL} = The skill the amount of levels go into.
+      # {LEVELS} = The amount of levels that are added to the skill.
+      - "&6Skill {SKILL}"
+      - "&6+{LEVEL} Level(s)"
+      -  "&7Automatically applies level on use."
+    xp:
+      item: "paper:0"
+      name: "&6&lMCMMO XP VOUCHER &7(Right Click)"
+      lore:
+      # {SKILL} = The skill the amount of levels go into.
+      # {LEVELS} = The amount of levels that are added to the skill.
+      # {PLAYER} = The player that withdrew the xp
+      - "&6Skill {SKILL}"
+      - "&6+{XP} &7XP"
+      - "&6Trainer &7{PLAYER}"
+      - "&7Applies mcMMO experience on use."
+    # When a player reveals a mcmmo voucher using a Drop Package, this replaces the {PLAYER}
+    drop-package: "Drop Package"
+    # If setup, when a player tinker's armor, this replaces the {PLAYER}
+    tinkerer: "Tinkerer"
+    #
+    skill-names:
+      acrobatics: "&7Acrobatics"
+      alchemy: "&7Alchemy"
+      archery: "&7Archery"
+      axes: "&7Axes"
+      combat: "&7Combat"
+      excavation: "&7Excavation"
+      fishing: "&7Fishing"
+      gathering: "&7Gathering"
+      herbalism: "&7Herbalism"
+      mining: "&7Mining"
+      repair: "&7Repair"
+      salvage: "&7Salvage"
+      smelting: "&7Smelting"
+      swords: "&7Swords"
+      taming: "&7Taming"
+      unarmed: "&7Unarmed"
+      woodcutting: "&7Wood Cutting"
+  #
+  mystery-dust:
+    item: "sulphur:0"
+    name: "&fMystery Dust"
+    lore:
+    - "&7A failed by-product of"
+    - "&7Magic and Primal dust."
+  #
+  mystery-mob-spawner:
+    item: "mob_spawner:0"
+    name: "&6&lMystery Mob Spawner"
+    lore:
+    - "&7Right-click in hand to reveal one"
+    - "&7of the following mob spawner types:"
+    - " "
+    - "&6&l* &7Endermen"
+    - "&6&l* &7Pigzombie"
+    - "&6&l* &7Creeper"
+    - "&6&l* &7Blaze"
+    - "&6&l* &7Iron Golem"
+    - "&6&l* &eMooshroom Cow"
+    - "&6&l* &eMagma Cube"
+    - "&6&l* &eGhast"
+    # Available obtainable-spawners
+    # blaze
+    # cave-spider
+    # chicken
+    # cow
+    # creeper
+    # endermen
+    # ghast
+    # iron-golem
+    # magma-cube
+    # mushroom-cow
+    # pig
+    # sheep
+    # skeleton
+    # slime
+    # spider
+    # wolf
+    # zombie
+    # zombie-pigman
+    obtainable-spawners:
+    - "endermen"
+    - "zombie-pigman"
+    - "creeper"
+    - "blaze"
+    - "iron-golem"
+    - "mushroom-cow"
+    - "magma-cube"
+    - "ghast"
+    revealed-spawner-lore:
+    # {SPAWNER_TYPE} = The name of the type of mob spawnable from the spawner.
+    - "&7Be careful where you place this!"
+    #
+    spawner-names:
+      blaze: "&6&lBlaze &6Spawner"
+      cave-spider: "&6&lCave Spider &6Spawner"
+      chicken: "&6&lChicken &6Spawner"
+      cow: "&6&lCow &6Spawner"
+      creeper: "&6&lCreeper &6Spawner"
+      enderman: "&6&lEnderman &6Spawner"
+      ghast: "&6&lGhast &6Spawner"
+      iron-golem: "&6&lIron Golem &6Spawner"
+      magma-cube: "&6&lMagma Cube &6Spawner"
+      mushroom-cow: "&6&lMushroom Cow &6Spawner"
+      pig: "&6&lPig &6Spawner"
+      sheep: "&6&lSheep &6Spawner"
+      skeleton: "&6&lSkeleton &6Spawner"
+      slime: "&6&lSlime &6Spawner"
+      spider: "&6&lSpider &6Spawner"
+      wolf: "&6&lWolf &6Spawner"
+      zombie: "&6&lZombie &6Spawner"
+      zombie-pigman: "&6&lZombie Pigman &6Spawner"
+  #
+  soul-gem:
+    item: "emerald:0"
+    # {SOULS} = The number of souls the soul gem contains. CAN ONLY BE IN THE ITEM NAME!
+    name: "&c&lSoul Gem [&6{SOULS}&c&l]"
+    lore:
+    - "&c&l* &cClick this item to activate &nSoul Mode"
+    - "&7While in 'Soul Mode', your ACTIVE god tier"
+    - "&7enchantment will activate and drain souls"
+    - "&7for as long as this mode is enabled"
+    - " "
+    - "&c&l* &7Use &c&n/splitsouls&r &7with this item"
+    - "&7to split souls off of it"
+    - " "
+    - "&c&l* &7Stack other &cSoul Gems &7ontop of this"
+    - "&7one to combine their soul counts"
+    colors:
+      less-than-100: "&f"
+      100s: "&a"
+      200s: "&a"
+      300s: "&a"
+      400s: "&a"
+      500s: "&b"
+      600s: "&b"
+      700s: "&b"
+      800s: "&b"
+      900s: "&b"
+      1000s: "&6&l"
+      2000s: "&b&l"
+      # If the soul gem amount doesn't fall under one of these, this is the color
+      else: "&6&l"
+    # Time in seconds
+    time-between-kills: 18000
+  #
+  space-drink:
+    item: "potion:0"
+    name: "&bSpace Drink"
+    lore:
+    - "&7Smuggled in from a mysterious galaxy,"
+    - "&7it is the Server partying drink of choice!"
+    # The amount of space drink's you have to drink to be...
+    tipsy:
+      drinks: 3
+      potion-effects: # Max of 5. Duration measured in SECONDS!
+      '0':
+        name: "confusion"
+        level: 1
+        duration: 12
+    smashed:
+      drinks: 5
+      potion-effects: # Max of 5. Available potion effect name's can be found ABOVE! Duration measured in SECONDS!
+      '0':
+        name: "confusion"
+        level: 2
+        duration: 23
+    poisoned: # Damage measured in health points. A player at max health has 20. A player at half health has 10.
+      drinks: 9
+      damage: 2
+  #
+  space-firework:
+    item: "firework:0"
+    name: "&e&lSpace Firework &7(Right Click)"
+    lore:
+    - "&7A firework specially designed to"
+    - "&7detonate in intergalatic space."
+  #
+  transmog-scroll:
+    item: "paper:0"
+    name: "&e&lTransmog Scroll"
+    lore:
+    - "&7Organizes enchants by &e&nrarity&r &7on item"
+    - "&7and adds the &blore &acount &7to name"
+    - " "
+    - "&e&oPlace scroll on item to apply"
+    # This is added to the item's name when the transmog scroll is applied to it.
+    # {LORE_COUNT} = The amount of custom enchants the item has.
+    apply: "&9&l[&b&n{LORE_COUNT}&9&l]"
+  #
+  weapon-enchantment-orb:
+    # This item is player specific.
+    # Meaning the item is different per player that gets one of these, if they have different levelcap permissions.
+    item: "eye_of_ender:0"
+    # {MAX} = The player's level cap number, plus the "add-slots". Applicable in the name and lore.
+    name: "&6&lWeapon Enchantment Orb [&a&n{MAX}&6&l]"
+    lore:
+    # {PERCENT} = Random number out of 100.
+    # {ADD_SLOTS} = The number located at "add-slots".
+    - "&a{PERCENT}% Success Rate"
+    - " "
+    - "&6+{ADD_SLOTS} Enchantment Slot"
+    - "&6{MAX} Max Enchantment Slots"
+    -  " "
+    - "&eIncreases the # of enchantment"
+    - "&eslots on a weapon by {ADD_SLOTS},"
+    - "&eup to a maximum of {MAX}."
+    - "&7Drag n' Drop onto weapon to apply."
+    # This adds x amount of more enchant slots an item can have.
+    # This means the player can have x amount more enchants beyond their levelcap permission size.
+    add-slots: 1
+    # This string is applied to the item to show a weapon enchantment orb was applied to it.
+    apply: "&a&l{MAX} Enchantment Slots &7(Orb [&a+{ADD_SLOTS}&7])"
+  #
+  white-scroll:
+    item: "empty_map:0"
+    name: "&eWhite Scroll"
+    lore:
+    - "&fPrevents an item from being destroyed"
+    - "&fdue to a failed Enchantment Book."
+    - "&ePlace scroll on item to apply."
+    # This is applied to an item's lore when the player adds a white scroll to an item
+    apply: "&f&lPROTECTED"
+  #
+  withdraw:
+    item: "paper:0"
+    name: "&b&lBank Note &7(Right Click)"
+    lore:
+    # {AMOUNT} = The amount the banknote is worth. Required in the lore somewhere.
+    # {PLAYER} = The player that withdrew the displayed amount.
+    - "&dValue &f${AMOUNT}"
+    - "&dSigner &7{PLAYER}"
+  #
+  tnt:
+    creepers:
+    #
+    gigantic:
+      item: "tnt:0" # DO NOT CHANGE THIS!
+      name: "&bGigantic TNT"
+      lore:
+      - "&b&oExplodes in a much larger radius."
+      - " "
+      - "&7Spawns 2 extra explosions at"
+      - "&7y+3 and y-3 of TNT, and another"
+      - "&72 explosions at either x+3 and z+3, or"
+      - "&7x-3 and z-3."
+    hex:
+      item: "tnt:0" # DO NOT CHANGE THIS!
+      name: "&5Hex TNT"
+      lore:
+      - "&5Weakens block durability."
+      - " "
+      - "&7All blocks within the explosion"
+      - "&7radius take 2x damage for"
+      - "&730s after the initial explosion."
+    lethal:
+      item: "tnt:0" # DO NOT CHANGE THIS!
+      name: "&4Lethal TNT"
+      lore:
+      - "&c&oA more dense, dangerous explosion."
+      - " "
+      - "&7Creates 4x extra TNT explosions at"
+      - "&7same location as the original."
+    lucky:
+      item: "tnt:0" # DO NOT CHANGE THIS!
+      name: "&eLucky TNT"
+      lore:
+      - "&e&oIncreases chances of spawner drops."
+      - " "
+      - "&7200% the normal chance of a"
+      - "&7spawner dropping from explosion."
+    mimic:
+      item: "tnt:0" # DO NOT CHANGE THIS!
+      name: "&aMimic TNT"
+      lore:
+      - "&a&oRepeats the same explosion many times."
+      - " "
+      - "&7Spawns a TNT explosion at"
+      - "&7same location every 5s"
+      - "&7for 15s total, or 3 explosions."
+    tactical:
+      item: "tnt:0" # DO NOT CHANGE THIS!
+      name: "&9Tactical TNT"
+      lore:
+      - "&9&oExplosion only affects mob spawners."
+      - " "
+      - "&7No blocks will be affected by"
+      - "&7this explosion except for"
+      - "&7Monster Spawners."
+  #
+#

@@ -1,0 +1,623 @@
+# Made by RandomHashTags #
+alchemist:
+  title: "Alchemist"
+  accept:
+    item: "stained_glass_pane:0"
+    name: "&b&lCLICK TO EXCHANGE"
+    lore:
+    - "&c&lCOST: &c{COST}&lXP"
+    - " "
+    - "&7Click here to confirm this"
+    - "&7item exchange and receive your"
+    - "&7epic new item shown above!"
+  exchange:
+    item: "stained_glass_pane:14"
+    name: "&b&lTHE SERVER ALCHEMIST"
+    lore:
+    - "&d&lThis NPC will exchange..."
+    - " "
+    - "&b&l* &f2X Enchantment Books"
+    - "&7(of the same type and level)"
+    - "&d= &f1X Enchantment Book"
+    - "&7(of higher level)"
+    - " "
+    - "&b&l* &f2X Magic Dust"
+    - "&7(of the same rarity)"
+    - "&d= &f1X Magic Dust"
+    - "&7(of higher rarity)"
+  preview:
+    item: "stained_glass_pane:0"
+    name: "&e&lITEM PREVIEW"
+    lore:
+    - "&7A preview of the item you will"
+    - "&7recieve from the Server Alchemist"
+    - "&7will be displayed here."
+  other:
+    item: "stained_glass_pane:15"
+    name: " "
+#
+enchanter:
+  title: "Enchanter"
+  size: 9
+  # currency can equal "CASH" or "EXP"
+  currency: "EXP"
+  # <item> in "purchase: <item>" can be any of these:
+  # Other available purchasable items
+  ## whitescroll
+  ## blackscroll
+  ## transmogscroll
+  '2':
+    item: "stained_glass_pane:0"
+    name: "&fSimple Enchantment &7(Right Click)"
+    lore:
+    - "&7Examine to recieve a random"
+    - "&fsimple &7enchantment book."
+    - " "
+    - "&b&lCOST &f{COST} EXP"
+    purchase: "simplebook"
+    cost: 400
+  '3':
+    item: "stained_glass_pane:5"
+    name: "&aUnique Enchantment &7(Right Click)"
+    lore:
+    - "&7Examine to recieve a random"
+    - "&aunique &7enchantment book."
+    - " "
+    - "&b&lCOST &f{COST} EXP"
+    purchase: "uniquebook"
+    cost: 800
+  '4':
+    item: "stained_glass_pane:3"
+    name: "&bElite Enchantment &7(Right Click)"
+    lore:
+    - "&7Examine to recieve a random"
+    - "&belite &7enchantment book."
+    - " "
+    - "&b&lCOST &f{COST} EXP"
+    purchase: "elitebook"
+    cost: 2500
+  '5':
+    item: "stained_glass_pane:4"
+    name: "&eUltimate Enchantment &7(Right Click)"
+    lore:
+    - "&7Examine to recieve a random"
+    - "&eultimate &7enchantment book."
+    - " "
+    - "&b&lCOST &f{COST} EXP"
+    purchase: "ultimatebook"
+    cost: 5000
+  '6':
+    item: "stained_glass_pane:1"
+    name: "&6&lLegendary Enchantment &7(Right Click)"
+    lore:
+    - "&7Examine to recieve a random"
+    - "&6legendary &7enchantment book."
+    - " "
+    - "&b&lCOST &f{COST} EXP"
+    purchase: "legendarybook"
+    cost: 25000
+#
+random-book-gui:
+  title: "RandomBookGui (Rarity Select)"
+#
+showcase:
+  view-other: "{PLAYER}'s Showcase"
+  view-self: "Your Showcase"
+  #
+  add-item:
+    title: "Confirm Item Addition"
+    size: 9
+    # {ITEM} = The item the player wants to add to their showcase
+    # {CONFIRM} = The confirm-add item
+    # {CANCEL} = The cancel-add item
+    confirm:
+      enchanted: true
+      item: "stained_glass_pane:5"
+      name: "&a&lConfirm Item Addition"
+      lore:
+      - "&7Click to confirm your decision."
+      - " "
+      - "&c&lWARNING:&r &7Once placed inside your"
+      - "&7Showcase this item can never"
+      - "&7be withdrawn and it can only"
+      - "&7be destroyed."
+    cancel:
+      enchanted: true
+      item: "stained_glass_pane:14"
+      name: "&c&lCancel Item Addition"
+      lore:
+      - "&7Click to cancel your action."
+    #
+    '0':
+      item: "{CONFIRM}"
+    '1':
+      item: "{CONFIRM}"
+    '2':
+      item: "{CONFIRM}"
+    '3':
+      item: "{CONFIRM}"
+    '4':
+      item: "{ITEM}"
+    '5':
+      item: "{CANCEL}"
+    '6':
+      item: "{CANCEL}"
+    '7':
+      item: "{CANCEL}"
+    '8':
+      item: "{CANCEL}"
+  #
+  remove-item:
+    title: "Removal Confirmation"
+    size: 9
+    # {ITEM} = The item the player wants to get rid of (remove it from their /showcase)
+    # {CONFIRM} = The confirm-destroy item
+    # {CANCEL} = The cancel-destroy item
+    confirm:
+      enchanted: true
+      item: "stained_glass_pane:5"
+      name: "&a&lConfirm Item Destruction"
+      lore:
+      - "&7Click to confirm your decision."
+      - " "
+      - "&c&lWARNING:&r &7This item will be removed &c&nforever!"
+    cancel:
+      enchanted: true
+      item: "stained_glass_pane:14"
+      name: "&c&lCancel Item Destruction"
+      lore:
+      - "&7Click to cancel your action."
+    #
+    '0':
+      item: "{CONFIRM}"
+    '1':
+      item: "{CONFIRM}"
+    '2':
+      item: "{CONFIRM}"
+    '3':
+      item: "{CONFIRM}"
+    '4':
+      item: "{ITEM}"
+    '5':
+      item: "{CANCEL}"
+    '6':
+      item: "{CANCEL}"
+    '7':
+      item: "{CANCEL}"
+    '8':
+      item: "{CANCEL}"
+    #
+  #
+#
+tinkerer:
+  title: "Tinkerer"
+  size: 54
+  accept:
+    item: "stained_glass_pane:14"
+    name: "&a&lCLICK TO ACCEPT"
+  accept-dupe:
+    item: "stained_glass_pane:14"
+    name: " "
+  divider:
+    item: "thin_glass:0"
+    name: " "
+#
+filter:
+  # When a player exits a filter gui, open the filter menu?
+  reopen-menu: true
+  colored-names:
+    not-filtered: "&c"
+    filtered: "&a"
+  menu:
+    title: "Item Filter Categories"
+    size: 9
+    '1':
+      item: "diamond_chestplate:0"
+      name: "&b&lEquipment"
+    '2':
+      item: "potion:0"
+      name: "&b&lPotion Supplies"
+    '3':
+      item: "redstone:0"
+      name: "&b&lRaiding"
+    '5':
+      item: "bread:0"
+      name: "&b&lFood"
+    '6':
+      item: "mob_spawner:0"
+      name: "&b&lSpecialty"
+    '7':
+      item: "emerald_ore:0"
+      name: "&b&lOres"
+  #
+  '1':
+    title: "Item Filter: Equipment"
+    size: 27
+    '0':
+      item: "iron_helmet:0"
+      name: "Iron Helmet"
+    '1':
+      item: "gold_helmet:0"
+      name: "Gold Helmet"
+    '2':
+      item: "diamond_helmet:0"
+      name: "Diamond Helmet"
+    '3':
+      item: "iron_chestplate:0"
+      name: "Iron Chestplate"
+    '4':
+      item: "gold_chestplate:0"
+      name: "Gold Chestplate"
+    '5':
+      item: "diamond_chestplate:0"
+      name: "Diamond Chestplate"
+    '6':
+      item: "iron_leggings:0"
+      name: "Iron Leggings"
+    '7':
+      item: "gold_leggings:0"
+      name: "Gold Leggings"
+    '8':
+      item: "diamond_leggings:0"
+      name: "Diamond Leggings"
+    '9':
+      item: "iron_boots:0"
+      name: "Iron Boots"
+    '10':
+      item: "gold_boots:0"
+      name: "Gold Boots"
+    '11':
+      item: "diamond_boots:0"
+      name: "Diamond Boots"
+    '12':
+      item: "iron_sword:0"
+      name: "Iron Sword"
+    '13':
+      item: "gold_sword:0"
+      name: "Gold Sword"
+    '14':
+      item: "diamond_sword:0"
+      name: "Diamond Sword"
+    '15':
+      item: "iron_axe:0"
+      name: "Iron Axe"
+    '16':
+      item: "gold_axe:0"
+      name: "Gold Axe"
+    '17':
+      item: "diamond_axe:0"
+      name: "Diamond Axe"
+    '18':
+      item: "bow:0"
+      name: "Bow"
+    '19':
+      item: "iron_hoe:0"
+      name: "Iron Hoe"
+    '20':
+      item: "gold_hoe:0"
+      name: "Gold Hoe"
+    '21':
+      item: "diamond_hoe:0"
+      name: "Diamond Hoe"
+    '22':
+      item: "arrow:0"
+      name: "Arrow"
+    '23':
+      item: "ender_pearl:0"
+      name: "Ender Pearl"
+    '24':
+      item: "potion:0"
+      name: "Potions"
+    '25':
+      item: "skull_item:3"
+      name: "Player Skulls"
+  #
+  '2':
+    title: "Item Filter: Potion Supplies"
+    size: 27
+    '0':
+      item: "spider_eye:0"
+      name: "Spider Eye"
+    '1':
+      item: "magma_cream:0"
+      name: "Magma Cream"
+    '2':
+      item: "ghast_tear:0"
+      name: "Ghast Tear"
+    '3':
+      item: "slime_ball:0"
+      name: "Slime Ball"
+    '4':
+      item: "nether_stalk:0"
+      name: "Nether Wart"
+    '5':
+      item: "speckled_melon:0"
+      name: "Speckled Melon"
+    '6':
+      item: "sugar:0"
+      name: "Sugar"
+    '7':
+      item: "glowstone_dust:0"
+      name: "Glowstone Dust"
+    '8':
+      item: "glowstone:0"
+      name: "Glowstone"
+    '9':
+      item: "golden_carrot:0"
+      name: "Golden Carrot"
+    '10':
+      item: "potion:0"
+      name: "Potion"
+    '11':
+      item: "glass_bottle:0"
+      name: "Glass Bottle"
+    '12':
+      item: "water_lily:0"
+      name: "Lily Pad"
+    '13':
+      item: "carrot_item:0"
+      name: "Carrot"
+    '14':
+      item: "quartz:0"
+      name: "Quartz"
+    '15':
+      item: "red_mushroom:0"
+      name: "Red Mushroom"
+    '16':
+      item: "apple:0"
+      name: "Apple"
+    '17':
+      item: "brown_mushroom:0"
+      name: "Brown Mushroom"
+    '18':
+      item: "ink_sack:0"
+      name: "Ink Sack"
+    '19':
+      item: "poisonous_potato:0"
+      name: "Poisonous Potato"
+    '20':
+      item: "golden_apple:0"
+      name: "Golden Apple"
+  #
+  '3':
+    title: "Item Filter: Raiding"
+    size: 27
+    '0':
+      item: "redstone:0"
+      name: "Redstone"
+    '1':
+      item: "redstone_lamp_off:0"
+      name: "Redstone Lamp"
+    '2':
+      item: "redstone_torch_off:0"
+      name: "Redstone Torch"
+    '3':
+      item: "redstone_ore:0"
+      name: "Redstone Ore"
+    '4':
+      item: "redstone_comparator:0"
+      name: "Redstone Comparator"
+    '5':
+      item: "diode:0"
+      name: "Redstone Repeater"
+    '6':
+      item: "lava_bucket:0"
+      name: "Lava Bucket"
+    '7':
+      item: "water_bucket:0"
+      name: "Water Bucket"
+    '8':
+      item: "tnt:0"
+      name: "TNT"
+    '9':
+      item: "web:0"
+      name: "Cobweb"
+    '10':
+      item: "sponge:0"
+      name: "Sponge"
+    '11':
+      item: "ice:0"
+      name: "Ice"
+    '12':
+      item: "packed_ice:0"
+      name: "Packed Ice"
+    '13':
+      item: "dispenser:0"
+      name: "Dispenser"
+    '14':
+      item: "dropper:0"
+      name: "Dropper"
+    '15':
+      item: "monster_egg:0"
+      name: "Creeper Egg"
+    '16':
+      item: "piston_base:0"
+      name: "Piston"
+    '17':
+      item: "piston_sticky_base:0"
+      name: "Sticky Piston"
+    '18':
+      item: "hopper:0"
+      name: "Hopper"
+    '19':
+      item: "flint_and_steel:0"
+      name: "Flint and Steel"
+  #
+  '5':
+    title: "Item Filter: Food"
+    size: 18
+    '0':
+      item: "bone:0"
+      name: "Bone"
+    '1':
+      item: "carrot_item:0"
+      name: "Carrot"
+    '2':
+      item: "pumpkin:0"
+      name: "Pumpkin"
+    '3':
+      item: "melon_block:0"
+      name: "Melon Block"
+    '4':
+      item: "melon:0"
+      name: "Melon"
+    '5':
+      item: "raw_beef:0"
+      name: "Raw Beef"
+    '6':
+      item: "sugar_cane:0"
+      name: "Sugar Cane"
+    '7':
+      item: "cactus:0"
+      name: "Cactus"
+    '8':
+      item: "pork:0"
+      name: "Raw Porkchop"
+    '9':
+      item: "grilled_pork:0"
+      name: "Cooked Porkchop"
+    '10':
+      item: "golden_apple:0"
+      name: "Golden Apple"
+    '11':
+      item: "pumpkin_seeds:0"
+      name: "Pumpkin Seeds"
+    '12':
+      item: "melon_seeds:0"
+      name: "Melon Seeds"
+    '13':
+      item: "seeds:0"
+      name: "Seeds"
+  #
+  '6':
+    title: "Item Filter: Specialty"
+    size: 27
+    '0':
+      item: "mob_spawner:0"
+      name: "Mob Spawner"
+    '1':
+      item: "monster_egg:0"
+      name: "Mob Eggs"
+    '2':
+      item: "name_tag:0"
+      name: "Name Tag"
+    '3':
+      item: "chest:0"
+      name: "Chest"
+    '4':
+      item: "trapped_chest:0"
+      name: "Trapped Chest"
+    '5':
+      item: "ender_chest:0"
+      name: "Ender Chest"
+    '6':
+      item: "paper:0"
+      name: "Paper"
+    '7':
+      item: "map:0"
+      name: "Map"
+    '8':
+      item: "exp_bottle:0"
+      name: "Exp Bottle"
+    '9':
+      item: "redstone_torch_on:0"
+      name: "Redstone Torch"
+    '10':
+      item: "book:0"
+      name: "Book"
+    '11':
+      item: "ink_sack:0"
+      name: "Ink Sack"
+    '12':
+      item: "torch:0"
+      name: "Torch"
+    '13':
+      item: "emerald:0"
+      name: "Emerald"
+    '14':
+      item: "magma_cream:0"
+      name: "Magma Cream"
+    '15':
+      item: "golden_apple:0"
+      name: "Golden Apple"
+    '16':
+      item: "diamond:0"
+      name: "Diamond"
+    '17':
+      item: "bone:0"
+      name: "Bone"
+    '18':
+      item: "ender_pearl:0"
+      name: "Ender Pearl"
+    '19':
+      item: "blaze_rod:0"
+      name: "Blaze Rod"
+    '20':
+      item: "nether_star:0"
+      name: "Nether Star"
+  #
+  '7':
+    title: "Item Filter: Ores"
+    size: 27
+    '0':
+      item: "iron_ore:0"
+      name: "Iron Ore"
+    '1':
+      item: "iron_ingot:0"
+      name: "Iron Ingot"
+    '2':
+     item: "iron_block:0"
+     name: "Iron Block"
+    '3':
+      item: "gold_ore:0"
+      name: "Gold Ore"
+    '4':
+      item: "gold_ingot:0"
+      name: "Gold Ingot"
+    '5':
+      item: "gold_block:0"
+      name: "Gold Block"
+    '6':
+      item: "redstone_ore:0"
+      name: "Redstone Ore"
+    '7':
+      item: "redstone:0"
+      name: "Redstone"
+    '8':
+      item: "redstone_block:0"
+      name: "Redstone Block"
+    '9':
+      item: "lapis_ore:0"
+      name: "Lapis Ore"
+    '10':
+      item: "ink_sack:4"
+      name: "Lapis Lazuli"
+    '11':
+      item: "lapis_block:0"
+      name: "Lapis Block"
+    '12':
+      item: "coal_ore:0"
+      name: "Coal Ore"
+    '13':
+      item: "coal:0"
+      name: "Coal"
+    '14':
+      item: "coal_block:0"
+      name: "Coal Block"
+    '15':
+      item: "emerald_ore:0"
+      name: "Emerald Ore"
+    '16':
+      item: "emerald_block:0"
+      name: "Emerald Block"
+    '17':
+      item: "diamond_ore:0"
+      name: "Diamond Ore"
+    '18':
+      item: "diamond:0"
+      name: "Diamond"
+    '19':
+      item: "diamond_block:0"
+      name: "Diamond Block"
+  #
+#

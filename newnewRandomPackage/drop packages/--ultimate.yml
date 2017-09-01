@@ -1,0 +1,456 @@
+# Made by RandomHashTags
+# Default configuration for drop package number 3 in the "drop-packages.yml".
+##
+# Max of 300 available item slots
+##
+####################################################################################################
+####                    HOW TO MAKE THE LOOT WORK WITH RANDOM PACKAGE ITEMS                     ####
+### These items are found in the master-config.yml, under givedp-items                             #
+## armorenchantmentorb =              The Armor Enchantment Orb item, personizaed to fit the player#
+## banknote:<amount of cash> =            The Banknote item with a set amount of redeemable cash   #
+## christmascandy =                       The Christmas Candy item                                 #
+## christmaseggnog =                      The Christmas Eggnog item                                #
+## experiencebottle:<amount of xp> = The Experience Bottle item, with a set amount of redeemable xp#
+## explosivecake =                        The Explosive Cake item                                  #
+## factioncrystal =                       The Faction Crystal item                                 #
+## factionmcmmobooster:<xp multiplier>:<time in seconds> = The Faction mcMMO Booster item          #
+### Example: item: "factionmcmmobooster:2.25:300"                                                  #
+### This faction mcmmo booster will gain 2.25 more XP from slain mobs, for a duration of 5 minutes #
+## factionxpbooster:<xp multiplier>:<time in seconds> = The Faction XP Booster item, with a set    #
+### xp multiplier and time in seconds.                                                             #
+## godrandomizationscroll =               The God Randomization Scroll item                        #
+## halloweencandy =                       The Halloween Candy item                                 #
+## itemnametag =                          The Item Nametag item                                    #
+## mcmmocreditvoucher:<credits> = The mcMMO Credit Voucher item with a set amount of credits       #
+## mcmmolevelvoucher:<skill name>:<levels> =      The mcMMO Level Voucher item with a set amount of#
+###                                                   redeemeable levels for a specific skill      #
+## mcmmoxpvoucher:<skill name>:<xp> =  The mcMMO XP Voucher item with a set amount of redeemable xp#
+###                                                   for a specific skill                         #
+## mysterydust =                          The Mystery Dust item                                    #
+## mysterymobspawner =                    The MysteryMobSpawner item                               #
+## randombook =                           The Random rarity book item                              #
+## sb:<Enchant name>:<integer OR random for level>:<integer OR random for success rate>:<integer OR random for destroy rate>
+### Example: item: "sb:Blind:random:100:50"'                                                       #
+### This gets a Blind enchant book with a random level, and 100% success & 50% destroy rates.      #
+## soulgem:<amount of souls harvested> =  A Soul Gem with the set amount of souls                  #
+## spacedrink =                           The Space Drink item                                     #
+## spacefirework =                        The Space Firework item                                  #
+## transmogscroll =                       The Transmog Scroll item                                 #
+## weaponenchantmentorb =           The Weapon Enchantment Orb item, personized to fit the player  #
+## whitescroll =                          The White Scroll item                                    #
+####################################################################################################
+####                      HOW TO MAKE THE LOOT WORK WITH CUSTOM RARITIES                      ####
+## book<rarity in rarity-books.yml> = The custom book that gets a random enchant of that rarity  #
+## dp<rarity in _drop-packages.yml> = The interactable item that is set in the _drop-packages.yml#
+## soultracker<rarity in rarity-books.yml> = The soul tracker that is apart of the rarity book   #
+##################################################################################################
+'2': # Default "legendary" rarity loot
+  '1':
+    item: "dp1"
+  '2':
+    item: "dp2"
+  '3':
+    item: "dp3"
+  '4':
+    item: "dp4"
+  '5':
+    item: "dp5"
+  '6':
+    item: "dp6"
+  '7':
+    item: "whitescroll"
+  '8':
+    item: "blackscroll"
+  '9':
+    item: "transmogscroll"
+  '10':
+    item: "mysterymobspawner"
+  '11':
+    item: "itemnametag"
+  '12':
+    item: "soulgem:1000"
+  '13':
+    item: "godrandomizationscroll"
+  '14':
+    item: "soultracker3"
+  '15':
+    item: "soultracker4"
+  '16':
+    item: "soultracker5"
+  '17':
+    item: "soultracker6"
+  '18':
+    item: "soultracker7"
+  '19':
+    item: "randombook"
+  '20':
+    item: "book1"
+  '21':
+    item: "book3"
+  '22':
+    item: "book4"
+  '23':
+    item: "book5"
+  '24':
+    item: "book6"
+  '25':
+    item: "book7"
+  '26':
+    item: "mcmmoxpvoucher:acrobatics:500"
+  '27':
+    item: "mcmmoxpvoucher:alchemy:500"
+  '28':
+    item: "mcmmoxpvoucher:archery:500"
+  '29':
+    item: "mcmmoxpvoucher:axes:500"
+  '30':
+    item: "mcmmoxpvoucher:excavation:500"
+  '31':
+    item: "mcmmoxpvoucher:fishing:500"
+  '32':
+    item: "mcmmoxpvoucher:herbalism:500"
+  '33':
+    item: "mcmmoxpvoucher:mining:500"
+  '34':
+    item: "mcmmoxpvoucher:repair:500"
+  '35':
+    item: "mcmmoxpvoucher:salvage:500"
+  '36':
+    item: "mcmmoxpvoucher:smelting:500"
+  '37':
+    item: "mcmmoxpvoucher:swords:500"
+  '38':
+    item: "mcmmoxpvoucher:taming:500"
+  '39':
+    item: "mcmmoxpvoucher:unarmed:500"
+  '40':
+    item: "mcmmoxpvoucher:woodcutting:500"
+#
+'3': # Default "ultimate" rarity loot
+  '1':
+    item: "dp1"
+  '2':
+    item: "dp2"
+  '3':
+    item: "dp3"
+  '4':
+    item: "dp4"
+  '5':
+    item: "dp5"
+  '6':
+    item: "dp6"
+  '7':
+    item: "whitescroll"
+  '8':
+    item: "blackscroll"
+  '9':
+    item: "transmogscroll"
+  '10':
+    item: "mysterymobspawner"
+  '11':
+    item: "itemnametag"
+  '12':
+    item: "soulgem:1000"
+  '13':
+    item: "godrandomizationscroll"
+  '14':
+    item: "soultracker3"
+  '15':
+    item: "soultracker4"
+  '16':
+    item: "soultracker5"
+  '17':
+    item: "soultracker6"
+  '18':
+    item: "soultracker7"
+  '19':
+    item: "randombook"
+  '20':
+    item: "book1"
+  '21':
+    item: "book3"
+  '22':
+    item: "book4"
+  '23':
+    item: "book5"
+  '24':
+    item: "book6"
+  '25':
+    item: "book7"
+  '26':
+    item: "mcmmoxpvoucher:acrobatics:500"
+  '27':
+    item: "mcmmoxpvoucher:alchemy:500"
+  '28':
+    item: "mcmmoxpvoucher:archery:500"
+  '29':
+    item: "mcmmoxpvoucher:axes:500"
+  '30':
+    item: "mcmmoxpvoucher:excavation:500"
+  '31':
+    item: "mcmmoxpvoucher:fishing:500"
+  '32':
+    item: "mcmmoxpvoucher:herbalism:500"
+  '33':
+    item: "mcmmoxpvoucher:mining:500"
+  '34':
+    item: "mcmmoxpvoucher:repair:500"
+  '35':
+    item: "mcmmoxpvoucher:salvage:500"
+  '36':
+    item: "mcmmoxpvoucher:smelting:500"
+  '37':
+    item: "mcmmoxpvoucher:swords:500"
+  '38':
+    item: "mcmmoxpvoucher:taming:500"
+  '39':
+    item: "mcmmoxpvoucher:unarmed:500"
+  '40':
+    item: "mcmmoxpvoucher:woodcutting:500"
+#
+'4': # Default "elite" rarity loot
+  '1':
+    item: "dp1"
+  '2':
+    item: "dp2"
+  '3':
+    item: "dp3"
+  '4':
+    item: "dp4"
+  '5':
+    item: "dp5"
+  '6':
+    item: "dp6"
+  '7':
+    item: "whitescroll"
+  '8':
+    item: "blackscroll"
+  '9':
+    item: "transmogscroll"
+  '10':
+    item: "mysterymobspawner"
+  '11':
+    item: "itemnametag"
+  '12':
+    item: "soulgem:1000"
+  '13':
+    item: "godrandomizationscroll"
+  '14':
+    item: "soultracker3"
+  '15':
+    item: "soultracker4"
+  '16':
+    item: "soultracker5"
+  '17':
+    item: "soultracker6"
+  '18':
+    item: "soultracker7"
+  '19':
+    item: "randombook"
+  '20':
+    item: "book1"
+  '21':
+    item: "book3"
+  '22':
+    item: "book4"
+  '23':
+    item: "book5"
+  '24':
+    item: "book6"
+  '25':
+    item: "book7"
+  '26':
+    item: "mcmmoxpvoucher:acrobatics:500"
+  '27':
+    item: "mcmmoxpvoucher:alchemy:500"
+  '28':
+    item: "mcmmoxpvoucher:archery:500"
+  '29':
+    item: "mcmmoxpvoucher:axes:500"
+  '30':
+    item: "mcmmoxpvoucher:excavation:500"
+  '31':
+    item: "mcmmoxpvoucher:fishing:500"
+  '32':
+    item: "mcmmoxpvoucher:herbalism:500"
+  '33':
+    item: "mcmmoxpvoucher:mining:500"
+  '34':
+    item: "mcmmoxpvoucher:repair:500"
+  '35':
+    item: "mcmmoxpvoucher:salvage:500"
+  '36':
+    item: "mcmmoxpvoucher:smelting:500"
+  '37':
+    item: "mcmmoxpvoucher:swords:500"
+  '38':
+    item: "mcmmoxpvoucher:taming:500"
+  '39':
+    item: "mcmmoxpvoucher:unarmed:500"
+  '40':
+    item: "mcmmoxpvoucher:woodcutting:500"
+#
+'5': # Default "unique" rarity loot
+  '1':
+    item: "dp1"
+  '2':
+    item: "dp2"
+  '3':
+    item: "dp3"
+  '4':
+    item: "dp4"
+  '5':
+    item: "dp5"
+  '6':
+    item: "dp6"
+  '7':
+    item: "whitescroll"
+  '8':
+    item: "blackscroll"
+  '9':
+    item: "transmogscroll"
+  '10':
+    item: "mysterymobspawner"
+  '11':
+    item: "itemnametag"
+  '12':
+    item: "soulgem:1000"
+  '13':
+    item: "godrandomizationscroll"
+  '14':
+    item: "soultracker3"
+  '15':
+    item: "soultracker4"
+  '16':
+    item: "soultracker5"
+  '17':
+    item: "soultracker6"
+  '18':
+    item: "soultracker7"
+  '19':
+    item: "randombook"
+  '20':
+    item: "book1"
+  '21':
+    item: "book3"
+  '22':
+    item: "book4"
+  '23':
+    item: "book5"
+  '24':
+    item: "book6"
+  '25':
+    item: "book7"
+  '26':
+    item: "mcmmoxpvoucher:acrobatics:500"
+  '27':
+    item: "mcmmoxpvoucher:alchemy:500"
+  '28':
+    item: "mcmmoxpvoucher:archery:500"
+  '29':
+    item: "mcmmoxpvoucher:axes:500"
+  '30':
+    item: "mcmmoxpvoucher:excavation:500"
+  '31':
+    item: "mcmmoxpvoucher:fishing:500"
+  '32':
+    item: "mcmmoxpvoucher:herbalism:500"
+  '33':
+    item: "mcmmoxpvoucher:mining:500"
+  '34':
+    item: "mcmmoxpvoucher:repair:500"
+  '35':
+    item: "mcmmoxpvoucher:salvage:500"
+  '36':
+    item: "mcmmoxpvoucher:smelting:500"
+  '37':
+    item: "mcmmoxpvoucher:swords:500"
+  '38':
+    item: "mcmmoxpvoucher:taming:500"
+  '39':
+    item: "mcmmoxpvoucher:unarmed:500"
+  '40':
+    item: "mcmmoxpvoucher:woodcutting:500"
+#
+'6': # Default "simple" rarity loot
+  '1':
+    item: "dp1"
+  '2':
+    item: "dp2"
+  '3':
+    item: "dp3"
+  '4':
+    item: "dp4"
+  '5':
+    item: "dp5"
+  '6':
+    item: "dp6"
+  '7':
+    item: "whitescroll"
+  '8':
+    item: "blackscroll"
+  '9':
+    item: "transmogscroll"
+  '10':
+    item: "mysterymobspawner"
+  '11':
+    item: "itemnametag"
+  '12':
+    item: "soulgem:1000"
+  '13':
+    item: "godrandomizationscroll"
+  '14':
+    item: "soultracker3"
+  '15':
+    item: "soultracker4"
+  '16':
+    item: "soultracker5"
+  '17':
+    item: "soultracker6"
+  '18':
+    item: "soultracker7"
+  '19':
+    item: "randombook"
+  '20':
+    item: "book1"
+  '21':
+    item: "book3"
+  '22':
+    item: "book4"
+  '23':
+    item: "book5"
+  '24':
+    item: "book6"
+  '25':
+    item: "book7"
+  '26':
+    item: "mcmmoxpvoucher:acrobatics:500"
+  '27':
+    item: "mcmmoxpvoucher:alchemy:500"
+  '28':
+    item: "mcmmoxpvoucher:archery:500"
+  '29':
+    item: "mcmmoxpvoucher:axes:500"
+  '30':
+    item: "mcmmoxpvoucher:excavation:500"
+  '31':
+    item: "mcmmoxpvoucher:fishing:500"
+  '32':
+    item: "mcmmoxpvoucher:herbalism:500"
+  '33':
+    item: "mcmmoxpvoucher:mining:500"
+  '34':
+    item: "mcmmoxpvoucher:repair:500"
+  '35':
+    item: "mcmmoxpvoucher:salvage:500"
+  '36':
+    item: "mcmmoxpvoucher:smelting:500"
+  '37':
+    item: "mcmmoxpvoucher:swords:500"
+  '38':
+    item: "mcmmoxpvoucher:taming:500"
+  '39':
+    item: "mcmmoxpvoucher:unarmed:500"
+  '40':
+    item: "mcmmoxpvoucher:woodcutting:500"
+#

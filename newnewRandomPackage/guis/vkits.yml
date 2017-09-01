@@ -1,0 +1,312 @@
+# Made by RandomHashTags
+title: "Evolution Kits"
+preview-title: "Server Kit Preview"
+# Size needs to be a multiple of 9 to work!
+size: 9
+#
+permissions:
+  unlocked:
+  - " "
+  - "&a&lUNLOCKED"
+  - "&7Click to receive kit."
+  #
+  locked:
+    item: "stained_glass_pane:14"
+    lore:
+    - " "
+    - "&c&lLOCKED"
+    - "&7Unlock at &nbuy.yourserver.com"
+#
+gems:
+  item: "diamond:0"
+  name: '&f&lEVOLUTION KIT "{NAME}&f&l"'
+  lore:
+  - "&7Right-click this gem to unlock"
+  - "&7the {NAME}&r &7/vkit on this server."
+#
+########################################################################################
+#                                HOW TO CHANGE THE SLOT                                #
+# You will need to change the '#' to the slot you want.
+# 0 = the first slot of the /vkit gui
+# 1 = the second slot of the /vkit gui
+# 8 = the eighth slot of the /vkit gui (top right slot)
+#########################################################################################
+#                              HOW TO ADD ENCHANTS TO ITEMS
+# To add an enchant to an item, you need to put "e:" before the enchant name & level.
+# You put this in the lore of the item. Example below.
+# 'e:prot4'
+# ^ this adds the "Protection" enchantment (level 4) to the item.
+#
+## Available enchant names for 1.8.8-1.11 (Not case sensitive) ##
+# Protection - Prot
+# FireProtection - FireProt - FP
+# BlastProtection
+# BlastProt - Blast
+# FeatherFalling - FF
+# ProjectileProtection - ProjProt - Proj
+# DepthStrider
+# FrostWalker - Frost
+# AquaAffinity - Aqua - AA
+# Thorns
+# Respiration - Resp
+# Efficiency - Eff
+# Fortune
+# SilkTouch - ST
+# Luck
+# Lure
+# Sharpness - Sharp
+# Smite
+# BaneOfArthropods - BaneOfA - Bane - BOA
+# Unbreaking - Unbreak
+# FireAspect - FireAs - FA
+# Knockback
+# Looting
+# Power
+# Punch
+# Infinity
+# Flame
+#
+## Available enchant names for 1.10-1.11 (Not case sensitive) ##
+# Mending - Mend
+#########################################################################################
+# MAX LEVEL FOR ANY ENCHANT IS 100!
+# COOLDOWN IS MEASURED IN SECONDS!
+#########################################################################################
+# The highest level the vkit kit can be
+max-level: 10
+# Chance of the vkit upgrading to the next level
+upgrade-chance: 10
+###########################################################################################
+#                   MODIFICATIONS THAT YOU CAN DO TO THE CUSTOM ENCHANT                   #
+# level=<enchant level>                                                                   #
+# chance=<chance of getting out of 100>                                                   #
+# reqlevel=<level the vkit needs to be before you can get this enchant on the item>       #
+## Seperate the modifications using the colon (":"). You can use all 3, or use none.      #
+#                                                                                         #
+# Examples on usage below                                                                 #
+#                                                                                         #
+## Example: "{Overload}:level=3"                                                          #
+### This will ALWAYS give the Overload enchant, with a level of 3 on the item.            #
+#                                                                                         #
+## Example: "{Overload}:chance=50:level=2"                                                #
+### This will have a 50% chance of adding the Overload enchant to the item.               #
+### If the Overload enchant is applied, it will always be level 2.                        #
+#                                                                                         #
+## Example: "{Overload}:reqlevel=4:chance=50"                                             #
+### This will have a 50% chance of adding the Overload enchant to the item.               #
+### If the Overload enchant is applied, it will have a random level.                      #
+#                                                                                         #
+## Example: "{Overload}:reqlevel=2"                                                       #
+### This will always add the Overload enchant to the item, as long as the                 #
+#### vkit levelis higher than or equal to the required level set above.                   #
+###########################################################################################
+#        #       ##### ORDER OF THE MODIFICATIONS DOES NOT MATTER!! ######        #       #
+###########################################################################################
+#
+'0':
+  cooldown: 259200
+  gui:
+    item: "blaze_powder:0"
+    name: "&5&lPhoenix Kit"
+    lore:
+    - "&e&lKit Level: &r&e&n{LEVEL}&r &e/ 10"
+    - " "
+    - "&5&l* Sandals of the Phoenix"
+    - "&5&l* Sikanda"
+    - " "
+    - "&7Return from the ashes once more."
+    - "&6* Server Renewal Patch"
+  items:
+    '0':
+      item: "diamond_boots:0"
+      name: "&5&lSandals of the Phoenix (&dLVL {LEVEL}&5&l) {ENCHANT_SIZE}"
+      lore:
+      - "e:protection4"
+      - "e:featherfalling4"
+      - "e:unbreaking3"
+      - "{Deathbringer}"
+      - "{Enlighted}"
+      - "{Gears}"
+      - "{Armored}:reqlevel=3"
+      - "{Angelic}:reqlevel=6"
+      - "{Tank}"
+      - "{ArrowDeflect}:reqlevel=8"
+      - "{Valor}:reqlevel=2"
+      - "{SpiritLink}"
+      - "{Springs}"
+      - "{Phoenix}:{EnderShift}"
+      - "&5A fabled relic that grants the owner"
+      - "&5control over life and death itself."
+      - " "
+      - "&5&lKit Level: &r&d{LEVEL} / 10"
+    '1':
+      item: "diamond_sword:0"
+      name: "&5&lSikanda (&dLVL {LEVEL}&5&l) {ENCHANT_SIZE}"
+      lore:
+      - 'e:sharpness5'
+      - 'e:smite5'
+      - 'e:unbreaking3'
+      - 'e:fireaspect2'
+      - '{DivineImmolation}'
+      - '{Disintegrate}'
+      - '{Disarmor}'
+      - '{Inversion}:reqlevel=5'
+      - '{Lifesteal}'
+      - '{Rage}'
+      - '{Silence}:reqlevel=4'
+      - '{DoubleStrike}'
+      - '{Execute}'
+      - '{Solitude}:reqlevel=7'
+      - '{Blind}'
+      - '&5The legendary flaming sword of Grograman,'
+      - '&5AKA "The many colored Death". An ancient'
+      - '&5celtic demon that personifies destruction.'
+      - ' '
+      - '&5&lKit Level: &d{LEVEL} / 10'
+#
+'1':
+  cooldown: 259200
+  gui:
+    item: "bone:0"
+    name: "&3&lTroll Kit"
+    lore:
+    - '&e&lKit Level: &r&e&n{LEVEL}&r &e/ 10'
+    - ' '
+    - '&3&l* Trollolololo"L"'
+    - '&3&l* Axe of ( ͡° ͜ʖ ͡°)'
+    - ' '
+    - '&7Who needs love when you can meme?'
+    - '&6* Valentine 2017'
+  items:
+    '0':
+      item: "diamond_leggings:0"
+      name: '&3&lTrollolololo"L" (&bLVL {LEVEL}&3&l) {ENCHANT_SIZE}'
+      lore:
+      - 'e:protection4'
+      - 'e:unbreaking3'
+      - '{NaturesWrath}:chance=50'
+      - '{Protection}'
+      - '{Enlighted}'
+      - '{Clarity}'
+      - '{Deathbringer}'
+      - '{Tank}'
+      - '{Angelic}:reqlevel=8'
+      - '{Guardians}'
+      - '{Obsidianshield}'
+      - '{Lucky}:reqlevel=3'
+      - '{Armored}'
+      - '{Dodge}:reqlevel=5'
+      - '{Cactus}'
+      - '&3Everywhere you go, you can hear the faint'
+      - '&3humm of your leggings as they whisper... "Trololo".'
+      - ' '
+      - '&3&lKit Level: &b{LEVEL} / 10'
+    '1':
+      item: "diamond_axe:0"
+      name: "&3&lAxe of ( ͡° ͜ʖ ͡°)"
+      lore:
+      - "e:sharpness5"
+      - "e:fireaspect2"
+      - "e:unbreaking3"
+      - "{SoulTrap}:50"
+      - "{Insanity}:reqlevel=3"
+      - "{Devour}"
+      - "{Lifesteal}:reqlevel=5"
+      - "{Rage}"
+      - "{Barbarian}"
+      - "{Cleave}"
+      - "{Blessed}"
+      - "{Silence}:reqlevel=10"
+      - "{Pummel}"
+      - "{Confusion}"
+      - "&3An axe believed to be unrivalved in cringe"
+      - "&3in all of the Serververse; lemme axe you a"
+      - "&3question, does it hurt to hold it in your hands?"
+      - " "
+      - "&3&lKit Level: &b{LEVEL} / 10"
+#
+'2':
+  cooldown: 259200
+  gui:
+    item: "potion:0"
+    name: "&6&lAlchemist Kit"
+    lore:
+    - "&e&lKit Level: &e&n{LEVEL}&r &e/ 10"
+    - " "
+    - "&6&l* A randomized bundle of..."
+    - "&6  - &eEnchantment Books"
+    - "&6  - &eEnchantment Dust"
+    - "&6  - &ePlayer Souls"
+    - "&6  - &eBlack Scrolls"
+    - "&6  - &eMystery Mob Spawners"
+    - "&6  - &eWhite Scrolls"
+    - "&6  - &eRandomization Scrolls"
+    - "&6  - &eTransmog Scrolls"
+    - "&6  - &eItem Nametags"
+    - "&6  - &eEnchantment Orbs"
+    - "&6  - &ePlayer Titles"
+    - " "
+    - "&7All the ingrdients to forge your own equipment!"
+    - "&6* Spring Break 2017"
+#
+'3':
+  cooldown: 259200
+  gui:
+    item: "skull_item:2"
+    name: "&2&lOgre Kit"
+    lore:
+    - "&e&lKit Level: &r&e&n{LEVEL}&r &e&l / 10"
+    - " "
+    - "&2&l* Ogre Mask"
+    - "&2&l* Fat Tummy"
+    - " "
+    - "&7The best offense is... a fat defence?"
+    - "&6* Summer Break 2017"
+  items:
+    '0':
+      item: "diamond_helmet:0"
+      name: "&2&lOgre Mask (&aLVL {LEVEL}&2&l) {ENCHANT_SIZE}"
+      lore:
+      - "e:protection4"
+      - "e:unbreaking3"
+      - "{Enlighted}"
+      - "{Destruction}"
+      - "{Clarity}"
+      - "{Ghost}:reqlevel=9"
+      - "{Deathbringer}"
+      - "{Angelic}:reqlevel=7"
+      - "{Tank}"
+      - "{Armored}:reqlevel=3"
+      - "{Resilience}"
+      - "{Lucky}"
+      - "{Voodoo}"
+      - "&2Learn to tame your monster inside,"
+      - "&2before it eats you alive..."
+      - " "
+      - "&2&lKit Level: &a{LEVEL} / 10"
+    '1':
+      item: "diamond_chestplate:0"
+      name: "&2&lFat Tummy (&aLVL {LEVEL}&2&l) {ENCHANT_SIZE}"
+      lore:
+      - "e:protection4"
+      - "e:featherfalling2"
+      - "e:unbreaking4"
+      - "e:projectileprotection2"
+      - "{Enlighted}"
+      - "{Overload}"
+      - "{Protection}"
+      - "{Deathbringer}"
+      - "{BloodLink}"
+      - "{Guardians}"
+      - "{ArrowDeflect}:reqlevel=6"
+      - "{Angelic}:reqlevel=8"
+      - "{Tank}"
+      - "{Armored}:reqlevel=5"
+      - "{Sticky}"
+      - "{Shockwave}"
+      - "&2There's no getting around it, it's"
+      - "&2a huge lump of thick, nasty orge fat."
+      - "&2Unconventional, yet amazingly effective."
+      - " "
+      - "&2&lKit Level: &a{LEVEL} / 10"
+#

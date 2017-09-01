@@ -1,0 +1,1842 @@
+# Made by RandomHashTags
+vanilla: # How much are these enchants worth when tinkerering armor?
+  protection_environmental:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+  protection_fire:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+  protection_fall:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+  protection_explosions:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+  protection_projectile:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+  oxygen:
+    '1': 23
+    '2': 46
+    '3': 69
+  water_worker:
+    '1': 23
+  mending:
+    '1': 23
+  thorns:
+    '1': 23
+    '2': 46
+    '3': 69
+  depth_strider:
+    '1': 23
+    '2': 46
+    '3': 69
+  frost_walker:
+    '1': 23
+    '2': 46
+  damage_all:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+    '5': 114
+  damage_undead:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+    '5': 114
+  damage_arthropods:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+    '5': 114
+  knockback:
+    '1': 23
+    '2': 46
+  fire_aspect:
+    '1': 23
+    '2': 46
+  loot_bonus_mobs:
+    '1': 23
+    '2': 46
+    '3': 69
+  dig_speed:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+    '5': 114
+  silk_touch:
+    '1': 23
+  durability:
+    '1': 23
+    '2': 46
+    '3': 69
+  loot_bonus_blocks:
+    '1': 23
+    '2': 46
+    '3': 69
+  arrow_damage:
+    '1': 23
+    '2': 46
+    '3': 69
+    '4': 92
+    '5': 114
+  arrow_knockback:
+    '1': 23
+    '2': 46
+  arrow_fire:
+    '1': 23
+  arrow_infinite:
+    '1': 23
+  luck:
+    '1': 23
+    '2': 46
+    '3': 69
+  lure:
+    '1': 23
+    '2': 46
+    '3': 69
+##################################################################
+#                       Available rarities                       #
+# "soul", "legendary", "ultimate", "elite", "unique", "simple"   #
+##################################################################
+# ONLY Available enchant-type's:
+# "armor", "helmet", "chestplate", "leggings", "boots", "weapon", "sword", "axes", "tools", "bow"
+#############
+# TUTORIALS #
+######################################################################################################
+## HOW TO SET THE TINKERER XP AMOUNT ##                                                              #
+# Seperate the xp amount for other levels using the colon (:)!                                       #
+# Level 1 enchant = 'tinkerer: "100"'                                                                #
+## You get 100 XP from tinkering this level 1 enchant                                                #
+# Level 2 enchant = 'tinkerer: "100:200"'                                                            #
+## You get 100 XP from tinkering the level 1 of this enchant and 200 XP for level 2                  #
+# Level 3 enchant = 'tinkerer: "100:200:300"'                                                        #
+## You get 100 XP from tinkering the level 1 of this enchant, 200 XP for level 2, and 300 for level 3#
+#### and so on... ####                                                                               #
+###############################################################################################################
+## HOW TO SET THE ALCHEMIST UPDATE BOOK XP AMOUNT ##                                                          #
+# Seperate the xp amount for other levels using the colon (:)!                                                #
+# Format = alchemist: "<level 1 to 2 cost>:<level 2 to 3 cost>" and so on...                                  #
+# Level 2 enchant = 'alchemist: "5700"'                                                                       #
+## Costs 5700 XP to level up this enchant to level 2 cia the alchemist                                        #
+# Level 3 enchant = 'alchemist: "5700:5800"'                                                                  #
+## Costs 5700 XP to level up this enchant to level 1  and 5800 to level 2 via alchemist                       #
+# Level 4 enchant = 'alchemist: "5700:5800:5900"'                                                             #
+## Costs 5700 XP to level up this enchant to level 1, 5800 for level 2, and 5900 for level 3 via the alchemist#
+#### and so on... ####                                                                                        #
+###############################################################################################################
+Angelic:
+  enabled: true
+  enchant-name: "Angelic"
+  rarity: "ultimate"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eHeals health over time whenever"
+  - "&edamaged, this enchantment IS"
+  - "&estackable in terms of activation"
+  - "&echance; however you can only have 1"
+  - "&eactive healing task from Angelic at"
+  - "&eany given time."
+  tinkerer: "115:137:159:181:203"
+  alchemist: "5700:5800:5900:6000"
+#
+AntiGravity:
+  enabled: true
+  enchant-name: "Anti Gravity"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "boots"
+  book-lore:
+  - "&eSuper jump but does not negate fall"
+  - "&edamage."
+  tinkerer: "47:58:69"
+  alchemist: "2000:5000"
+#
+Aquatic:
+  enabled: true
+  enchant-name: "Aquatic"
+  rarity: "simple"
+  max-level: 1
+  enchant-type: "helmet"
+  book-lore:
+  - "&eGives permanent water breathing."
+  tinkerer: "134"
+#
+Armored:
+  enabled: true
+  enchant-name: "Armored"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "armor"
+  book-lore:
+  - "&eDecreases damage from enemy swords by"
+  - "&e1.85% per level, this enchantment is"
+  - "&estackable."
+  tinkerer: "82:94:106:118"
+  alchemist: "6000:6200:6400"
+#
+ArrowBreak:
+  enabled: true
+  enchant-name: "Arrow Break"
+  rarity: "ultimate"
+  max-level: 6
+  enchant-type: "axe"
+  book-lore:
+  - "&eChance for arrows to bounce off and"
+  - "&edo no damage to you whenever you are"
+  - "&ewielding an axe with this enchantment"
+  - "&eon it."
+  tinkerer: "59:70:84:96:112:121"
+  alchemist: "5300:5500:5700:5900:6100"
+#
+ArrowDeflect:
+  enabled: true
+  enchant-name: "Arrow Deflect"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "armor"
+  book-lore:
+  - "&ePrevents you from being damaged by"
+  - "&eenemy arrows more often than once"
+  - "&eevery level x 400 milliseconds."
+  tinkerer: "51:64:77:90"
+  alchemist: "5400:5700:6000"
+#
+ArrowLifesteal:
+  enabled: true
+  enchant-name: "Arrow Lifesteal"
+  rarity: "ultimate"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eA chance to steal health from"
+  - "&eopponent while fighting."
+  tinkerer: "53:65:77:89:101"
+  alchemist: "5800:6000:6200:6400"
+#
+AutoSmelt:
+  enabled: true
+  enchant-name: "Auto Smelt"
+  rarity: "simple"
+  max-level: 3
+  enchant-type: "pickaxe"
+  book-lore:
+  - "&eOres are automatically smelted when"
+  - "&emined."
+  tinkerer: "76:84:92"
+  alchemist: "1000:1500"
+#
+Barbarian:
+  enabled: true
+  enchant-name: "Barbarian"
+  rarity: "legendary"
+  max-level: 4
+  enchant-type: "axe"
+  book-lore:
+  - "&eMultiplies damage against players who"
+  - "&eare wielding an AXE at the time they"
+  - "&eare hit."
+  tinkerer: "82:97:112:127"
+  alchemist: "6000:7000:8000"
+#
+Berserk:
+  enabled: true
+  enchant-name: "Berserk"
+  rarity: "unique"
+  max-level: 5
+  enchant-type: "axe"
+  book-lore:
+  - "&eA chance of strength and mining"
+  - "&efatigue."
+  tinkerer: "67:81:105:114:129"
+  alchemist: "5600:6400:7200:8000"
+#
+Blacksmith:
+  enabled: true
+  enchant-name: "Blacksmith"
+  rarity: "legendary"
+  max-level: 5
+  enchant-type: "axe"
+  book-lore:
+  - "&eChance to heal your most damaged"
+  - "&epiece of armor by 1-2 durability"
+  - "&ewhenever you hit a player, but when"
+  - "&eit procs, your attack will only deal"
+  - "&e50% of the normal damage."
+  tinkerer: "74:86:94:125:139"
+  alchemist: "8000:9000:10000:11000"
+#
+Bleed:
+  enabled: false
+  enchant-name: "Bleed"
+  rarity: "ultimate"
+  max-level: 6
+  enchant-type: "axe"
+  book-lore:
+  - "&eApplies bleed stacks to enemies that"
+  - "&edecrease their movement speed. Use in"
+  - "&ecombination with Devour and Blood"
+  - "&eLust."
+  tinkerer: "56:65:74:83:92:101"
+  alchemist: "5000:5500:6000:6500:7000"
+#
+Blessed:
+  enabled: true
+  enchant-name: "Blessed"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "axe"
+  book-lore:
+  - "&eA chance of removing debuffs."
+  tinkerer: "53:67:81"
+  alchemist: "5000:6000"
+#
+Blind:
+  enabled: true
+  enchant-name: "Blind"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eA chance of causing blindness when"
+  - "&eattacking."
+  tinkerer: "54:64:74"
+  alchemist: "6000:6500"
+#
+Block:
+  enabled: false
+  enchant-name: "Block"
+  rarity: "ultimate"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eA chance to increase damage and"
+  - "&eredirect an attack."
+  tinkerer: "45:54:63"
+  alchemist: "3000:5000"
+#
+BloodLink:
+  enabled: true
+  enchant-name: "Blood Link"
+  rarity: "legendary"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eA chance to heal you for 1-2hp"
+  - "&ewhenever your Guardians take damage."
+  tinkerer: "73:86:99:112:125"
+  alchemist: "4400:4600:4800:5000"
+#
+BloodLust:
+  enabled: false
+  enchant-name: "Blood Lust"
+  rarity: "legendary"
+  max-level: 6
+  enchant-type: "chestplate"
+  book-lore:
+  - "&eA chance to heal you whenever an"
+  - "&eenemy player within 7x7 blocks is"
+  - "&edamaged by the Bleed enchantment."
+  tinkerer: "71:83:95:107:119:131"
+  alchemist: "5700:6100:6500:6900:7300"
+#
+Cactus:
+  enabled: true
+  enchant-name: "Cactus"
+  rarity: "elite"
+  max-level: 2
+  enchant-type: "armor"
+  book-lore:
+  - "&eInjurs your attacker but does not"
+  - "&eaffect your durability."
+  tinkerer: "58:66"
+  alchemist: "2000"
+#
+Clarity:
+  enabled: true
+  enchant-name: "Clarity"
+  rarity: "legendary"
+  max-level: 3
+  enchant-type: "armor"
+  book-lore:
+  - "&eImmune to Blindness up to level of"
+  - "&eclarity enchantment."
+  tinkerer: "87:100:113"
+  alchemist: "6000:7000"
+#
+Cleave:
+  enabled: true
+  enchant-name: "Cleave"
+  rarity: "ultimate"
+  max-level: 7
+  enchant-type: "axe"
+  book-lore:
+  - "&eDamages players within a radius that"
+  - "&eincreases with the level of enchant."
+  tinkerer: "52:64:76:88:100:112:124"
+  alchemist: "4000:4400:4800:5200:5600:6000"
+#
+Commander:
+  enabled: true
+  enchant-name: "Commander"
+  rarity: "unique"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eNearby allies are given haste."
+  tinkerer: "116:137:158:179:200"
+  alchemist: "1000:1500:2000:2500"
+#
+Confusion:
+  enabled: true
+  enchant-name: "Confusion"
+  rarity: "simple"
+  max-level: 3
+  enchant-type: "axe"
+  book-lore:
+  - "&eA chance to deal nausea to your"
+  - "&evictim."
+  tinkerer: "54:63:72"
+  alchemist: "850:1700"
+#
+Cowification:
+  enabled: false
+  enchant-name: "Cowification"
+  rarity: "unique"
+  max-level: 3
+  enchant-type: "bow"
+  book-lore:
+  - "&eShoots exploding cows."
+  tinkerer: "104:129:154"
+  alchemist: "750:900"
+#
+CreeperArmor:
+  enabled: true
+  enchant-name: "Creeper Armor"
+  rarity: "ultimate"
+  max-level: 3
+  enchant-type: "armor"
+  book-lore:
+  - "&eNo knockback, and reduced"
+  - "&edamage from explosions."
+  tinkerer: "89:105:121"
+  alchemist: "6000:7000"
+#
+Curse:
+  enabled: true
+  enchant-name: "Curse"
+  rarity: "unique"
+  max-level: 5
+  enchant-type: "chestplate"
+  book-lore:
+  - "&eChance to cause mining fatigue."
+  tinkerer: "113:134:155:176:197"
+  alchemist: "1000:1500:2000:2500"
+#
+Deathbringer:
+  enabled: true
+  enchant-name: "Deathbringer"
+  rarity: "legendary"
+  max-level: 3
+  enchant-type: "armor"
+  book-lore:
+  - "&eChance to deal double damage."
+  tinkerer: "143:157:171"
+  alchemist: "6000:7000"
+#
+Decapitation:
+  enabled: true
+  enchant-name: "Decapitation"
+  rarity: "simple"
+  max-level: 3
+  enchant-type: "axe"
+  book-lore:
+  - "&eVictims have a chance of dropping"
+  - "&etheir head on death."
+  tinkerer: "50:63:76"
+  alchemist: "1500:2000"
+#
+DeepWounds:
+  enabled: true
+  enchant-name: "Deep Wounds"
+  rarity: "unique"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eIncreases the chance of you giving"
+  - "&ethe bleed effect."
+  tinkerer: "119:151:183"
+  alchemist: "1500:2500"
+#
+Demonforged:
+  enabled: true
+  enchant-name: "Demonforged"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "sword"
+  book-lore:
+  - "&eIncreases durability loss on your"
+  - "&enemy's armor."
+  tinkerer: "68:80:92:104"
+  alchemist: "4500:5000:5500"
+#
+Destruction:
+  enabled: false
+  enchant-name: "Destruction"
+  rarity: "legendary"
+  max-level: 5
+  enchant-type: "helmet"
+  book-lore:
+  - "&eAutomatically damages and debuffs all"
+  - "&enearby enemies."
+  tinkerer: "81:93:105:117:129"
+  alchemist: "6000:7000:8000:9000"
+#
+Detonate:
+  enabled: true
+  enchant-name: "Detonate"
+  rarity: "ultimate"
+  max-level: 9
+  enchant-type: "pickaxe"
+  book-lore:
+  - "&eSummons up to a 3x3x3 explosion"
+  - "&earound any blocks you break."
+  tinkerer: "54:63:72:81:90:99:108:117:126"
+  alchemist: "3500:3700:3900:4100:4300:4500:4700:4900"
+#
+Devour:
+  enabled: false
+  enchant-name: "Devour"
+  rarity: "legendary"
+  max-level: 4
+  enchant-type: "axe"
+  book-lore:
+  - "&eMultiplies damage dealt to players"
+  - "&ewith active bleed stacks from the"
+  - "&eBleed enchantment."
+  tinkerer: "108:117:126:135"
+  alchemist: "6000:7000:8000"
+#
+DimensionRift:
+  enabled: false
+  enchant-name: "Dimension Rift"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "bow"
+  book-lore:
+  - "&eChance to turn blocks underneath"
+  - "&etarget to soul sand, and possibly"
+  - "&ewebs ontop."
+  tinkerer: "102:117:131:142"
+  alchemist: "2350:2500:2750"
+#
+Disarmor:
+  enabled: true
+  enchant-name: "Disarmor"
+  rarity: "legendary"
+  max-level: 8
+  enchant-type: "sword"
+  book-lore:
+  - "&eA slight chance of removing one piece"
+  - "&eof armor from your enemy when they"
+  - "&eare at low health."
+  tinkerer: "96:108:120:132:144:156:168:180"
+  alchemist: "6000:7000:8000:9000:10000:11000:12000"
+#
+Disintegrate:
+  enabled: true
+  enchant-name: "Disintegrate"
+  rarity: "legendary"
+  max-level: 4
+  enchant-type: "sword"
+  book-lore:
+  - "&eChance to deal double durability"
+  - "&edamage to all enemy armor with every"
+  - "&eattack."
+  tinkerer: "94:108:122:136"
+  alchemist: "6000:7000:8000"
+#
+DivineImmolation:
+  enabled: true
+  enchant-name: "Divine Immolation"
+  rarity: "soul"
+  max-level: 4
+  enchant-type: "sword"
+  book-lore:
+  - "&eActive Soul Enchantment. Your weapons"
+  - "&eare imbued with divine fire, turning"
+  - "&eall your physical attacks into Area"
+  - "&eof Effect spells and igniting divine"
+  - "&efire upon all nearby enemies. Costs"
+  - "&e16 souls per second."
+  tinkerer: "180:195:210:225"
+  alchemist: "10000:12500:15000"
+#
+Dodge:
+  enabled: true
+  enchant-name: "Dodge"
+  rarity: "elite"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eChance to dodge physical enemy"
+  - "&eattacks, increased chance if"
+  - "&esneaking."
+  tinkerer: "58:67:76:85:94"
+  alchemist: "5000:5800:6600:7400"
+#
+DoubleStrike:
+  enabled: true
+  enchant-name: "Double Strike"
+  rarity: "legendary"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eA chance to attack swice in one"
+  - "&eswing. All your enchantments can"
+  - "&ere-proc on this second attack, and it"
+  - "&eoccurs instantly."
+  tinkerer: "51:66:81"
+  alchemist: "3000:7000"
+#
+Drunk:
+  enabled: true
+  enchant-name: "Drunk"
+  rarity: "legendary"
+  max-level: 4
+  enchant-type: "helmet"
+  book-lore:
+  - "&eSlowness and slow swinging with a"
+  - "&echance to give buffed strength."
+  tinkerer: "109:144:179:214"
+  alchemist: "10000:15000:20000"
+#
+EagleEye:
+  enabled: false
+  enchant-name: "Eagle Eye"
+  rarity: "legendary"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eChance to deal 1-4 durability damage"
+  - "&eto ALL armor pieces of enemy player."
+  tinkerer: "120:132:147:153:171"
+  alchemist: "6000:6350:6700:7050"
+#
+EnderShift:
+  enabled: true
+  enchant-name: "Ender Shift"
+  rarity: "unique"
+  max-level: 3
+  enchant-type: "helmet"
+  book-lore:
+  - "&eGives a speed/health boost at low hp."
+  tinkerer: "103:119:135"
+  alchemist: "2500:3000"
+#
+EnderWalker:
+  enabled: true
+  enchant-name: "Ender Walker"
+  rarity: "ultimate"
+  max-level: 5
+  enchant-type: "boots"
+  book-lore:
+  - "&eWither and Poison do not injure and"
+  - "&ehave a chance to heal at high levels."
+  tinkerer: "57:66:75:84:93"
+  alchemist: "2000:3250:4500:5750"
+#
+Enlighted:
+  enabled: true
+  enchant-name: "Enlighted"
+  rarity: "legendary"
+  max-level: 3
+  enchant-type: "armor"
+  book-lore:
+  - "&eCan heal hearts while taking damage."
+  tinkerer: "106:127:148"
+  alchemist: "10000:15000"
+#
+Enrage:
+  enabled: true
+  enchant-name: "Enrage"
+  rarity: "ultimate"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eThe lower your HP is, the more damage"
+  - "&eyou deal."
+  tinkerer: "58:70:82"
+  alchemist: "5000:6000"
+#
+Epicness:
+  enabled: true
+  enchant-name: "Epicness"
+  rarity: "simple"
+  max-level: 3
+  enchant-type: "weapon"
+  book-lore:
+  - "&eGives particles and sound effects."
+  tinkerer: "54:62:70"
+  alchemist: "750:1250"
+#
+Execute:
+  enabled: true
+  enchant-name: "Execute"
+  rarity: "elite"
+  max-level: 7
+  enchant-type: "sword"
+  book-lore:
+  - "&eDamage buff when your target is at"
+  - "&elow hp."
+  tinkerer: "51:60:69:78:87:96:105"
+  alchemist: "1500:2000:2500:3000:3500:4000"
+#
+Experience:
+  enabled: true
+  enchant-name: "Experience"
+  rarity: "unique"
+  max-level: 5
+  enchant-type: "pickaxe"
+  book-lore:
+  - "&eGives more exp when mining blocks."
+  tinkerer: "58:66:74:82:90"
+  alchemist: "1000:2250:3500:4750"
+#
+Explosive:
+  enabled: true
+  enchant-name: "Explosive"
+  rarity: "unique"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eExplosive arrows."
+  tinkerer: "113:137:161:185:209"
+  alchemist: "1000:1750:2500:3250"
+#
+Farcast:
+  enabled: true
+  enchant-name: "Farcast"
+  rarity: "ultimate"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eChance to knockback melee attackers"
+  - "&eby a couple of blocks when they hit"
+  - "&eyou. The lower your health, the"
+  - "&ehigher the chance to prock."
+  tinkerer: "51:62:73:84:95"
+  alchemist: "4500:5000:5600:6200"
+#
+Featherweight:
+  enabled: true
+  enchant-name: "Featherweight"
+  rarity: "unique"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eA chance to give a burst of haste."
+  tinkerer: "138:162:186"
+  alchemist: "3000:3500"
+#
+Frozen:
+  enabled: true
+  enchant-name: "Frozen"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "armor"
+  book-lore:
+  - "&eCan cause slowness when attacked."
+  tinkerer: "115:126:137"
+  alchemist: "1500:2500"
+#
+Gears:
+  enabled: true
+  enchant-name: "Gears"
+  rarity: "legendary"
+  max-level: 3
+  enchant-type: "boots"
+  book-lore:
+  - "&eAdded speed when equipped."
+  tinkerer: "142:163:184"
+  alchemist: "7500:10000"
+#
+Ghost:
+  enabled: false
+  enchant-name: "Ghost"
+  rarity: "legendary"
+  max-level: 3
+  enchant-type: "boots"
+  book-lore:
+  - "&eInvisable to /near lookups while in"
+  - "&efriendly territory depending on level"
+  - "&eof enchantment."
+  tinkerer: "153:184:215"
+  alchemist: "7500:12500"
+#
+Glowing:
+  enabled: true
+  enchant-name: "Glowing"
+  rarity: "simple"
+  max-level: 1
+  enchant-type: "helmet"
+  book-lore:
+  - "&eGives permanent night vision."
+  tinkerer: "84"
+#
+Greatsword:
+  enabled: true
+  enchant-name: "Greatsword"
+  rarity: "legendary"
+  max-level: 5
+  enchant-type: "sword"
+  book-lore:
+  - "&eMultiplies damage against players who"
+  - "&eare wielding a BOW at the time they"
+  - "&eare hit."
+  tinkerer: "118:127:136:145:154"
+  alchemist: "6000:7000:8000:9000"
+#
+Guardians:
+  enabled: true
+  enchant-name: "Guardians"
+  rarity: "ultimate"
+  max-level: 10
+  enchant-type: "armor"
+  book-lore:
+  - "&eChance to spawn iron golems to assist"
+  - "&eyou and watch over you."
+  tinkerer: "56:67:78:89:100:111:122:133:144:155"
+  alchemist: "4000:4500:5000:5500:6000:6500:7000:7500:8000"
+#
+Hardened:
+  enabled: true
+  enchant-name: "Hardened"
+  rarity: "ultimate"
+  max-level: 3
+  enchant-type: "armor"
+  book-lore:
+  - "&eArmor takes less durability damage."
+  tinkerer: "91:105:119"
+  alchemist: "4500:6500"
+#
+Haste:
+  enabled: true
+  enchant-name: "Haste"
+  rarity: "simple"
+  max-level: 3
+  enchant-type: "pickaxe"
+  book-lore:
+  - "&eAllows you to swing your tools faster."
+  tinkerer: "73:86:99"
+  alchemist: "800:1300"
+#
+Headless:
+  enabled: true
+  enchant-name: "Headless"
+  rarity: "simple"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eVictims have a chance of dropping"
+  - "&etheir head on death."
+  tinkerer: "59:66:73"
+  alchemist: "2000:2500"
+#
+Healing:
+  enabled: false
+  enchant-name: "Healing"
+  rarity: "simple"
+  max-level: 4
+  enchant-type: "bow"
+  book-lore:
+  - "&eHeals friendly players hit with arrow"
+  - "&eshot by this bow. Also has a chance"
+  - "&eto increase durability of armor and"
+  - "&egive absorption/health boost."
+  tinkerer: "54:63:72:81"
+  alchemist: "950:1400:1850"
+#
+Heavy:
+  enabled: true
+  enchant-name: "Heavy"
+  rarity: "ultimate"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eDecreases damage from bows by"
+  - "&e2% per level, this enchantment is"
+  - "&estackable."
+  tinkerer: "48:59:70:81:92"
+  alchemist: "4500:4750:5000:5250"
+#
+Hellfire:
+  enabled: true
+  enchant-name: "Hellfire"
+  rarity: "ultimate"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eAll arrows shot by you turn into"
+  - "&eexplosive fireballs."
+  tinkerer: "54:63:72:81:90"
+  alchemist: "3500:4000:4500:5000"
+#
+Hijack:
+  enabled: true
+  enchant-name: "Hijack"
+  rarity: "elite"
+  max-level: 4
+  enchant-type: "bow"
+  book-lore:
+  - "&eChance to convert summoned enemy"
+  - "&eGuardians into your own when they are"
+  - "&esoht with an arrow."
+  tinkerer: "49:57:65:73"
+  alchemist: "3500:4000:4500"
+#
+IceAspect:
+  enabled: true
+  enchant-name: "Ice Aspect"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eA chance of causing the slowness"
+  - "&eeffect on your enemy."
+  tinkerer: "72:85:98"
+  alchemist: "2000:2750"
+#
+IceFreeze:
+  enabled: false
+  enchant-name: "Ice Freeze"
+  rarity: "elite"
+  max-level: 1
+  enchant-type: "weapon"
+  book-lore:
+  - "&eA chance to freeze enemy in place."
+  tinkerer: "92"
+#
+Immortal:
+  enabled: true
+  enchant-name: "Immortal"
+  rarity: "soul"
+  max-level: 4
+  enchant-type: "armor"
+  book-lore:
+  - "&ePassive Soul Enchant. Prevents the"
+  - "&epiece of armor the enchant is on from"
+  - "&etaking durability damage in exchange"
+  - "&efor souls. Costs 5-20 souls per use."
+  tinkerer: "183:197:211:225"
+  alchemist: "10000:17500:25000"
+#
+Implants:
+  enabled: true
+  enchant-name: "Implants"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "helmet"
+  book-lore:
+  - "&ePassively heals +1 health and"
+  - "&erestores +1 hunger every few seconds."
+  tinkerer: "79:90:101"
+  alchemist: "3500:5000"
+#
+Infernal:
+  enabled: false
+  enchant-name: "Infernal"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "bow"
+  book-lore:
+  - "&eExplosive fire effect."
+  tinkerer: "75:83:91"
+  alchemist: "3500:4500"
+#
+Inquisitive:
+  enabled: true
+  enchant-name: "Inquisitive"
+  rarity: "legendary"
+  max-level: 4
+  enchant-type: "sword"
+  book-lore:
+  - "&eIncreases EXP drops from mobs."
+  tinkerer: "121:144:167:190"
+  alchemist: "9000:11000:14000"
+#
+Insanity:
+  enabled: true
+  enchant-name: "Insanity"
+  rarity: "legendary"
+  max-level: 8
+  enchant-type: "axe"
+  book-lore:
+  - "&eYou swing your axe like a maniac."
+  - "&eMultiplies damage against players who"
+  - "&eare wielding a SWORD at the time they"
+  - "&eare hit."
+  tinkerer: "76:88:100:112:124:136:148:160"
+  alchemist: "6000:7000:8000:9000:10000:11000:12000"
+#
+Insomnia:
+  enabled: true
+  enchant-name: "Insomnia"
+  rarity: "simple"
+  max-level: 7
+  enchant-type: "sword"
+  book-lore:
+  - "&eGives slowness, slow swinging, and"
+  - "&econfusion."
+  tinkerer: "52:63:74:85:96:107:118"
+  alchemist: "1000:1500:2000:2500:3000:3500"
+#
+Inversion:
+  enabled: true
+  enchant-name: "Inversion"
+  rarity: "legendary"
+  max-level: 4
+  enchant-type: "sword"
+  book-lore:
+  - "&eDamage dealt to you has a % chance to"
+  - "&ebe blocked and heal you for 1-3 HP"
+  - "&einstead."
+  tinkerer: "67:76:85:94"
+  alchemist: "6500:7500:8500"
+#
+KillAura:
+  enabled: false
+  enchant-name: "Kill Aura"
+  rarity: "legendary"
+  max-level: 5
+  enchant-type: "sword"
+  book-lore:
+  - "&eChance to kill multiple monsters in a"
+  - "&estack each death event."
+  tinkerer: "63:75:87:99:111"
+  alchemist: "4000:5000:6000:7000"
+#
+Leadership:
+  enabled: false
+  enchant-name: "Leadership"
+  rarity: "ultimate"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eThe more allies near you, the more"
+  - "&edamage you deal."
+  tinkerer: "58:69:80:91:102"
+  alchemist: "4500:5000:5500:6000"
+#
+Lifebloom:
+  enabled: true
+  enchant-name: "Lifebloom"
+  rarity: "unique"
+  max-level: 5
+  enchant-type: "leggings"
+  book-lore:
+  - "&eCompletely heals allies and truces on"
+  - "&eyour death."
+  tinkerer: "60:72:84:96:108"
+  alchemist: "4000:5000:6000:7000"
+#
+Lifesteal:
+  enabled: true
+  enchant-name: "Lifesteal"
+  rarity: "legendary"
+  max-level: 5
+  enchant-type: "sword"
+  book-lore:
+  - "&eA chance to regain health when"
+  - "&eattacking."
+  tinkerer: "124:136:148:160:172"
+  alchemist: "6500:8000:9500:11000"
+#
+Lightning:
+  enabled: true
+  enchant-name: "Lightning"
+  rarity: "simple"
+  max-level: 3
+  enchant-type: "bow"
+  book-lore:
+  - "&eA chance to strike lightning where"
+  - "&eyou strike."
+  tinkerer: "77:89:101"
+  alchemist: "1000:2000"
+#
+Longbow:
+  enabled: true
+  enchant-name: "Longbow"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "bow"
+  book-lore:
+  - "&eGreatly increases damage dealt to"
+  - "&eenemy players that have a bow in"
+  - "&etheir hands."
+  tinkerer: "58:71:84:97"
+  alchemist: "4500:5000:5500"
+#
+Lucky:
+  enabled: true
+  enchant-name: "Lucky"
+  rarity: "ultimate"
+  max-level: 10
+  enchant-type: "armor"
+  book-lore:
+  - "&eYou will find yourself more lucky in"
+  - "&eall Server situations."
+  tinkerer: "62:71:80:89"
+  alchemist: "2650:3000:3350:3700:4150:4500:4850:5200:5550"
+#
+Marksman:
+  enabled: true
+  enchant-name: "Marksman"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "armor"
+  book-lore:
+  - "&eIncreases damage dealt with bows,"
+  - "&ethis enchantment is stackable."
+  tinkerer: "121:137:150:161"
+  alchemist: "4000:4500:5000"
+#
+Metaphysical:
+  enabled: true
+  enchant-name: "Metaphysical"
+  rarity: "elite"
+  max-level: 4
+  enchant-type: "boots"
+  book-lore:
+  - "&eA chance to resist the slowness given"
+  - "&eby enemy Trap, Snare, and Pummel"
+  - "&eenchantments. At max level, you will"
+  - "&eonly be affected approx. 10% of the"
+  - "&etime."
+  tinkerer: "112:134:156:178"
+  alchemist: "3000:3500:4000"
+#
+Molten:
+  enabled: true
+  enchant-name: "Molten"
+  rarity: "unique"
+  max-level: 4
+  enchant-type: "armor"
+  book-lore:
+  - "&eChance to light your attacker."
+  tinkerer: "104:116:128:140"
+  alchemist: "1250:2500:3750"
+#
+NaturesWrath:
+  enabled: true
+  enchant-name: "Natures Wrath"
+  rarity: "soul"
+  max-level: 4
+  enchant-type: "armor"
+  book-lore:
+  - "&ePassive Soul Enchantment. Temporarily"
+  - "&efreeze all enemies in a massive area"
+  - "&earound you, pushing them back and"
+  - "&edealing massive nature damage. Costs"
+  - "&e75 souls per use."
+  tinkerer: "180:205:230:255"
+  alchemist: "7500:15000:22500"
+#
+Nimble:
+  enabled: true
+  enchant-name: "Nimble"
+  rarity: "elite"
+  max-level: 5
+  enchant-type: "boots"
+  book-lore:
+  - "&eIncreases mcMMO XP gained in Acrobatics"
+  - "&ewhile equipped."
+  tinkerer: "84:93:102:111:120"
+  alchemist: "6000:6500:7000:7500"
+#
+Nutrition:
+  enabled: true
+  enchant-name: "Nutrition"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "armor"
+  book-lore:
+  - "&e1.2-2x normal hunger replenishment."
+  tinkerer: "53:64:75"
+  alchemist: "900:1400"
+#
+Obliterate:
+  enabled: true
+  enchant-name: "Obliterate"
+  rarity: "simple"
+  max-level: 5
+  enchant-type: "weapon"
+  book-lore:
+  - "&eExtreme knockback."
+  tinkerer: "61:70:79:88:97"
+  alchemist: "1500:2000:2500:3000"
+#
+ObsidianDestroyer:
+  enabled: true
+  enchant-name: "Obsidian Destroyer"
+  rarity: "unique"
+  max-level: 5
+  enchant-type: "pickaxe"
+  book-lore:
+  - "&eChance to instantly break obsidian"
+  - "&eblocks."
+  tinkerer: "111:123:135:147:159"
+  alchemist: "1250:1500:1750:2000"
+#
+Obsidianshield:
+  enabled: true
+  enchant-name: "Obsidianshield"
+  rarity: "ultimate"
+  max-level: 1
+  enchant-type: "armor"
+  book-lore:
+  - "&eGives permanent fire resistance."
+  tinkerer: "164"
+#
+Overload:
+  enabled: true
+  enchant-name: "Overload"
+  rarity: "legendary"
+  max-level: 3
+  enchant-type: "armor"
+  book-lore:
+  - "&ePermanent increase in hearts."
+  tinkerer: "143:154:165"
+  alchemist: "7000:9500"
+#
+Oxygenate:
+  enabled: true
+  enchant-name: "Oxygenate"
+  rarity: "simple"
+  max-level: 1
+  enchant-type: "pickaxe"
+  book-lore:
+  - "&eRefills oxygen levels when breaking"
+  - "&eblocks underwater."
+  tinkerer: "73"
+#
+Pacify:
+  enabled: false
+  enchant-name: "Pacify"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "bow"
+  book-lore:
+  - "&eA chance to pacify your target,"
+  - "&epreventing them from building rage"
+  - "&estacks for 1-3 seconds depending on"
+  - "&elevel."
+  tinkerer: "121:135:148:162"
+  alchemist: "2350:2600:2850"
+#
+Paradox:
+  enabled: false
+  enchant-name: "Paradox"
+  rarity: "soul"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&ePassive Soul Enchantment. Heals all"
+  - "&enearby allies in a massive area"
+  - "&earound you for a portion of all"
+  - "&edamage dealt to you. Costs 5 souls"
+  - "&eper use."
+  tinkerer: "170:195:220:245:270"
+  alchemist: "7000:9000:11000:13000"
+#
+Paralyze:
+  enabled: true
+  enchant-name: "Paralyze"
+  rarity: "elite"
+  max-level: 4
+  enchant-type: "sword"
+  book-lore:
+  - "&eGives lightning effect and a chance"
+  - "&efor slowness and slow swinging. Also"
+  - "&einflicts direct damage on proc."
+  tinkerer: "113:125:137:149"
+  alchemist: "1500:2200:2900"
+#
+Phoenix:
+  enabled: true
+  enchant-name: "Phoenix"
+  rarity: "soul"
+  max-level: 3
+  enchant-type: "boots"
+  book-lore:
+  - "&ePassive Soul Enchantment. An attack"
+  - "&ethat would normally kill you will"
+  - "&einstead heal you to full HP. Costs"
+  - "&e1000+ souls per use. Can only be"
+  - "&eactivated once every couple minutes."
+  tinkerer: "190:215:240"
+  alchemist: "8500:13500"
+#
+Piercing:
+  enabled: true
+  enchant-name: "Piercing"
+  rarity: "ultimate"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eInflicts more damage."
+  tinkerer: "67:76:85:94:103"
+  alchemist: "4000:6000:8000:10000"
+#
+PlagueCarrier:
+  enabled: false
+  enchant-name: "Plague Carrier"
+  rarity: "unique"
+  max-level: 8
+  enchant-type: "leggings"
+  book-lore:
+  - "&eWhen near death, summons creepers and"
+  - "&edebuffs to avenge you."
+  tinkerer: "108:119:130:141:152:163:174:185"
+  alchemist: "1000:1500:2000:2500:3000:3500:4000"
+#
+Poison:
+  enabled: true
+  enchant-name: "Poison"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "weapon"
+  book-lore:
+  - "&eA chance of giving the poison effect."
+  tinkerer: "75:84:93"
+  alchemist: "2500:3000"
+#
+Poisoned:
+  enabled: true
+  enchant-name: "Poisoned"
+  rarity: "elite"
+  max-level: 4
+  enchant-type: "weapon"
+  book-lore:
+  - "&eChance to give poison to your attacker."
+  tinkerer: "69:78:87:96"
+  alchemist: "3500:4000:4500"
+#
+Protection:
+  enabled: true
+  enchant-name: "Protection"
+  rarity: "legendary"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eAutomatically heals and buffs all"
+  - "&enearby faction allies."
+  tinkerer: "65:76:87:98:109"
+  alchemist: "7000:8000:9000:10000"
+#
+Pummel:
+  enabled: true
+  enchant-name: "Pummel"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "axe"
+  book-lore:
+  - "&eChance to slow down nearby enemy players"
+  - "&efor a short period."
+  tinkerer: "59:70:81"
+  alchemist: "2600:3300"
+#
+Ragdoll:
+  enabled: true
+  enchant-name: "Ragdoll"
+  rarity: "unique"
+  max-level: 4
+  enchant-type: "armor"
+  book-lore:
+  - "&eWhenever you take damage, you are"
+  - "&epushed far back."
+  tinkerer: "132:141:150:159"
+  alchemist: "1500:2000:2500"
+#
+Rage:
+  enabled: true
+  enchant-name: "Rage"
+  rarity: "legendary"
+  max-level: 6
+  enchant-type: "weapon"
+  book-lore:
+  - "&eFor every combo hit you land, your"
+  - "&edamage is multiplied by 1.1x."
+  tinkerer: "139:151:163:175:187:199"
+  alchemist: "6000:7000:8000:9000:10000"
+#
+Ravenous:
+  enabled: true
+  enchant-name: "Ravenous"
+  rarity: "unique"
+  max-level: 4
+  enchant-type: "axe"
+  book-lore:
+  - "&eA chance to regain hunger."
+  tinkerer: "123:134:145:156"
+  alchemist: "1000:1500:2000"
+#
+Reforged:
+  enabled: true
+  enchant-name: "Reforged"
+  rarity: "unique"
+  max-level: 10
+  enchant-type: "sword"
+  book-lore:
+  - "&eProtects tool durability, items will"
+  - "&etake longer to break."
+  tinkerer: "58:67:76:85:94:103:112:121:130:139"
+  alchemist: "1200:1600:2000:2400:2800:3200:3600:4000:4400"
+#
+Resilience:
+  enabled: false
+  enchant-name: "Resilience"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "helmet"
+  book-lore:
+  - "&eIncreases HP of your NPC if you get"
+  - "&ecombat logged by 15% per level. Also"
+  - "&ehas a chance to negate 50% of damage"
+  - "&efrom incoming attacks that would"
+  - "&enormally kill you."
+  tinkerer: "64:76:88:100"
+  alchemist: "2500:3000:4000"
+#
+RocketEscape:
+  enabled: true
+  enchant-name: "Rocket Escape"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "boots"
+  book-lore:
+  - "&eBlast off into the air at low HP."
+  tinkerer: "128:139:150"
+  alchemist: "1250:1750"
+#
+SelfDestruct:
+  enabled: false
+  enchant-name: "Self Destruct"
+  rarity: "unique"
+  max-level: 3
+  enchant-type: "armor"
+  book-lore:
+  - "&eWhen close to death, buffed TNT spawns"
+  - "&earound you."
+  tinkerer: "54:65:76"
+  alchemist: "1500:2000"
+#
+Shackle:
+  enabled: false
+  enchant-name: "Shackle"
+  rarity: "ultimate"
+  max-level: 3
+  enchant-type: "weapon"
+  book-lore:
+  - "&ePrevents mobs spawned from mob"
+  - "&espawners from suffering from"
+  - "&eknockback from your attacks."
+  tinkerer: "71:80:89"
+  alchemist: "2500:5000"
+#
+Shockwave:
+  enabled: true
+  enchant-name: "Shockwave"
+  rarity: "elite"
+  max-level: 5
+  enchant-type: "chestplate"
+  book-lore:
+  - "&eA chance to push back your attacker."
+  tinkerer: "58:67:76:85:94"
+  alchemist: "2000:3000:4000:5000"
+#
+Silence:
+  enabled: true
+  enchant-name: "Silence"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "sword"
+  book-lore:
+  - "&eChance to stop activation of your"
+  - "&eenemy's custom enchants."
+  tinkerer: "67:76:85:94"
+  alchemist: "5500:6500:7500"
+#
+SkillSwipe:
+  enabled: true
+  enchant-name: "Skill Swipe"
+  rarity: "elite"
+  max-level: 5
+  enchant-type: "weapon"
+  book-lore:
+  - "&eA chance to steal some of your"
+  - "&eenemy's EXP every time you damage"
+  - "&ethem."
+  tinkerer: "63:74:85:96:107"
+  alchemist: "2150:2600:2950:3200"
+#
+Skilling:
+  enabled: true
+  enchant-name: "Skilling"
+  rarity: "elite"
+  max-level: 10
+  enchant-type: "pickaxe"
+  book-lore:
+  - "&eIncreases mcMMO XP gained in all"
+  - "&eGATHERING skills while equipped."
+  tinkerer: "58:69:80:91:102:113:124:135:146:157"
+  alchemist: "1750:1850:1950:2050:2150:2250:2350:2450:2550"
+#
+SmokeBomb:
+  enabled: false
+  enchant-name: "Smoke Bomb"
+  rarity: "elite"
+  max-level: 8
+  enchant-type: "helmet"
+  book-lore:
+  - "&eWhen you are near death, you will"
+  - "&espawn a smoke bomb to distract your"
+  - "&eenemies."
+  tinkerer: "59:68:77:86:95:104:113:122"
+  alchemist: "2100:2300:2500:2700:2900:3100:3300"
+#
+Snare:
+  enabled: true
+  enchant-name: "Snare"
+  rarity: "elite"
+  max-level: 4
+  enchant-type: "bow"
+  book-lore:
+  - "&eChance to slow and fatigue enemies"
+  - "&ewith projectiles."
+  tinkerer: "60:70:80:90"
+  alchemist: "3500:4000:4500"
+#
+Sniper:
+  enabled: true
+  enchant-name: "Sniper"
+  rarity: "legendary"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eHeadshots with projectile deal up to"
+  - "&e3.5x damage."
+  tinkerer: "128:139:150:161:172"
+  alchemist: "6000:7250:8500:9750"
+#
+Solitude:
+  enabled: false
+  enchant-name: "Solitude"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eIncreases chance and length of the"
+  - "&eSilence enchantment procing on enemy"
+  - "&eplayers by up to 3X."
+  tinkerer: "57:66:75"
+  alchemist: "4500:5200"
+#
+SoulTrap:
+  enabled: false
+  enchant-name: "Soul Trap"
+  rarity: "soul"
+  max-level: 3
+  enchant-type: "axe"
+  book-lore:
+  - "&eActive Soul Enchantment. Your axe is"
+  - "&eimbued with sealing magic, and has a"
+  - "&echance to disable all offensive soul"
+  - "&eenchantments of your enemies on hit."
+  - "&eCosts 6 souls per second."
+  tinkerer: "172:197:222"
+  alchemist: "9000:16000"
+#
+SpiritLink:
+  enabled: true
+  enchant-name: "Spirit Link"
+  rarity: "elite"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eHeals nearby faction/ally members upon damage."
+  tinkerer: "106:117:128:139:150"
+  alchemist: "1000:1500:2000:2500"
+#
+Spirits:
+  enabled: false
+  enchant-name: "Spirits"
+  rarity: "ultimate"
+  max-level: 10
+  enchant-type: "armor"
+  book-lore:
+  - "&eChance to spawn blazes that heal"
+  - "&eyourself and your allies in combat."
+  tinkerer: "53:62:71:80:89:98:107:116:125:134"
+  alchemist: "2500:3000:3500:4000:4500:5000:5500:6000:6500"
+#
+Springs:
+  enabled: true
+  enchant-name: "Springs"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "boots"
+  book-lore:
+  - "&eGives jump boost."
+  tinkerer: "78:86:94"
+  alchemist: "2000:3500"
+#
+Sticky:
+  enabled: true
+  enchant-name: "Sticky"
+  rarity: "ultimate"
+  max-level: 8
+  enchant-type: "armor"
+  book-lore:
+  - "&eDecreases the chance of an enemy's"
+  - "&eDisarmor enchantment procing on you"
+  - "&eby 12.5% per level. At max level, you"
+  - "&ecan never be disarmored."
+  tinkerer: "62:73:84:95:106:117:128:139"
+  alchemist: "4000:4250:4500:4750:5000:5250:5500"
+#
+Stormcaller:
+  enabled: true
+  enchant-name: "Stormcaller"
+  rarity: "elite"
+  max-level: 4
+  enchant-type: "armor"
+  book-lore:
+  - "&eStrikes lightning on attacking players."
+  tinkerer: "104:115:126:137"
+  alchemist: "3000:3500:4000"
+#
+Tank:
+  enabled: true
+  enchant-name: "Tank"
+  rarity: "ultimate"
+  max-level: 4
+  enchant-type: "armor"
+  book-lore:
+  - "&eDecreases damage from enemy axes by"
+  - "&e1.85% per level, this enchantment is"
+  - "&estackable."
+  tinkerer: "59:68:77:86"
+  alchemist: "4500:5000:5500"
+#
+TargetTracking:
+  enabled: false
+  enchant-name: "Target Tracking"
+  rarity: "simple"
+  max-level: 1
+  enchant-type: "bow"
+  book-lore:
+  - "&e"
+  tinkerer: "81"
+#
+Teleblock:
+  enabled: true
+  enchant-name: "Teleblock"
+  rarity: "soul"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eActive Soul Enchantment. Your bow is"
+  - "&eenchanted with enderpearl blocking"
+  - "&emagic, damaged players will be unable"
+  - "&eto use enderpearls for up to 20"
+  - "&eseconds, and will lose up to 15"
+  - "&eenderpearls from their inventory."
+  - "&eCosts level x 6 souls per shot."
+  tinkerer: "160:175:190:205:220"
+  alchemist: "7000:9000:11000:13000"
+#
+Telepathy:
+  enabled: true
+  enchant-name: "Telepathy"
+  rarity: "elite"
+  max-level: 4
+  enchant-type: "tool"
+  book-lore:
+  - "&eAutomatically places blocks broken by tools"
+  - "&ein your inventory."
+  tinkerer: "50:61:72:83"
+  alchemist: "2000:2650:3300"
+#
+Teleportation:
+  enabled: false
+  enchant-name: "Teleportation"
+  rarity: "elite"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eWhen an ally or faction member is"
+  - "&ehit, you teleport to them."
+  tinkerer: "51:64:77:90:103"
+  alchemist: "3200:4200:5200:6200"
+#
+ThunderingBlow:
+  enabled: true
+  enchant-name: "Thundering Blow"
+  rarity: "simple"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eCan cause smite effect on your enemy"
+  tinkerer: "73:86:99"
+  alchemist: "2000:3000"
+#
+Training:
+  enabled: true
+  enchant-name: "Training"
+  rarity: "elite"
+  max-level: 10
+  enchant-type: "weapon"
+  book-lore:
+  - "&eIncreases mcMMO XP gained in all"
+  - "&eCOMBAT skills while equipped."
+  tinkerer: "58:67:76:85:94:103:112:121:130:139"
+  alchemist: "2500:2750:3000:3250:3500:3750:4000:4250:4500"
+#
+Trap:
+  enabled: true
+  enchant-name: "Trap"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eA chance to give buffed slowness"
+  - "&eeffect."
+  tinkerer: "62:71:80"
+  alchemist: "3500:4000"
+#
+Trickster:
+  enabled: true
+  enchant-name: "Trickster"
+  rarity: "elite"
+  max-level: 8
+  enchant-type: "armor"
+  book-lore:
+  - "&eWhen hit, you have a chance to"
+  - "&eteleport directly behind your"
+  - "&eopponent and take them by surprise."
+  tinkerer: "63:74:85:96:107:118:129:140"
+  alchemist: "2000:2150:2300:2450:2600:2750:2900"
+#
+UndeadRuse:
+  enabled: true
+  enchant-name: "Undead Ruse"
+  rarity: "elite"
+  max-level: 10
+  enchant-type: "armor"
+  book-lore:
+  - "&eWhen hit, you have a chance to spawn"
+  - "&ezombie hordes to distract and"
+  - "&edisorient your opponents."
+  tinkerer: "63:74:85:96:107:118:129:140:151:162"
+  alchemist: "1250:2250:3350:4350:5350:6350:7350:8350:9350"
+#
+Unfocus:
+  enabled: true
+  enchant-name: "Unfocus"
+  rarity: "ultimate"
+  max-level: 5
+  enchant-type: "bow"
+  book-lore:
+  - "&eChance to Unfocus target player,"
+  - "&ereducing their outgoing bow damage by"
+  - "&e50% for up to 10 seconds."
+  tinkerer: "60:72:84:96:108"
+  alchemist: "2300:2600:2900:3200"
+#
+Valor:
+  enabled: false
+  enchant-name: "Valor"
+  rarity: "elite"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eReduces incoming damage while"
+  - "&ewielding a sword by up to 22.5%."
+  tinkerer: "52:64:76:88:100"
+  alchemist: "2000:2500:3000:3500"
+#
+Vampire:
+  enabled: false
+  enchant-name: "Vampire"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eA chance to heal you for up to 3hp a"
+  - "&efew seconds after you strike."
+  tinkerer: "72:81:90"
+  alchemist: "2500:3000"
+#
+Venom:
+  enabled: true
+  enchant-name: "Venom"
+  rarity: "elite"
+  max-level: 3
+  enchant-type: "sword"
+  book-lore:
+  - "&eA chance of dealing poison."
+  tinkerer: "75:84:93"
+  alchemist: "2500:2750"
+#
+Virus:
+  enabled: false
+  enchant-name: "Virus"
+  rarity: "elite"
+  max-level: 4
+  enchant-type: "bow"
+  book-lore:
+  - "&eMultiplies all Wither and Poison"
+  - "&edamage the affected target recieves,"
+  - "&eand has a chance to remove"
+  - "&eregeneration effects on hit."
+  tinkerer: "71:80:89:98"
+  alchemist: "2450:2650:2850"
+#
+Voodoo:
+  enabled: true
+  enchant-name: "Voodoo"
+  rarity: "elite"
+  max-level: 6
+  enchant-type: "armor"
+  book-lore:
+  - "&eGives a chance to deal weakness."
+  tinkerer: "59:68:77:86:95:104"
+  alchemist: "1750:2000:2150:2300:2450"
+#
+Wither:
+  enabled: true
+  enchant-name: "Wither"
+  rarity: "elite"
+  max-level: 5
+  enchant-type: "armor"
+  book-lore:
+  - "&eA chance to give the wither effect."
+  tinkerer: "69:77:85:93:101"
+  alchemist: "2000:2200:2400:2600"
+#

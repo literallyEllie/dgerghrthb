@@ -1,0 +1,423 @@
+# Made by RandomHashTags
+prefix: "&8&l[&6RandomPackage&8&l]&r"
+#
+alchemist:
+  need-more-cash:
+  - "&c&l(!)&r &cYou need more CASH to do this!"
+  not-enough-xp:
+  - "&c&l(!)&r &cYou need more XP to do this!"
+#
+duel:
+  add-enchant:
+  - "{COLOR}&l+ &r{COLOR}{ENCHANT} [{ITEM}] ({SLOTS_LEFT} slots left)"
+  not-enough-enchant-slots:
+  - "&cYou do not have enough enchant points left on this item."
+  - "&7Enchant Slots left: {SLOTS_LEFT}"
+  not-in-duel:
+  - "&c&l(!)&r &cYou are not in a duel."
+  godset-save:
+  - "&aDuel Godset changes saved."
+  #
+  join-ranked-queue:
+  - "&a&l(!)&r &aYou have been placed in the &aRANKED&r &aduel queue!"
+  - "&aUse &n/duel leave&r &ato leave the queue."
+  - "&7Searching for an opponent..."
+  current-ranked-queue:
+  - "&a&l(!)&r &aYou are currently &l#{QUEUE_PLACEMENT}&r &ain the Ranked Duel Queue."
+  leave-ranked-queue:
+  - "&cYou have been removed from the Ranked Duel Queue."
+  #
+  no-players-in-queue:
+  - "&c&l(!)&r &cNo players found in queue, please create a duel."
+  closed-settings-unranked:
+  - "&cYou closed the settings and have been removed from the Global Duel Queue."
+  closed-setting-unranked:
+  - "&cYou have closed the {SETTING_TITLE} meny and cancelled the Global Queued Duel."
+  paired-unranked:
+  - "&aPairing with duel partner &a{OPPONENT}!"
+  duel-cancelled:
+  - "&7The duel has been cancelled and has been removed from queue."
+#
+golden-apple-sickness:
+  warning:
+  - "{PREFIX} &eYou're about to contract the golden apple sickness if you keep consuming golden apples!"
+#
+fund:
+  no-permission-to-deposit:
+  - "&c&l(!)&r &cYou do not have permission to deposit funds!"
+  not-enough-to-deposit:
+  - "&c&l(!)&r &cYou do not have enough funds to deposit this much!"
+  completed:
+  - "&m"
+  # {TOTAL_SERVER_FUNDS} = The total server funds that is have recieved
+  # {TARGETS} = The listed targets in the data.yml
+  heading:
+  - "&6&l<&e&l*&6&l> Server Fund <&e&l*&6&l>"
+  - "     &6&l:  $&r&e&n{TOTAL_SERVER_FUNDS}&r   &6&l:"
+  - "&6Add $ to the /fund and unlock new content for your server with &n/fund deposit <$>"
+  - "{TARGETS}"
+  # {FUND_NAME} = The name of the fund found in the data.yml
+  # {FUND_PERCENT} = The fund amount required to give reward divided by the total amount of server funds.
+  # {FUND_PROGRESS} = The progress shown visually for the remaining amount of funds required.
+  targets:
+  - "&6&l{FUND_NAME} [&r&7{FUND_PERCENT}%&6&l]"
+  - "&7&l{FUND_PROGRESS}"
+#
+givedp-items:
+  space-drink:
+    feeling-tipsy:
+    - "&e&l(!) &eYou are feeling tipsy, time to party, drink up!"
+    completely-smashed:
+    - "&e&l(!) &eYou are completely smashed. What a party!"
+    smash-drink:
+    - "&eYou finish the drink, smash the glass on the ground, and feel"
+    - " &ean unstoppable sense of rage fill your body."
+    poisoning:
+    - "&c&l(!) &cYou are getting space drink poisoning, sober up!"
+#
+combine:
+  # {AMOUNT_ORES} = The amount of ores converted to blocks
+  # {AMOUNT_BLOCKS} = The amount of blocks from the converted ores
+  # {BLOCK} = The block's name that was converted from ores
+  # {ORES} = The ore's name that was converted into blocks
+  items-to-inventory:
+  - "&e&l*&r &c{AMOUNT_ORES}x {ORE} &e&l>=<&r &a{AMOUNT_BLOCKS}x {BLOCK}"
+  success:
+  - "&e&l(!)&r &eSuccessfully combined and organized inventory."
+#
+coinflip:
+  # {CHALLENGER} = The player's name who has accepted the wager against the {MATCH_CREATOR}.
+  # {MATCH_CREATOR} = The player that started the coin flip match, and awaits a challenger to accept.
+  # {WAGER_PRICE} = The amount the coin flip winner receives.
+  # {ACCEPTOR_COLOR_CHOSEN} = The color the {ACCEPTOR} selected.
+  # {WAGER_COLOR_CHOSEN} = The color the {WAGER} selected.
+  # {RECENT_WINS} = Total wins within a period of time set in the global-settings.yml.
+  # {RECENT_LOSSES} = Total losses within a period of time. Time is the same as {RECENT_WINS}'s time.
+  # {RECENT_WIN_LOSS_PERCENT} = Percent where {RECENT_WINS} is divided by {RECENT_LOSSES}.
+  # {TOTAL_WINS} = Total wins the player has playing the coinflip game.
+  # {TOTAL_LOSSES} = Total losses the player has playing the coinflip game.
+  # {TOTAL_WIN_LOSS_PERCENT} = Percent where {TOTAL_WINS} is divided by {TOTAL_LOSSES}.
+  # {TOTAL_GAMES_PLAYED} = Total amount of coinflip games the player has played.
+  accept:
+  - "&c&l- ${WAGER_PRICE}"
+  - "&c{ACCEPTOR} has accepted the Coin Flip Wager!"
+#
+roll:
+  # {PLAYER} = The player's name that executed the command
+  # {ROLLED} = The number the player that rolled got
+  # {MAX_ROLL} = The max number you can roll
+  message:
+  - "&7&l **&r &7{PLAYER} has rolled a &l&n{ROLLED}&r &7out of &l&n{MAX_ROLL}."
+  #
+  nobody-heard-roll:
+  - "&7&l ** &c&lNobody is around to hear you roll!"
+#
+shop:
+  # {TOTAL_COST} = The total cost the player bought the item(s) for
+  # {TOTAL_REVENUE} = The total amount of $ the player sold item(s) for
+  # {BUY_PRICE} = The item clicked's base purchase value
+  # {SELL_PRICE} = The item clicked's base sell value
+  # {AMOUNT} = The amount of items purchased or sold in a transaction
+  # {ITEM} = The item's name that was purchased or sold
+  buy:
+  - "&c&l- ${TOTAL_COST}"
+  - "&aSuccessfully purchased &l{AMOUNT}x&r &a{ITEM}!"
+  sell:
+  - "&a&l+ ${TOTAL_REVENUE}"
+  - "&aSuccessfully sold &l{AMOUNT}x&r &a{ITEM} for ${SELL_PRICE}/ea!"
+  not-enough-balance:
+  - "&c&l(!)&r &cYou do not have enough money to purchase this!"
+  - "&7Price: {BUY_PRICE}/ea"
+  not-have-any-to-sell:
+  - "&c&l(!)&r &cYou do not have any to sell!"
+  not-sellable:
+  - "&cYou cannot sell this item to the shop!"
+#
+signs:
+  create:
+  # {SIGN_INFO} = What you get if you purchase the givedp item.
+  - "{PREFIX} &eYou successfully created a Givedp sign!"
+  - "&eSign information: {SIGN_INFO}"
+  destroy:
+#
+mcmmo-voucher:
+  redeem-levels:
+  - "&a&l+{LEVELS} {SKILL}"
+  # {XP} = The amount of xp the voucher contains
+  # {SKILL} = The skill the xp will be applied to
+  redeem-xp:
+  - "&a&l+{XP} {SKILL} XP!"
+#
+fallen-heroes:
+  not-in-warzone:
+  - "&c&l(!) &r&cYou can only summon Fallen Heros in the &4WarZone!"
+  summon:
+  - " "
+  - "&f&l*** {FALLEN_HERO_NAME}&r &f&l***"
+  - "&7You have summoned a Fallen Hero! Defeat it to claim its treasures and a chance to &nunlock its /gkit!"
+  - " "
+  redeem-kit:
+  - "&e&l(!) &r&eYou have unlocked the {FALLEN_HERO_NAME} &f/gkit&e!"
+  already-have-kit:
+  - "&c&l(!) &cYou already have this &f/gkit&c!"
+  # This is broadcasted around the server
+  receive-kit:
+  - "&6&l(!) &r&6{PLAYER} has unlocked the {FALLEN_HERO_NAME} Kit&r &6from a Fallen Hero!"
+#
+withdraw:
+  argument-0:
+  - "{PREFIX} &eUsage: &f/withdraw [positive integer]"
+  cannot-withdraw-zero:
+  - "{PREFIX} &eUsage: &f/withdraw [positive integer]"
+  cannot-withdraw-more-than-balance:
+  - "{PREFIX} &cYou do not have enough balance to withdraw this amount!"
+  success:
+  - "&c&l-${AMOUNT}"
+  - "&aYou have signed a bank note for ${AMOUNT}"
+  deposit:
+  - "&a&l+${AMOUNT}"
+#
+randombookgui:
+  argument-0:
+  - '{PREFIX} &7Usage: &f/rbg [soul, legendary, ultimate, elite, unique, simple]'
+#
+gkit:
+  usage:
+  - "{PREFIX} &eUsage: &f/gkit reset <player username>"
+  no-permission-to-reset:
+  - "{PREFIX} &cYou do not have permission to execute this command!"
+  player-isnt-online-reset:
+  - "{PREFIX} &cThis player isn't online!"
+  # {PLAYER} = The target player's name
+  reset:
+  - "{PREFIX} &eSuccessfully reset &n{PLAYER}&r&e's gkits!"
+  message:
+  - " "
+  - "&eYou can obtain this gkit again in &7{DAYS}d {HOURS}h {MINUTES}m {SECONDS}s"
+#
+enchants:
+  arrowbreak:
+  - "&e&l** ARROW BREAK **"
+  blacksmith:
+  - "&6&l** BLACKSMITH **"
+  blessed:
+  - "&e&l** BLESSED **"
+  bloodlink:
+  - "&e&l** BLOOD LINK &a&l+{AMOUNT}HP &e&l**"
+  disarmor:
+  - "&6&l** YOU HAVE BEEN DISARMORED **"
+  doublestrike:
+  - "&6&l** DOUBLE STRIKE **"
+  dodge:
+  - "&b&l** DODGE **"
+  inversion:
+  - "&6&l** INVERSION &a&l+{AMOUNT} HP"
+  natureswrath::
+  - "&c&l** NATURES WRATH **"
+  sniper:
+  - "&e&l** HEADSHOT **"
+  #
+  unfocus:
+  - "&e&l** YOU'VE BEEN UNFOCUSED **"
+  refocus:
+  - "&a&l** YOU'VE REGAINED FOCUS **"
+#
+xpbottle:
+  ##Taken directly from the | Beast-XpWithdraw |  plugin##
+  argument-0:
+  - "&e/xpbottle <amount>"
+  - "&7Convert <amount> xp into bottle form."
+  - "&7Use &e/xp &7to view your current exp points."
+  ########################################################
+  invalid-xpbottle-amount:
+  - '&c&l(!)&r &cInvalid xpbottle amount: "{AMOUNT}"'
+  not-enough-xp-to-bottle:
+  - "&c&l(!)&r &cYou do not have enough experience to bottle this much!"
+  deposit:
+  - "&a&l+{AMOUNT} XP"
+  withdraw:
+  - "&c&l-{AMOUNT} XP"
+  afflicted-with-exp-exhaustion:
+  - "&eYou are now afflicted with &nEXP Exhaustion&r &efor {TIME}."
+  cannot-xpbottle:
+  - "&c&l(!)&r &cYou cannot create another XP bottle for {MINUTES}m {SECONDS}s"
+  - "&7Complete a Rank Quest from store.yourserver.com to decrease this delay."
+#
+showcase:
+#
+books:
+  apply-info:
+  - "&e&l(!)&r &eTo apply this enchantment to an item, simply drag n' drop"
+  - " &ethe book onto the item you'd like to enchant in your inventory!"
+  - "&7The &bSuccess Rate &7is the chance of the book successfully being applied"
+  - " &7to your equipment. The &bDestruction Chance &7is the percent chance of"
+  - " &7your piece of equipment being &nDESTROYED&r &7if the book fails to apply."
+  #
+  random:
+  - "&e&l(!) &eYou examine the &d&lRandom Enchantment Book..."
+  - "&eand discovered {BOOK_NAME}"
+  soul:
+  - "&e&l(!) &eYou examine the &c&lSoul Enchantment Book..."
+  - "&eand discovered {BOOK_NAME}"
+  legendary:
+  - "&e&l(!) &eYou examine the &6&lLegendary Enchantment Book..."
+  - "&eand discovered {BOOK_NAME}"
+  ultimate:
+  - "&e&l(!) &eYou examine the &e&lUltimate Enchantment Book..."
+  - "&eand discovered {BOOK_NAME}"
+  elite:
+  - "&e&l(!) &eYou examine the &b&lElite Enchantment Book..."
+  - "&eand discovered {BOOK_NAME}"
+  unique:
+  - "&e&l(!) &eYou examine the &a&lUnique Enchantment Book..."
+  - "&eand discovered {BOOK_NAME}"
+  simple:
+  - "&e&l(!) &eYou examine the &f&lSimple Enchantment Book..."
+  - "&eand discovered {BOOK_NAME}"
+#
+givedp:
+  insufficient-permission: "&cYou do not have permission to execute this command!"
+#
+filter:
+  argument-0:
+  - " "
+  - "{PREFIX}"
+  - "&b&lItem Filter Commands"
+  - "&f/filter toggle"
+  - "&7Toggle item pickup filter"
+  - " "
+  - "&f/filter edit"
+  - "&7Edit items you pickup while the item filter is enabled"
+  - " "
+  activate:
+  - "&a&l(!) Item Filter &nEnabled"
+  - "&7Use &n/filter edit&r &7to edit the items you will pickup"
+  deactivate:
+  - "&c&l(!) Item Filter &nDisabled"
+#
+splitsouls:
+  need-item-with-soul-tracker:
+  - "&c&l(!)&r &cYou need an item with a soul tracker to use this!"
+  need-to-collect-souls:
+  - "&c&l(!)&r &cYou need to collect some souls to use this!"
+  split-soul-gem:
+  - "&eYour Soul Gem has been split into two gems successfully."
+  - "&a&l+ {AMOUNT} Soul Gem(s)"
+  ######################################################
+  #  How to add messages for custom rarity book names  #
+  #
+  ######################################################
+  split-legendary:
+  - "&6&l- {SOULS} Legendary Souls"
+  - "&a&l+ {GEMS} Soul Gem(s)"
+  split-ultimate:
+  - "&e&l- {SOULS} Ultimate Souls"
+  - "&a&l+ {GEMS} Soul Gem(s)"
+  split-elite:
+  - "&b&l- {SOULS} Elite Souls"
+  - "&a&l+ {GEMS} Soul Gem(s)"
+  split-unique:
+  - "&a&l- {SOULS} Unique Souls"
+  - "&a&l+ {GEMS} Soul Gem(s)"
+  split-simple:
+  - "&f&l- {SOULS} Simple Souls"
+  - "&a&l+ {GEMS} Soul Gem(s)"
+#
+soul-trackers:
+  cooldown:
+  - "&c&l(!)&r &cYou can collect {VICTIM}'s Soul again in {TIME_MIN}m {TIME_SEC}s!"
+  apply:
+    legendary:
+    - "&e&l(!)&r &eYou have applied a &6&lLegendary Soul Tracker&r &eto your {ITEM}!"
+    ultimate:
+    - "&e&l(!)&r &eYou have applied a &e&lUltimate Soul Tracker&r &eto your {ITEM}!"
+    elite:
+    - "&e&l(!)&r &eYou have applied a &b&lElite Soul Tracker&r &eto your {ITEM}!"
+    unique:
+    - "&e&l(!)&r &eYou have applied a &a&lUnique Soul Tracker&r &eto your {ITEM}!"
+    simple:
+    - "&e&l(!)&r &eYou have applied a &f&lSimple Soul Tracker&r &eto your {ITEM}!"
+#
+soul-mode:
+  need-souls:
+  - "&c&l(!)&r &cYou need to collect some souls before entering Soul Mode!"
+  soul-drain-message: true
+  soul-drain-update:
+  - " "
+  - "&e&l** REMAINING SOULS: &n{SOULS}&r &e&l**"
+  moved-active-soul-gem:
+  - "&c&l** SOUL MODE: &nOFF&r &c&l**"
+  - "&7You have left Soul Mode, because you have moved the active Soul Gem!"
+  dropped-item-while-active:
+  - "&c&l** SOUL MODE: &nOFF&r &c&l**"
+  - "&7You have left Soul Mode, because you have dropped the Soul Gem!"
+  out-of-souls:
+  - "&c&l** SOUL MODE: &nOFF&r &c&l**"
+  - "&7You ran out of souls to use! Collect more to activate Soul Enchants!"
+  activate:
+  - "&a&l** SOUL MODE: &nON&r &a&l**"
+  - "&7Active soul enchantments will now drain soul gems."
+  deactivate:
+  - "&c&l** SOUL MODE: &nOFF&r &c&l**"
+  - "&7Soul enchantments will no longer drain soul gems."
+#
+ItemNameTag:
+  cannot-rename-air:
+  - "&c&l(!)&r &cYou need to be holding an item to rename!"
+  cannot-rename-item:
+  - "&c&l(!)&r &cYou cannot rename this item!"
+  already-in-rename-process:
+  - "&c&l(!)&r &cYour next message will already try to rename your item!"
+  enter-rename:
+  - "&a&l(!)&r &aYour next message will try to rename your item."
+  rename-item:
+  - "&e&l(!)&r &eYour item has been renamed to '{NAME}&r&e'!"
+#
+enchanter:
+  cash-purchase-success:
+  - '&c&l-${AMOUNT}'
+  xp-purchase-success:
+  - '&c&l-{AMOUNT} EXP'
+  need-more-xp:
+  - '&c&l(!)&r &cYou need more experience to purchase this!'
+  need-more-cash:
+  - '&c&l(!)&r &cYou need more money to purchase this!'
+#
+tinkerer:
+  cancelled:
+  - "&c&lTrade Cancelled."
+  accepted:
+  - "&a&lTrade Accepted."
+  open:
+  - "&eTrading with &lServer Tinkerer&r&e..."
+  doesnt-want-item:
+  - "&c&"
+#
+titles:
+  already-own-title:
+    - '&c&l(!)&r &cYou already own the {TITLE} &ctitle!'
+  redeem-title:
+    - ' '
+    - '&b&l(!) You''ve UNLOCKED the &d&l{TITLE} &b&ltitle!'
+    - '&7Equip your new title in the /title menu!'
+    - '&a&l>> &7Your available titles have updated. Use &e&l/title &7to view them'
+  need-titles:
+    - ' '
+    - '&c&l(!) &cYou have not yet unlocked any titles!'
+    - '&7Titles may be gained through accomplishing achievements in-game or purchasing them with /buy!'
+  equip-title:
+    - ' '
+    - '&e&l(!)&r &eYou have equipped the {TITLE} &etitle'
+  unequip-title:
+    - ' '
+    - '&e&l(!)&r &eYou have unequipped the {TITLE} &etitle'
+#
+koth:
+  event:
+  - ' '
+  - '&b&l*** A KOTH EVENT IS RUNNING! ***'
+  - '&7Use &b/koth &7to view event information!'
+  - ' '
+  captured:
+  - ' '
+#
